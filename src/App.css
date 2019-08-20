@@ -1,0 +1,55 @@
+#title {
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 50px;
+  position: absolute;
+  top: -1%;
+  left: 39%;
+}
+
+#soundcloud-player {
+  position: absolute;
+  top: 13%;
+  left: 30.5%;
+}
+
+#title1 {
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 40px;
+  position: absolute;
+  top: 55%;
+  left: 27%;
+}
+
+#spotify-player {
+  position: absolute;
+  top: 75%;
+  left: 34.5%;
+}
+
+#apple {
+  position: absolute;
+  top: 65.8%;
+  left: 46%;
+  width: 4%;
+}
+
+#spotify {
+  position: absolute;
+  top: 66.5%;
+  left: 50.5%;
+  width: 3.5%;
+}
+
+#pandora {
+  position: absolute;
+  top: 63%;
+  left: 51.5%;
+  width: 9%;
+}
+
+#tidal {
+  position: absolute;
+  top: 68%;
+  left: 40.5%;
+  width: 5%;
+}
