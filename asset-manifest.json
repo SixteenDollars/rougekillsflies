@@ -1,19 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.b32e0c93.chunk.css",
-    "main.js": "/static/js/main.1a357114.chunk.js",
-    "main.js.map": "/static/js/main.1a357114.chunk.js.map",
+    "main.css": "/static/css/main.6ac6b88c.chunk.css",
+    "main.js": "/static/js/main.0ce786b7.chunk.js",
+    "main.js.map": "/static/js/main.0ce786b7.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.70ccc2c3.js",
     "runtime~main.js.map": "/static/js/runtime~main.70ccc2c3.js.map",
-    "static/js/2.e60dd9f4.chunk.js": "/static/js/2.e60dd9f4.chunk.js",
-    "static/js/2.e60dd9f4.chunk.js.map": "/static/js/2.e60dd9f4.chunk.js.map",
+    "static/css/2.22a7d4ef.chunk.css": "/static/css/2.22a7d4ef.chunk.css",
+    "static/js/2.4741aada.chunk.js": "/static/js/2.4741aada.chunk.js",
+    "static/js/2.4741aada.chunk.js.map": "/static/js/2.4741aada.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.9291f92d1644a871915e72ecb9f1c551.js": "/precache-manifest.9291f92d1644a871915e72ecb9f1c551.js",
+    "precache-manifest.6bb9f8e22bea602f46cea9710c307371.js": "/precache-manifest.6bb9f8e22bea602f46cea9710c307371.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.b32e0c93.chunk.css.map": "/static/css/main.b32e0c93.chunk.css.map",
-    "static/media/apple-music.png": "/static/media/apple-music.24451496.png",
-    "static/media/pandora.png": "/static/media/pandora.4d4c4b84.png",
-    "static/media/spotify.png": "/static/media/spotify.2d17c16d.png",
-    "static/media/tidal.png": "/static/media/tidal.ae042daa.png"
+    "static/css/2.22a7d4ef.chunk.css.map": "/static/css/2.22a7d4ef.chunk.css.map",
+    "static/css/main.6ac6b88c.chunk.css.map": "/static/css/main.6ac6b88c.chunk.css.map",
+    "static/media/App.css": "/static/media/SoulMarkerHandwritingFont.b17f81bf.woff2",
+    "static/media/apple-music.png": "/static/media/apple-music.3d919e8e.png",
+    "static/media/ig.png": "/static/media/ig.a8cc6acf.png",
+    "static/media/me.png": "/static/media/me.c05c8c21.png",
+    "static/media/pandora.png": "/static/media/pandora.ee193b0b.png",
+    "static/media/sc.png": "/static/media/sc.0138f7ea.png",
+    "static/media/spotify.png": "/static/media/spotify.a9225b24.png",
+    "static/media/tidal.png": "/static/media/tidal.5baa6a44.png"
   }
 }
