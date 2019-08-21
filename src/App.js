@@ -34,7 +34,7 @@ class App extends Component {
 					</div>
 					<div class="row justify-content-center align-items-center" id="soundcloud-player">
 						<ReactPlayer
-							class="col-sm-7 col-8"
+							class="col-sm-7"
 							url='https://soundcloud.com/rougeisdead/sets/stoptweakin'
 							playing />
 					</div>
@@ -45,24 +45,24 @@ class App extends Component {
 					</div>
 
 					<div id="logos" class="row justify-content-center align-items-center">
-						<div class="col-sm-1 col-2">
+						<div class="col-sm-1 col-md-1 col-2">
 							<a href="https://listen.tidal.com/album/107846023">
 								<div class="img-max">
 									<img class="img-fluid" id="tidal" src={tidal} alt=""></img>
 								</div>
 							</a>
 						</div>
-						<div class="col-sm-1 col-2">
+						<div class="col-sm-1 col-md-1 col-2">
 							<a href="https://geo.music.apple.com/us/album/_/1460176267?mt=1&app=music&at=1000lHKX">
 								<img class="img-fluid" id="apple" src={apple} alt=""></img>
 							</a>
 						</div>
-						<div class="col-sm-1 col-2">
+						<div class="col-sm-1 col-md-1 col-2">
 							<a href="https://open.spotify.com/album/6ITBoE1l1zPCtXKOTN12IC">
 								<img class="img-fluid" id="spotify" src={spotify} alt=""></img>
 							</a>
 						</div>
-						<div class="col-sm-1 col-2">
+						<div class="col-sm-1 col-md-1 col-2">
 							<a href="https://www.pandora.com/artist/various-artists/love-hart-presents-hartfm-explicit/AL2V7Pb7xcg7p74">
 								<img class="img-fluid" id="pandora" src={pandora} alt=""></img>
 							</a>
@@ -71,7 +71,7 @@ class App extends Component {
 
 					<div class="row justify-content-center align-items-center">
 						<iframe
-							class="col-6"
+							class="col"
 							title="spotify"
 							src={`https://embed.spotify.com/?uri=${uri}&view=${view}&theme=${theme}`}
 							width={size.width}
