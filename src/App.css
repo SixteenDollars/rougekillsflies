@@ -22,10 +22,6 @@
   margin-top: 40px;
 }
 
-#title:hover {
-  color: grey
-}
-
 #soundcloud-player {
   margin-top: -25px;
 
@@ -35,10 +31,6 @@
   font-family: 'Covered By Your Grace', cursive;
   font-size: 40px;
   margin-top: 30px;
-}
-
-#title1:hover {
-  color: grey
 }
 
 #spotify-player {
