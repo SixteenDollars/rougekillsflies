@@ -71,7 +71,7 @@ class App extends Component {
 
 					<div class="row justify-content-center align-items-center">
 						<iframe
-							class="col"
+							class="col-6"
 							title="spotify"
 							src={`https://embed.spotify.com/?uri=${uri}&view=${view}&theme=${theme}`}
 							width={size.width}
