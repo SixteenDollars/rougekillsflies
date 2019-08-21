@@ -27,39 +27,39 @@ class App extends Component {
 						<p class="text-left" id="head"> HALF OF HEAVEN IS A HOME </p>
 					</div>
 					<div class="row justify-content-center align-items-center">
-						<div class="col-xs-12 col-md-12" id="title"><p class="text-center">STOP tweakin' (2018)</p></div>
+						<div class="col-xs-12" id="title"><p class="text-center">STOP tweakin' (2018)</p></div>
 					</div>
 					<div class="row justify-content-center align-items-center" id="soundcloud-player">
 						<ReactPlayer
-							class="col-xs-7 col-md-7"
+							class="col-xs-7"
 							url='https://soundcloud.com/rougeisdead/sets/stoptweakin'
 							playing />
 					</div>
 					<div class="row justify-content-center align-items-center">
-						<div class="col-xs-12 col-md-12" id="title1">
+						<div class="col-xs-12" id="title1">
 							<p class="text-center">F**KMONDAY's (from LoveHart Compilation Album) (2019)</p>
 						</div>
 					</div>
 
 					<div id="logos" class="row justify-content-center align-items-center">
-						<div class="col-xs-12 col-md-1">
+						<div class="col-xs-1">
 							<a href="https://listen.tidal.com/album/107846023">
 								<img class="img-fluid" id="tidal" src={tidal} alt=""></img>
 							</a>
 						</div>
 
-						<div class="col-xs-12 col-md-1">
+						<div class="col-xs-1">
 							<a href="https://geo.music.apple.com/us/album/_/1460176267?mt=1&app=music&at=1000lHKX">
 								<img class="img-fluid" id="apple" src={apple} alt=""></img>
 							</a>
 						</div>
 
-						<div class="col-xs-12 col-md-1">
+						<div class="col-xs-1">
 							<a href="https://open.spotify.com/album/6ITBoE1l1zPCtXKOTN12IC">
 								<img class="img-fluid" id="spotify" src={spotify} alt=""></img>
 							</a>
 						</div>
-						<div class="col-xs-12 col-md-1">
+						<div class="col-xs-1">
 							<a href="https://www.pandora.com/artist/various-artists/love-hart-presents-hartfm-explicit/AL2V7Pb7xcg7p74">
 								<img class="img-fluid" id="pandora" src={pandora} alt=""></img>
 							</a>
@@ -68,7 +68,7 @@ class App extends Component {
 
 					<div class="row justify-content-center align-items-center">
 						<iframe
-							class="col-xs-6 col-md-6"
+							class="col-xs-6"
 							title="spotify"
 							id="spotify-player"
 							src={`https://embed.spotify.com/?uri=${uri}&view=${view}&theme=${theme}`}
@@ -81,18 +81,18 @@ class App extends Component {
 					</div>
 
 					<div class="row justify-content-center align-items-center">
-						<div class="col-xs-12 col-md-12" id="title2">
+						<div class="col-xs-12" id="title2">
 							<p class="text-center">me + ur moms in the background</p>
 						</div>
 					</div>
 
 					<div class="row justify-content-center align-items-center">
-						<img class="col-xs-4 col-md-4" id="me" src={me} alt="">
+						<img class="col-xs-4" id="me" src={me} alt="">
 						</img>
 					</div>
 
 					<div class="row justify-content-center align-items-center">
-						<div class="col-xs-1 col-md-1">
+						<div class="col-xs-1">
 							<a href="https://www.instagram.com/rougedied">
 								<img id="ig" class="img-fluid" src={ig} alt=""></img>
 							</a>
