@@ -44,28 +44,28 @@ class App extends Component {
 					</div>
 
 					<div id="logos" class="row justify-content-center align-items-center">
-						<div class="col-md-1 col-lg-1 col-sm-1 .col-xl-1">
+						<div class="col-lg-1">
 							<a href="https://listen.tidal.com/album/107846023">
 								<div class="img-max">
 									<img class="img-fluid" id="tidal" src={tidal} alt=""></img>
 								</div>
 							</a>
 						</div>
-						<div class="col-md-1 col-lg-1 col-sm-1 .col-xl-1">
+						<div class="col-lg-1">
 							<a href="https://geo.music.apple.com/us/album/_/1460176267?mt=1&app=music&at=1000lHKX">
 								<div class="img-max">
 									<img class="img-fluid" id="apple" src={apple} alt=""></img>
 								</div>
 							</a>
 						</div>
-						<div class="col-md-1 col-lg-1 col-sm-1 .col-xl-1">
+						<div class="col-lg-1">
 							<a href="https://open.spotify.com/album/6ITBoE1l1zPCtXKOTN12IC">
 								<div class="img-max">
 									<img class="img-fluid" id="spotify" src={spotify} alt=""></img>
 								</div>
 							</a>
 						</div>
-						<div class="col-md-1 col-lg-1 col-sm-1 .col-xl-1">
+						<div class="col-lg-1">
 							<a href="https://www.pandora.com/artist/various-artists/love-hart-presents-hartfm-explicit/AL2V7Pb7xcg7p74">
 								<div class="img-max">
 									<img class="img-fluid" id="pandora" src={pandora} alt=""></img>
