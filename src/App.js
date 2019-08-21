@@ -82,7 +82,7 @@ class App extends Component {
 
 					</div>
 
-					<div class="row justify-content-center align-items-center">
+{/* 					<div class="row justify-content-center align-items-center">
 						<div class="col-sm-12 col-6" id="title3">
 							<p class="text-center">dollartree (rough demo) (w/ khaji, atlas, ryanwise) (2019) </p>
 						</div>
@@ -96,7 +96,7 @@ class App extends Component {
 							autoPlay
 							controls
 						/>
-					</div>
+					</div> */}
 
 					<div class="row justify-content-center align-items-center">
 						<div class="col-xs-12" id="title2">
