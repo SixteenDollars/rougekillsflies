@@ -15,7 +15,7 @@ class App extends Component {
 	render() {
 		const uri = "spotify:album:6ITBoE1l1zPCtXKOTN12IC";
 		const size = {
-			width: '45%',
+			width: '50%',
 			height: 350
 		};
 		const view = 'list'; // or 'coverart'
@@ -44,32 +44,26 @@ class App extends Component {
 					</div>
 
 					<div id="logos" class="row justify-content-center align-items-center">
-						<div class="col-lg-1">
+						<div class="col-sm-1 col-2">
 							<a href="https://listen.tidal.com/album/107846023">
 								<div class="img-max">
 									<img class="img-fluid" id="tidal" src={tidal} alt=""></img>
 								</div>
 							</a>
 						</div>
-						<div class="col-lg-1">
+						<div class="col-sm-1 col-2">
 							<a href="https://geo.music.apple.com/us/album/_/1460176267?mt=1&app=music&at=1000lHKX">
-								<div class="img-max">
-									<img class="img-fluid" id="apple" src={apple} alt=""></img>
-								</div>
+							<img class="img-fluid" id="apple" src={apple} alt=""></img>
 							</a>
 						</div>
-						<div class="col-lg-1">
+						<div class="col-sm-1 col-2">
 							<a href="https://open.spotify.com/album/6ITBoE1l1zPCtXKOTN12IC">
-								<div class="img-max">
-									<img class="img-fluid" id="spotify" src={spotify} alt=""></img>
-								</div>
+							<img class="img-fluid" id="spotify" src={spotify} alt=""></img>
 							</a>
 						</div>
-						<div class="col-lg-1">
+						<div class="col-sm-1 col-2">
 							<a href="https://www.pandora.com/artist/various-artists/love-hart-presents-hartfm-explicit/AL2V7Pb7xcg7p74">
-								<div class="img-max">
-									<img class="img-fluid" id="pandora" src={pandora} alt=""></img>
-								</div>
+							<img class="img-fluid" id="pandora" src={pandora} alt=""></img>
 							</a>
 						</div>
 					</div>
