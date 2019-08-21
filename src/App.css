@@ -1,55 +1,80 @@
+@font-face {
+  font-family: 'SoulMarker_Handwriting_Font';
+  src: url('resources/fonts/SoulMarkerHandwritingFont.woff2') format('woff2'),
+      url('resources/fonts/SoulMarkerHandwritingFont.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+#page {
+  background-image: 
+}
+
+#head {
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 35px;
+  width: 5px;
+}
+
 #title {
   font-family: 'Covered By Your Grace', cursive;
   font-size: 50px;
-  position: absolute;
-  top: -1%;
-  left: 39%;
+  margin-top: 40px;
+}
+
+#title:hover {
+  color: grey
 }
 
 #soundcloud-player {
-  position: absolute;
-  top: 13%;
-  left: 30.5%;
+  margin-top: -25px;
+
 }
 
 #title1 {
   font-family: 'Covered By Your Grace', cursive;
   font-size: 40px;
-  position: absolute;
-  top: 55%;
-  left: 27%;
+  margin-top: 30px;
+}
+
+#title1:hover {
+  color: grey
 }
 
 #spotify-player {
-  position: absolute;
-  top: 75%;
-  left: 34.5%;
+
 }
 
-#apple {
-  position: absolute;
-  top: 65.8%;
-  left: 46%;
-  width: 4%;
+#logos {
+  margin-top: -25px;
+  margin-bottom: 10px;
 }
 
 #spotify {
-  position: absolute;
-  top: 66.5%;
-  left: 50.5%;
-  width: 3.5%;
+  width: 90%;
 }
 
 #pandora {
-  position: absolute;
-  top: 63%;
-  left: 51.5%;
-  width: 9%;
+  width: 75%;
 }
 
-#tidal {
-  position: absolute;
-  top: 68%;
-  left: 40.5%;
-  width: 5%;
+#item{
+  display:inline-block;
+  vertical-align:top;
+  width:30%;
 }
+
+#title2 {
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: -15px;
+}
+
+#ig {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+
+

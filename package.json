@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://rougedied.com/",
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "gh-pages": "^2.1.1",
     "jquery": "^3.4.1",
     "react": "^16.9.0",
@@ -13,7 +14,8 @@
     "react-soundcloud": "^0.1.1",
     "react-soundcloud-widget-player": "^1.0.0",
     "react-spotify-player": "^1.0.4",
-    "react-spotify-web-playback": "^0.6.0"
+    "react-spotify-web-playback": "^0.6.0",
+    "reactstrap": "^8.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
