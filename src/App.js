@@ -30,16 +30,16 @@ class App extends Component {
 						</div>
 					</div>
 					<div class="row justify-content-center align-items-center">
-						<div class="col-xs-12" id="title"><p class="text-center">STOP tweakin' (2018)</p></div>
+						<div class="col-sm-12 col-6" id="title"><p class="text-center">STOP tweakin' (2018)</p></div>
 					</div>
 					<div class="row justify-content-center align-items-center" id="soundcloud-player">
 						<ReactPlayer
-							class="col-xs-7"
+							class="col-sm-7 col-8"
 							url='https://soundcloud.com/rougeisdead/sets/stoptweakin'
 							playing />
 					</div>
 					<div class="row justify-content-center align-items-center">
-						<div class="col-xs-12" id="title1">
+						<div class="col-sm-12 col-6" id="title1">
 							<p class="text-center">F**KMONDAY's (from LoveHart Compilation Album) (2019)</p>
 						</div>
 					</div>
@@ -71,7 +71,7 @@ class App extends Component {
 
 					<div class="row justify-content-center align-items-center">
 						<iframe
-							class="col-xs"
+							class="col-6"
 							title="spotify"
 							src={`https://embed.spotify.com/?uri=${uri}&view=${view}&theme=${theme}`}
 							width={size.width}
@@ -83,7 +83,7 @@ class App extends Component {
 					</div>
 
 					<div class="row justify-content-center align-items-center">
-						<div class="col-xs-12" id="title3">
+						<div class="col-sm-12 col-6" id="title3">
 							<p class="text-center">dollartree (rough demo) (w/ khaji, atlas, ryanwise) (2019) </p>
 						</div>
 					</div>
