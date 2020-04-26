@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "53577e955355df1cb39503f5edb89eb5",
+    "revision": "b0225e08d522ec2d3de67bc867e6427a",
     "url": "/index.html"
   },
   {
-    "revision": "b3a9d5e9842f350adeb7",
+    "revision": "6f6cb0b9f367ff568eca",
     "url": "/static/css/2.22a7d4ef.chunk.css"
   },
   {
-    "revision": "8b08005140aadce4848a",
-    "url": "/static/css/main.cdaab089.chunk.css"
+    "revision": "2505a7a219c586d110ef",
+    "url": "/static/css/main.f96b70e1.chunk.css"
   },
   {
-    "revision": "b3a9d5e9842f350adeb7",
-    "url": "/static/js/2.a322a812.chunk.js"
+    "revision": "6f6cb0b9f367ff568eca",
+    "url": "/static/js/2.e6e0d944.chunk.js"
   },
   {
-    "revision": "8b08005140aadce4848a",
-    "url": "/static/js/main.850ea5e7.chunk.js"
+    "revision": "2505a7a219c586d110ef",
+    "url": "/static/js/main.93326dfe.chunk.js"
   },
   {
     "revision": "3ee15d4df232563c2d0b",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3d919e8eeb9769073ad0661c033bb692",
     "url": "/static/media/apple-music.3d919e8e.png"
+  },
+  {
+    "revision": "affdfe3f6a8749af9a90c3d0d61105d4",
+    "url": "/static/media/circle.affdfe3f.png"
   },
   {
     "revision": "001d8490ebe1f677684a6518e0c0159f",
