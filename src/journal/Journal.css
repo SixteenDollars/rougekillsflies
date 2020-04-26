@@ -1,0 +1,52 @@
+
+  #journal-head {
+    font-family: 'Space Mono', bold;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+    margin-top: 200px;
+    white-space: nowrap;
+  }
+
+  #journal-date-month {
+    font-family: 'Space Mono', bold;
+    font-size: 11px;
+    font-weight: italic;
+    color: black;
+    margin-top: 25px;
+    white-space: nowrap;
+  }
+
+  #journal-date-year {
+    font-family: 'Space Mono', bold;
+    font-size: 11px;
+    font-weight: bold;
+    color: black;
+    white-space: nowrap;
+  }
+
+  #location {
+    font-family: 'Space Mono', bold;
+    font-size: 11px;
+    color: black;
+    white-space: nowrap;
+    margin-top: 2.5px;
+    opacity: 0.5;
+  }
+
+  #journal-body {
+    font-family: 'Space Mono', bold;
+    font-size: 15px;
+    color: black;
+    white-space: nowrap;
+    margin-top: 5px;
+  }
+
+  #circle {
+    float: none;
+    margin: 0 auto;
+    width: 10%;
+  }
+
+
+  
