@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.f96b70e1.chunk.css",
-    "main.js": "/static/js/main.93326dfe.chunk.js",
-    "main.js.map": "/static/js/main.93326dfe.chunk.js.map",
+    "main.css": "/static/css/main.e57262be.chunk.css",
+    "main.js": "/static/js/main.acbbd3ae.chunk.js",
+    "main.js.map": "/static/js/main.acbbd3ae.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.70ccc2c3.js",
     "runtime~main.js.map": "/static/js/runtime~main.70ccc2c3.js.map",
     "static/css/2.22a7d4ef.chunk.css": "/static/css/2.22a7d4ef.chunk.css",
-    "static/js/2.e6e0d944.chunk.js": "/static/js/2.e6e0d944.chunk.js",
-    "static/js/2.e6e0d944.chunk.js.map": "/static/js/2.e6e0d944.chunk.js.map",
+    "static/js/2.9976afe9.chunk.js": "/static/js/2.9976afe9.chunk.js",
+    "static/js/2.9976afe9.chunk.js.map": "/static/js/2.9976afe9.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d73e46fecfcf697b64f6e5c121f2dbb9.js": "/precache-manifest.d73e46fecfcf697b64f6e5c121f2dbb9.js",
+    "precache-manifest.fba26318e4d2050a650d22441462d7dc.js": "/precache-manifest.fba26318e4d2050a650d22441462d7dc.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.22a7d4ef.chunk.css.map": "/static/css/2.22a7d4ef.chunk.css.map",
-    "static/css/main.f96b70e1.chunk.css.map": "/static/css/main.f96b70e1.chunk.css.map",
+    "static/css/main.e57262be.chunk.css.map": "/static/css/main.e57262be.chunk.css.map",
+    "static/media/BandcampHoriz.png": "/static/media/BandcampHoriz.16c33fdd.png",
     "static/media/Homepage.css": "/static/media/SoulMarkerHandwritingFont.b17f81bf.woff2",
+    "static/media/SoundcloudReg.png": "/static/media/SoundcloudReg.0138f7ea.png",
     "static/media/apple-music.png": "/static/media/apple-music.3d919e8e.png",
     "static/media/circle.png": "/static/media/circle.affdfe3f.png",
     "static/media/deathwish (demo).mp3": "/static/media/deathwish (demo).001d8490.mp3",
@@ -21,7 +23,9 @@
     "static/media/ig.png": "/static/media/ig.a8cc6acf.png",
     "static/media/me.png": "/static/media/me.156acdcc.png",
     "static/media/pandora.png": "/static/media/pandora.ee193b0b.png",
+    "static/media/panic.wav": "/static/media/panic.7e44a68d.wav",
     "static/media/spotify.png": "/static/media/spotify.a9225b24.png",
-    "static/media/tidal.png": "/static/media/tidal.5baa6a44.png"
+    "static/media/tidal.png": "/static/media/tidal.5baa6a44.png",
+    "static/media/tripwire.wav": "/static/media/tripwire.69a9044a.wav"
   }
 }
