@@ -6,10 +6,6 @@ import bcblack from '../resources/images/bcblack.png'
 import spotifyblack from '../resources/images/spotifyblack.png'
 import pause from '../resources/images/pause.png'
 import play from '../resources/images/play.png'
-import tl from '../resources/images/TL.png'
-import tr from '../resources/images/TR.png'
-import bl from '../resources/images/BL.png'
-import br from '../resources/images/BR.png'
 import flower from '../resources/videos/08-08.m4v'
 import ReactPlayer from 'react-player'
 import CircleType from "circletype";
@@ -19,25 +15,29 @@ class LandingPage extends Component {
 	constructor(props) {
 		super(props);
 		this.addActiveTrack = this.addActiveTrack.bind(this);
-		this.closest = new Audio('songs/closest.wav');
-		this.bloom = new Audio('songs/bloom.mp3');
-		this.shame = new Audio('songs/shame.mp3');
-		this.godsend = new Audio('songs/godsend.mp3');
-		this.magic = new Audio('songs/magic.mp3');
-		this.ready = new Audio('songs/ready.mp3');
-		this.tape1 = new Audio('songs/tape1.mp3');
-		this.tape2 = new Audio('songs/tape2.mp3');
+		this.track1 = new Audio('songs/Closest Master.wav');
+		this.track2 = new Audio('songs/Bomb Master.wav');
+		this.track3 = new Audio('songs/Dead Men Master.wav');
+		this.track4 = new Audio('songs/Kill or King Me Master.wav');
+		this.track5 = new Audio('songs/God Send God Speed Master.wav');
+		this.track6 = new Audio('songs/Shame Master.wav');
+		this.track7 = new Audio('songs/No Not Magic Master.wav');
+		this.track8 = new Audio('songs/Heroes Never Die Master.wav');
+		this.track9 = new Audio('songs/Kitchen Sink Master.wav');
+		this.track10 = new Audio('songs/Blackstar.wav');
+		this.track11 = new Audio('songs/Deathwissh Master.wav');
+		this.track12 = new Audio('songs/Deathwish Master.wav');
 		this.state = {
-			activeTracks: [true, false, false, false, false, false, false, false],
-			indicators: [true, false, false, false, false, false, false, false],
-			playingTrack: this.closest,
+			activeTracks: [true, false, false, false, false, false, false, false, false, false, false, false],
+			indicators: [true, false, false, false, false, false, false, false, false, false, false, false],
+			playingTrack: this.track1,
 			pausePlay: true
 		};
 	}
 
 	componentDidMount() {
 		const circleType = new CircleType(document.getElementById("circleText")).radius(55);
-		var playPromise = this.closest.play();
+		var playPromise = this.track1.play();
 		if (playPromise !== undefined) {
 			playPromise.then(function () {
 				// do nothing
@@ -61,56 +61,80 @@ class LandingPage extends Component {
 	playTrack(index) {
 		this.state.playingTrack.pause();
 		this.state.playingTrack.currentTime = 0
-		this.setState( {
+		this.setState({
 			pausePlay: true
 		})
 		switch (index) {
 			case 0:
-				var playPromise = this.closest.play();
-				this.setState ( {
-					playingTrack: this.closest
+				var playPromise = this.track1.play();
+				this.setState({
+					playingTrack: this.track1
 				})
 				break;
 			case 1:
-				playPromise = this.bloom.play();
-				this.setState ( {
-					playingTrack: this.bloom
+				playPromise = this.track2.play();
+				this.setState({
+					playingTrack: this.track2
 				})
 				break;
 			case 2:
-				playPromise = this.shame.play();
-				this.setState ( {
-					playingTrack: this.shame
+				playPromise = this.track3.play();
+				this.setState({
+					playingTrack: this.track3
 				})
 				break;
 			case 3:
-				playPromise = this.godsend.play();
-				this.setState ( {
-					playingTrack: this.godsend
+				playPromise = this.track4.play();
+				this.setState({
+					playingTrack: this.track4
 				})
 				break;
 			case 4:
-				playPromise = this.magic.play();
-				this.setState ( {
-					playingTrack: this.magic
+				playPromise = this.track5.play();
+				this.setState({
+					playingTrack: this.track5
 				})
 				break;
 			case 5:
-				playPromise = this.ready.play();
-				this.setState ( {
-					playingTrack: this.ready
+				playPromise = this.track6.play();
+				this.setState({
+					playingTrack: this.track6
 				})
 				break;
 			case 6:
-				playPromise = this.tape1.play();
-				this.setState ( {
-					playingTrack: this.tape1
+				playPromise = this.track7.play();
+				this.setState({
+					playingTrack: this.track7
 				})
 				break;
 			case 7:
-				playPromise = this.tape2.play();
-				this.setState ( {
-					playingTrack: this.tape2
+				playPromise = this.track8.play();
+				this.setState({
+					playingTrack: this.track8
+				})
+				break;
+			case 8:
+				playPromise = this.track9.play();
+				this.setState({
+					playingTrack: this.track9
+				})
+				break;
+			case 9:
+				playPromise = this.track10.play();
+				this.setState({
+					playingTrack: this.track10
+				})
+				break;
+			case 10:
+				playPromise = this.track11.play();
+				this.setState({
+					playingTrack: this.track11
+				})
+				break;
+			case 11:
+				playPromise = this.track12.play();
+				this.setState({
+					playingTrack: this.track12
 				})
 				break;
 			default:
@@ -141,60 +165,6 @@ class LandingPage extends Component {
 		const activeTracks = this.state.activeTracks.slice();
 		return (
 			<div id="page">
-				<div id="pictures">
-					<div id="box a">
-						<div id="tl" onClick={() => {this.state.playingTrack.pause()}}>
-							<Link to="/home">
-								{this.state.playingTrack === this.closest && <img class="img-fluid" src={tl} alt=""></img>}
-								{this.state.playingTrack === this.bloom && <img class="img-fluid" src={tr} alt=""></img>}
-								{this.state.playingTrack === this.godsend && <img class="img-fluid" src={bl} alt=""></img>}
-								{this.state.playingTrack === this.shame && <img class="img-fluid" src={br} alt=""></img>}
-								{this.state.playingTrack === this.tape1 && <img class="img-fluid" src={tl} alt=""></img>}
-								{this.state.playingTrack === this.tape2 && <img class="img-fluid" src={tr} alt=""></img>}
-								{this.state.playingTrack === this.ready && <img class="img-fluid" src={bl} alt=""></img>}
-							</Link>
-						</div>
-					</div>
-					<div id="box b">
-						<div id="tr" onClick={() => {this.state.playingTrack.pause()}}>
-							<Link to="/journal/1">
-								{this.state.playingTrack === this.closest && <img class="img-fluid" src={tr} alt=""></img>}
-								{this.state.playingTrack === this.bloom && <img class="img-fluid" src={bl} alt=""></img>}
-								{this.state.playingTrack === this.godsend && <img class="img-fluid" src={br} alt=""></img>}
-								{this.state.playingTrack === this.shame && <img class="img-fluid" src={tl} alt=""></img>}
-								{this.state.playingTrack === this.tape2 && <img class="img-fluid" src={bl} alt=""></img>}
-								{this.state.playingTrack === this.ready && <img class="img-fluid" src={tl} alt=""></img>}
-								{this.state.playingTrack === this.magic && <img class="img-fluid" src={br} alt=""></img>}
-							</Link>
-						</div>
-					</div>
-					<div id="box c">
-						<div id="bl" onClick={() => {this.state.playingTrack.pause()}}>
-							<Link to="/journal/2">
-								{this.state.playingTrack === this.closest && <img class="img-fluid" src={bl} alt=""></img>}
-								{this.state.playingTrack === this.bloom && <img class="img-fluid" src={br} alt=""></img>}
-								{this.state.playingTrack === this.godsend && <img class="img-fluid" src={tl} alt=""></img>}
-								{this.state.playingTrack === this.shame && <img class="img-fluid" src={tr} alt=""></img>}
-								{this.state.playingTrack === this.tape1 && <img class="img-fluid" src={br} alt=""></img>}
-								{this.state.playingTrack === this.tape2 && <img class="img-fluid" src={tr} alt=""></img>}
-								{this.state.playingTrack === this.magic && <img class="img-fluid" src={tl} alt=""></img>}
-							</Link>
-						</div>
-					</div>
-					<div id="box d">
-						<div id="br" onClick={() => {this.state.playingTrack.pause()}}>
-							<Link to="/journal/3">
-								{this.state.playingTrack === this.closest && <img class="img-fluid" src={br} alt=""></img>}
-								{this.state.playingTrack === this.bloom && <img class="img-fluid" src={tl} alt=""></img>}
-								{this.state.playingTrack === this.godsend && <img class="img-fluid" src={tr} alt=""></img>}
-								{this.state.playingTrack === this.shame && <img class="img-fluid" src={bl} alt=""></img>}
-								{this.state.playingTrack === this.tape1 && <img class="img-fluid" src={bl} alt=""></img>}
-								{this.state.playingTrack === this.magic && <img class="img-fluid" src={tr} alt=""></img>}
-								{this.state.playingTrack === this.ready && <img class="img-fluid" src={tl} alt=""></img>}
-							</Link>
-						</div>
-					</div>
-				</div>
 				<div class="circular-text">
 					<div id="rotating">
 						<span id="circleText">
@@ -238,31 +208,47 @@ class LandingPage extends Component {
 								</li>
 								<li data-id="1" className={activeTracks[1] ? "active" : "inactive"} onClick={() => this.addActiveTrack(1)}>
 									{this.state.indicators[1] && <span id="current-track-smiley">⚘</span>}
-									IN BLOOM
+									BOMB
 								</li>
 								<li data-id="2" className={activeTracks[2] ? "active" : "inactive"} onClick={() => this.addActiveTrack(2)}>
 									{this.state.indicators[2] && <span id="current-track-smiley">⚘</span>}
-									SHAME. DEAD BODY
+									DEAD MEN PILFER MY SILENCE (FEAT. RODNEY CHROME)
 								</li>
 								<li data-id="3" className={activeTracks[3] ? "active" : "inactive"} onClick={() => this.addActiveTrack(3)}>
 									{this.state.indicators[3] && <span id="current-track-smiley">⚘</span>}
-									GOD SEND GOD SPEED
+									KILL OR KING ME
 								</li>
 								<li data-id="4" className={activeTracks[4] ? "active" : "inactive"} onClick={() => this.addActiveTrack(4)}>
 									{this.state.indicators[4] && <span id="current-track-smiley">⚘</span>}
-									NO NOT MAGIC
+									GOD SEND GOD SPEED (FEAT. ST.ARY)
 								</li>
 								<li data-id="5" className={activeTracks[5] ? "active" : "inactive"} onClick={() => this.addActiveTrack(5)}>
 									{this.state.indicators[5] && <span id="current-track-smiley">⚘</span>}
-									I'LL BE READY
+									SHAME.
 								</li>
 								<li data-id="6" className={activeTracks[6] ? "active" : "inactive"} onClick={() => this.addActiveTrack(6)}>
 									{this.state.indicators[6] && <span id="current-track-smiley">⚘</span>}
-									TRY#1
+									NO NOT MAGIC
 								</li>
 								<li data-id="7" className={activeTracks[7] ? "active" : "inactive"} onClick={() => this.addActiveTrack(7)}>
 									{this.state.indicators[7] && <span id="current-track-smiley">⚘</span>}
-									TRY#2
+									HEROES. NEVER. DIE.
+								</li>
+								<li data-id="8" className={activeTracks[8] ? "active" : "inactive"} onClick={() => this.addActiveTrack(8)}>
+									{this.state.indicators[8] && <span id="current-track-smiley">⚘</span>}
+									THE KITCHEN SINK, PARIS TEXAS, 00110
+								</li>
+								<li data-id="9" className={activeTracks[9] ? "active" : "inactive"} onClick={() => this.addActiveTrack(9)}>
+									{this.state.indicators[9] && <span id="current-track-smiley">⚘</span>}
+									BLACKHOLE, BLACKSTAR
+								</li>
+								<li data-id="10" className={activeTracks[10] ? "active" : "inactive"} onClick={() => this.addActiveTrack(10)}>
+									{this.state.indicators[10] && <span id="current-track-smiley">⚘</span>}
+									IN BLOOM (FEAT. KELLIE RODRIGUEZ)
+								</li>
+								<li data-id="11" className={activeTracks[11] ? "active" : "inactive"} onClick={() => this.addActiveTrack(11)}>
+									{this.state.indicators[11] && <span id="current-track-smiley">⚘</span>}
+									DEATHWISH
 								</li>
 							</ul>
 						</div>
