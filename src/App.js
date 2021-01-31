@@ -9,7 +9,7 @@ export default function App() {
 	return (
 		<BrowserRouter basename="/">
 			<Switch>
-				<Route exact path="/" component={LandingPage} />
+				<Route exact path="/" component={HomePage} />
 				<Route exact path="/home" component={HomePage} />
 				<Route path="/journal/:id" component={Journal} />
 			</Switch>
