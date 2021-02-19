@@ -1,6 +1,6 @@
 import ReactPlayer from 'react-player'
 import React, { Component } from 'react'
-import './HomePage.css';
+import './Homepage.css';
 import apple from '../resources/images/apple-music.png'
 import bandcamp from '../resources/images/BandcampHoriz.png'
 import soundcloud from '../resources/images/SoundcloudReg.png'
