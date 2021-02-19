@@ -9,7 +9,7 @@ import play from '../resources/images/play.png'
 import tl from '../resources/images/TL.png'
 import tr from '../resources/images/TR.png'
 import bl from '../resources/images/BL.png'
-import br from '../resources/images/BR.png'
+import br from '../resources/images/plant.png'
 import flower from '../resources/videos/08-08.m4v'
 import ReactPlayer from 'react-player'
 import CircleType from "circletype";

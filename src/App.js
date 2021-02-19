@@ -2,18 +2,21 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import LandingPage from './landingPage/LandingPage'
-import HomePage from './homePage/HomePage'
-import Journal from './journal/Journal'
+import Homepage from './homePage/Homepage'
+import Contact from './contact/Contact'
+import AlbumView from './albumView/AlbumView'
 
 export default function App() {
 	return (
 		<BrowserRouter basename="/">
 			<Switch>
-				<Route exact path="/" component={HomePage} />
-				<Route exact path="/home" component={HomePage} />
-				<Route path="/journal/:id" component={Journal} />
+				<Route exact path="/" component={Homepage} />
+				<Route exact path="/war" component={AlbumView} />
+				<Route exact path="/misc" component={Homepage} />
+				<Route exact path="/video" component={Homepage} />
+				<Route exact path="/shoot" component={Homepage} />
+				<Route exact path="/contact" component={Contact} />
 			</Switch>
 		</BrowserRouter>
 	)
-
 }

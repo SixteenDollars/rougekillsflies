@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './AlbumView.css';
+import './Contact.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import appleblack from '../resources/images/appleblack.png'
 import bcblack from '../resources/images/bcblack.png'
@@ -15,7 +15,7 @@ import ReactPlayer from 'react-player'
 import CircleType from "circletype";
 import { Link } from 'react-router-dom'
 
-class AlbumView extends Component {
+class Contact extends Component {
 	constructor(props) {
 		super(props);
 	}
@@ -30,10 +30,7 @@ class AlbumView extends Component {
 				<div class="container">
 					<div class="row">
 						<div class="col">
-							<Link to="/">
-								<p class="text-center" id="header"> HOME </p>
-							</Link>
-							<p class="text-center" id="header"> CONTACT </p>
+							<p class="text-center" id="head"> HALF OF HEAVEN IS A HOME </p>
 						</div>
 					</div>
 				</div>
@@ -51,4 +48,4 @@ class AlbumView extends Component {
 	}
 }
 
-export default AlbumView;
+export default Contact;

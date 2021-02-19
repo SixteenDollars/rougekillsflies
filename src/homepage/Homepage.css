@@ -1,20 +1,15 @@
-@font-face {
-    font-family: 'SoulMarker_Handwriting_Font';
-    src: url('../resources/fonts/SoulMarkerHandwritingFont.woff2') format('woff2'),
-        url('../resources/fonts/SoulMarkerHandwritingFont.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
+  #homePage {
+    background-color:rgb(1, 0, 1);
+    box-sizing: border-box;
   }
-  
-  .img-max {
-    max-width: 500px;
-  }
+
+  /* Text */
   
   #head {
     font-family: 'Covered By Your Grace', cursive;
     font-size: 35px;
     width: 5px;
-    color: black;
+    color: white;
     cursor: pointer;
   }
   
@@ -22,39 +17,31 @@
     font-family: 'Covered By Your Grace', cursive;
     font-size: 35px;
     width: 5px;
+    color: white;
   }
   
   #head2 {
     font-family: 'Covered By Your Grace', cursive;
     font-size: 20px;
     width: 5px;
-  }
-  
-  #title {
-    font-family: 'Covered By Your Grace', cursive;
-    font-size: 50px;
-    margin-top: 40px;
-  }
-  
-  #soundcloud-player {
-    margin-top: -25px;
-  }
-
-  #youtube-player {
-    margin-bottom: 10px;
+    color: white;
   }
   
   #title1 {
     font-family: 'Covered By Your Grace', cursive;
     font-size: 40px;
     margin-top: 55px;
+    color: white;
   }
 
   #title4 {
     font-family: 'Covered By Your Grace', cursive;
     font-size: 40px;
     margin-bottom: 5px;
+    color: white;
   }
+
+  /* Logos */
   
   #logos {
     margin-top: -25px;
@@ -76,66 +63,196 @@
   #pandora {
     width: 65%;
   }
-  
-  
-  
-  #item {
-    display:inline-block;
-    vertical-align:top;
-    width:30%;
-  }
-  
-  #title2 {
-    font-family: 'Covered By Your Grace', cursive;
-    font-size: 30px;
-    margin-top: 30px;
-    margin-bottom: -15px;
-  }
-  
-  #title3 {
-    font-family: 'Covered By Your Grace', cursive;
-    font-size: 40px;
-    margin-top: 30px;
-    margin-bottom: -15px;
-  }
-  
-  #play {
-    margin-top: 30px;
-    margin-bottom: -15px;
-  }
-  
-  .col-cent{
-    float: none;
-    margin: 0 auto;
-  }
-  
+
   #ig {
     display: block;
     margin-top: 25px;
     margin-bottom: 50px;
     width: 20%;
   }
-
-  #note{
+  
+  .col-cent{
     float: none;
     margin: 0 auto;
-    width: 50%;
+  }
+
+  .img-max {
+    max-width: 500px;
+  }
+
+  /* Players */
+
+  #soundcloud-player {
+    margin-top: -25px;
+  }
+      
+  #youtube-player {
+    margin-bottom: 10px;
+  }
+     
+  /* Grid */
+
+  #grid {
+    display: grid;
+    position: relative;
+    grid-template-columns: 295px 295px 295px;
+    grid-template-rows: 295px 295px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 75px;
+    grid-gap: 15px;
+    z-index: 500000;
+  }
+
+  .box {
+    border-radius: 5px;
+    padding: 20px;
   }
   
-  #me{
-    float: none;
-    margin: 0 auto;
-    width: 25%;
-  }
+      .one1 {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 2;
+      }
+      .one2 {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 2;
+          grid-row-end: 3;
+      }
+      .one3 {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 3;
+          grid-row-end: 4;
+      }
+      .two1 {
+          grid-column-start: 3;
+          grid-column-end: 4;
+          grid-row-start: 2;
+          grid-row-end: 3;
+      }
+      .two2 {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 1;
+          grid-row-end: 2;
+      }
 
-  #head {
-    font-family: 'Covered By Your Grace', cursive;
-    font-size: 35px;
-    width: 5px;
-    color: black;
-    cursor: pointer;
-  }
+      #box1x1 {
+        opacity: .75;
+        -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 2s; /* Firefox < 16 */
+         -ms-animation: fadein 2s; /* Internet Explorer */
+          -o-animation: fadein 2s; /* Opera < 12.1 */
+             animation: fadein 2s;
+      }
 
-
-
+      #box1x1:hover {
+        cursor: pointer;
+        opacity: 1;
+        margin-top: -5px;
+        margin-left: -5px;
+      }
   
+      #box1x2 {
+        opacity: .75;
+        -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 3s; /* Firefox < 16 */
+         -ms-animation: fadein 3s; /* Internet Explorer */
+          -o-animation: fadein 3s; /* Opera < 12.1 */
+             animation: fadein 3s;
+      }
+
+      #box1x2:hover {
+        cursor: pointer;
+        opacity: 1;
+        margin-top: -5px;
+        margin-right: -5px;
+      }
+
+      #box1x3 {
+        opacity: .75;
+        margin-top: -97px;
+        margin-left: -100px;
+        z-index: -10000;
+        height: 50%;
+      }
+
+      #video-container {
+        width: 50vw;
+        height: 80vh;
+        overflow: hidden;
+        z-index: -100000;
+      }
+
+      #box1x3:hover {
+        cursor: pointer;
+        opacity: 1;
+        z-index: -10000;
+      }
+
+      #box2x1 {
+        opacity: .75;
+        -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 4s; /* Firefox < 16 */
+         -ms-animation: fadein 4s; /* Internet Explorer */
+          -o-animation: fadein 4s; /* Opera < 12.1 */
+             animation: fadein 4s;
+      }
+
+      #box2x1:hover {
+        cursor: pointer;
+        opacity: 1;
+        margin-bottom: -5px;
+        margin-left: -5px;
+      }
+
+      #box2x2 {
+        opacity: .75;
+        -webkit-animation: fadein 4.55s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 4.5s; /* Firefox < 16 */
+         -ms-animation: fadein 4.5s; /* Internet Explorer */
+          -o-animation: fadein 4.5s; /* Opera < 12.1 */
+             animation: fadein 4.5s;
+      }
+
+      #box2x2:hover {
+        cursor: pointer;
+        opacity: 1;
+        margin-bottom: -5px;
+        margin-right: -5px;
+      }
+
+      @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: .75; }
+      }
+      
+      /* Firefox < 16 */
+      @-moz-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: .75; }
+      }
+      
+      /* Safari, Chrome and Opera > 12.1 */
+      @-webkit-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: .75; }
+      }
+      
+      /* Internet Explorer */
+      @-ms-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: .75; }
+      }
+      
+      /* Opera < 12.1 */
+      @-o-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: .75; }
+      }
+      
+
+ 
