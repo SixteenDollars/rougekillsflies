@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'SoulMarker_Handwriting_Font';
+    src: url('../resources/fonts/SoulMarkerHandwritingFont.woff2') format('woff2'),
+        url('../resources/fonts/SoulMarkerHandwritingFont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  .img-max {
+    max-width: 500px;
+  }
+  
+  #head {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 35px;
+    width: 5px;
+    color: black;
+    cursor: pointer;
+  }
+  
+  #head1 {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 35px;
+    width: 5px;
+  }
+  
+  #head2 {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 20px;
+    width: 5px;
+  }
+  
+  #title {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 50px;
+    margin-top: 40px;
+  }
+  
+  #soundcloud-player {
+    margin-top: -25px;
+  }
+
+  #youtube-player {
+    margin-bottom: 10px;
+  }
+  
+  #title1 {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 40px;
+    margin-top: 55px;
+  }
+
+  #title4 {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+  
+  #logos {
+    margin-top: -25px;
+    margin-bottom: 10px;
+  }
+  
+  #soundcloud {
+    width: 65%;
+  }
+  
+  #apple {
+    width: 80%;
+  }
+  
+  #spotify {
+    width: 75%;
+  }
+  
+  #pandora {
+    width: 65%;
+  }
+  
+  
+  
+  #item {
+    display:inline-block;
+    vertical-align:top;
+    width:30%;
+  }
+  
+  #title2 {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: -15px;
+  }
+  
+  #title3 {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: -15px;
+  }
+  
+  #play {
+    margin-top: 30px;
+    margin-bottom: -15px;
+  }
+  
+  .col-cent{
+    float: none;
+    margin: 0 auto;
+  }
+  
+  #ig2 {
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    width: 20%;
+  }
+
+  #note{
+    float: none;
+    margin: 0 auto;
+    width: 50%;
+  }
+  
+  #me{
+    float: none;
+    margin: 0 auto;
+    width: 25%;
+  }
+
+  #head {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 35px;
+    width: 5px;
+    color: black;
+    cursor: pointer;
+  }
+

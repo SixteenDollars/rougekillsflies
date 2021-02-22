@@ -66,3 +66,70 @@
   height: 100%;
   object-fit: cover;
 }
+
+.youtube-player {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 25vh;
+}
+
+.album-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 25vh;
+}
+
+.album-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 35px;
+  color: white;
+}
+
+.album-desc {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: white;
+}
+
+#logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+#appleblack {
+  width: 6rem;
+  opacity: 0.5;
+}
+
+#appleblack:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#spotifyblack {
+  width: 6rem;
+  opacity: 0.5;
+}
+
+#spotifyblack:hover {
+  opacity: 1;
+}
+
+#bcblack {
+  width: 6rem;
+  opacity: 0.5;
+}
+
+#bcblack:hover {
+  opacity: 1;
+  cursor: pointer;
+}
