@@ -1,168 +1,91 @@
-  #homePage {
+  .homePage {
     background-color:rgb(1, 0, 1);
-    box-sizing: border-box;
+    padding:2rem;
+    margin:0;	
   }
+
+  .homePage > nav > h1 {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 35px;
+    width: 5px;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 25px;
+  }
+
+  .homePage > .img_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    grid-template-rows: repeat(2, 275px);
+    grid-gap: 1rem;
+    grid-auto-flow: dense;
+  }
+
+  .homePage > .img_list > li {
+    opacity: .75;
+  }
+
+  .homePage > .img_list > li:hover {
+    cursor: pointer;
+    opacity: 1;
+    margin-top: -5px;
+    margin-left: -5px;
+  }
+
+  .homePage > .img_list > li:nth-child(1n) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .homePage > .img_list > li:nth-child(2n) {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  .homePage > .img_list > li:nth-child(4n) {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .homePage > .img_list > li:nth-child(5n) {
+    grid-column: span 3;
+    grid-row: span 2;
+  }
+  
+  .homePage > .img_list > li > figure {
+    height: 100%;
+  }
+  
+  .homePage > .img_list > li > figure > a > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #video-container {
+    width: 30vw;
+    height: 33vh;
+    margin-left: -70px;
+    z-index: -100;
+  }
+
+
+
 
   /* Text */
-  
-  #head {
-    font-family: 'Covered By Your Grace', cursive;
-    font-size: 35px;
-    width: 5px;
-    color: white;
-    cursor: pointer;
-  }
-  
-  #head1 {
-    font-family: 'Covered By Your Grace', cursive;
-    font-size: 35px;
-    width: 5px;
-    color: white;
-  }
-  
-  #head2 {
-    font-family: 'Covered By Your Grace', cursive;
-    font-size: 20px;
-    width: 5px;
-    color: white;
-  }
-  
-  #title1 {
-    font-family: 'Covered By Your Grace', cursive;
-    font-size: 40px;
-    margin-top: 55px;
-    color: white;
-  }
-
-  #title4 {
-    font-family: 'Covered By Your Grace', cursive;
-    font-size: 40px;
-    margin-bottom: 5px;
-    color: white;
-  }
-
-  /* Logos */
-  
-  #logos {
-    margin-top: -25px;
-    margin-bottom: 10px;
-  }
-  
-  #soundcloud {
-    width: 65%;
-  }
-  
-  #apple {
-    width: 80%;
-  }
-  
-  #spotify {
-    width: 75%;
-  }
-  
-  #pandora {
-    width: 65%;
-  }
 
   #ig {
     display: block;
     margin-top: 25px;
     margin-bottom: 50px;
-    width: 20%;
+    width: 5%;
   }
-  
-  .col-cent{
-    float: none;
-    margin: 0 auto;
-  }
-
-  .img-max {
-    max-width: 500px;
-  }
-
-  /* Players */
-
-  #soundcloud-player {
-    margin-top: -25px;
-  }
-      
-  #youtube-player {
-    margin-bottom: 10px;
-  }
-     
-  /* Grid */
-
-  #grid {
-    display: grid;
-    position: relative;
-    grid-template-columns: 295px 295px 295px;
-    grid-template-rows: 295px 295px;
-    margin-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 75px;
-    grid-gap: 15px;
-    z-index: 500000;
-  }
-
-  .box {
-    border-radius: 5px;
-    padding: 20px;
-  }
-  
-      .one1 {
-          grid-column-start: 2;
-          grid-column-end: 3;
-          grid-row-start: 1;
-          grid-row-end: 2;
-      }
-      .one2 {
-          grid-column-start: 2;
-          grid-column-end: 3;
-          grid-row-start: 2;
-          grid-row-end: 3;
-      }
-      .one3 {
-          grid-column-start: 2;
-          grid-column-end: 3;
-          grid-row-start: 3;
-          grid-row-end: 4;
-      }
-      .two1 {
-          grid-column-start: 3;
-          grid-column-end: 4;
-          grid-row-start: 2;
-          grid-row-end: 3;
-      }
-      .two2 {
-          grid-column-start: 1;
-          grid-column-end: 2;
-          grid-row-start: 1;
-          grid-row-end: 2;
-      }
-
-      #box1x1 {
-        opacity: .75;
-        -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-        -moz-animation: fadein 2s; /* Firefox < 16 */
-         -ms-animation: fadein 2s; /* Internet Explorer */
-          -o-animation: fadein 2s; /* Opera < 12.1 */
-             animation: fadein 2s;
-      }
 
       #box1x1:hover {
         cursor: pointer;
         opacity: 1;
         margin-top: -5px;
         margin-left: -5px;
-      }
-  
-      #box1x2 {
-        opacity: .75;
-        -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-        -moz-animation: fadein 3s; /* Firefox < 16 */
-         -ms-animation: fadein 3s; /* Internet Explorer */
-          -o-animation: fadein 3s; /* Opera < 12.1 */
-             animation: fadein 3s;
       }
 
       #box1x2:hover {
@@ -172,50 +95,17 @@
         margin-right: -5px;
       }
 
-      #box1x3 {
-        opacity: .75;
-        margin-top: -97px;
-        margin-left: -100px;
-        z-index: -10000;
-        height: 50%;
-      }
-
-      #video-container {
-        width: 50vw;
-        height: 80vh;
-        overflow: hidden;
-        z-index: -100000;
-      }
-
       #box1x3:hover {
         cursor: pointer;
         opacity: 1;
         z-index: -10000;
-      }
-
-      #box2x1 {
-        opacity: .75;
-        -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-        -moz-animation: fadein 4s; /* Firefox < 16 */
-         -ms-animation: fadein 4s; /* Internet Explorer */
-          -o-animation: fadein 4s; /* Opera < 12.1 */
-             animation: fadein 4s;
-      }
+      } */
 
       #box2x1:hover {
         cursor: pointer;
         opacity: 1;
         margin-bottom: -5px;
         margin-left: -5px;
-      }
-
-      #box2x2 {
-        opacity: .75;
-        -webkit-animation: fadein 4.55s; /* Safari, Chrome and Opera > 12.1 */
-        -moz-animation: fadein 4.5s; /* Firefox < 16 */
-         -ms-animation: fadein 4.5s; /* Internet Explorer */
-          -o-animation: fadein 4.5s; /* Opera < 12.1 */
-             animation: fadein 4.5s;
       }
 
       #box2x2:hover {
@@ -256,3 +146,21 @@
       
 
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
