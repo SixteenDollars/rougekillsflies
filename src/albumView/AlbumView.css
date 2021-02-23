@@ -69,7 +69,6 @@
 
 .youtube-player {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -97,39 +96,48 @@
   color: white;
 }
 
-#logos {
+.logos {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: space-between;
 }
 
 
-#appleblack {
+#applewar {
   width: 6rem;
   opacity: 0.5;
 }
 
-#appleblack:hover {
+#applewar:hover {
   opacity: 1;
   cursor: pointer;
 }
 
-#spotifyblack {
-  width: 6rem;
+#spotifywar {
+  width: 5.25rem;
   opacity: 0.5;
 }
 
-#spotifyblack:hover {
+#spotifywar:hover {
   opacity: 1;
+  cursor: pointer;
 }
 
-#bcblack {
-  width: 6rem;
+#tidalwar {
+  width: 5.25rem;
   opacity: 0.5;
 }
 
-#bcblack:hover {
+#tidalwar:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#bcwar {
+  width: 5.25rem;
+  opacity: 0.5;
+}
+
+#bcwar:hover {
   opacity: 1;
   cursor: pointer;
 }

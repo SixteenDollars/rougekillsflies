@@ -10,7 +10,7 @@ import shoot1 from '../resources/images/shoot1.JPG'
 import ReactPlayer from 'react-player'
 import spotifyblack from '../resources/images/spotifyblack.png'
 import appleblack from '../resources/images/appleblack.png'
-import tidalblack from '../resources/images/tidalblack.png'
+import tidalblackcircle from '../resources/images/tidalblackcircle.png'
 import bcblack from '../resources/images/bcblack.png'
 
 class AlbumView extends Component {
@@ -32,19 +32,22 @@ class AlbumView extends Component {
 						controls
 					/>
 				</div>
-				<div id="logos">
-					<div id="appleblack">
+				<div class="logos">
+					<div id="applewar">
 						<img class="img-fluid" src={appleblack} alt=""></img>
 					</div>
-					<div id="spotifyblack">
+					<div id="spotifywar">
 						<img class="img-fluid" src={spotifyblack} alt=""></img>
 					</div>
-					<div id="bcblack">
+					<div id="tidalwar">
+						<img class="img-fluid" src={tidalblackcircle} alt=""></img>
+					</div>
+					<div id="bcwar">
 						<img class="img-fluid" src={bcblack} alt=""></img>
 					</div>
 				</div>
 				<div class="album-text">
-					<h1 class="album-title">"WAR!" by Rouge</h1>
+					<h1 class="album-title">"WAR!" by Rouge (an album)</h1>
 				</div>
 				<ul class="img_list">
 					<li>
