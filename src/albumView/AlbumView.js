@@ -26,28 +26,38 @@ class AlbumView extends Component {
 					<a href="https://rougedied.com"><h1 id="header">HOME</h1></a>
 					<a href="https://rougedied.com/contact"><h1 id="header">CONTACT</h1></a>
 				</nav>
+				<div class="album-text">
+					<h1 class="album-title">"WAR!" by Rouge (an album)</h1>
+				</div>
+				<div class="logos" class="row justify-content-center align-items-center">
+						<div class="col-sm-1 col-md-1 col-2">
+							<a href="https://geo.music.apple.com/us/album/_/1460176267?mt=1&app=music&at=1000lHKX">
+								<img class="img-fluid" id="applewar" src={appleblack} alt=""></img>
+							</a>
+						</div>
+						<div class="col-sm-1 col-md-1 col-2">
+							<a href="https://open.spotify.com/album/6ITBoE1l1zPCtXKOTN12IC">
+								<img class="img-fluid" id="spotifywar" src={spotifyblack} alt=""></img>
+							</a>
+						</div>
+						<div class="col-sm-1 col-md-1 col-2">
+							<a href="https://listen.tidal.com/album/107846023">
+								<div class="img-max">
+									<img class="img-fluid" id="tidalwar" src={tidalblackcircle} alt=""></img>
+								</div>
+							</a>
+						</div>
+						<div class="col-sm-1 col-md-1 col-2">
+							<a href="https://www.pandora.com/artist/various-artists/love-hart-presents-hartfm-explicit/AL2V7Pb7xcg7p74">
+								<img class="img-fluid" id="bcwar" src={bcblack} alt=""></img>
+							</a>
+						</div>
+					</div>
 				<div class="youtube-player">
 					<ReactPlayer
 						url="https://www.youtube.com/watch?v=UTDQnOqUe-Q"
 						controls
 					/>
-				</div>
-				<div class="logos">
-					<div id="applewar">
-						<img class="img-fluid" src={appleblack} alt=""></img>
-					</div>
-					<div id="spotifywar">
-						<img class="img-fluid" src={spotifyblack} alt=""></img>
-					</div>
-					<div id="tidalwar">
-						<img class="img-fluid" src={tidalblackcircle} alt=""></img>
-					</div>
-					<div id="bcwar">
-						<img class="img-fluid" src={bcblack} alt=""></img>
-					</div>
-				</div>
-				<div class="album-text">
-					<h1 class="album-title">"WAR!" by Rouge (an album)</h1>
 				</div>
 				<ul class="img_list">
 					<li>

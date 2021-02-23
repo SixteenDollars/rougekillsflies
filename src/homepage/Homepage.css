@@ -144,6 +144,28 @@
         to   { opacity: .75; }
       }
       
+      @media only screen 
+      and (max-device-width: 768px) {
+        .homePage > .img_list > li:nth-child(1n) {
+          grid-column: span 1;
+          grid-row: span 2;
+        }
+      
+        .homePage > .img_list > li:nth-child(2n) {
+          grid-column: span 1;
+          grid-row: span 1;
+        }
+      
+        .homePage > .img_list > li:nth-child(3n) {
+          grid-column: span 1;
+          grid-row: span 1;
+        }
+      
+        .homePage > .img_list > li:nth-child(4n) {
+          grid-column: span 1;
+          grid-row: span 1;
+        }
+    }
 
  
 
