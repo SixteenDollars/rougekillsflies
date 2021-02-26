@@ -17,7 +17,7 @@ class AlbumView extends Component {
     render() {
         return (
             <main class="albumView">
-                <nav>
+                {/* <nav>
                     <a href="https://rougedied.com"><h1 id="header">HOME</h1></a>
                 </nav>
                 <div class="album-text">
@@ -52,7 +52,7 @@ class AlbumView extends Component {
                         url="https://www.youtube.com/watch?v=UTDQnOqUe-Q"
                         controls
                     />
-                </div>
+                </div> */}
                 <ul class="grid">
                     <li>
                         <figure>
@@ -69,15 +69,10 @@ class AlbumView extends Component {
                             <img id="shoot1" src={shoot1} alt="Shoot1"></img>
                         </figure>
                     </li>
-					<li>
-                        <figure>
-                            <img id="shoot1" src={shoot1} alt="Shoot1"></img>
-                        </figure>
-                    </li>
                 </ul>
-                <a href="https://www.instagram.com/rougedied">
+{/*                 <a href="https://www.instagram.com/rougedied">
                     <img id="ig" class="mx-auto d-block" src={ig} alt=""></img>
-                </a>
+                </a> */}
             </main>
         );
     }
