@@ -12,53 +12,53 @@ import flower from '../resources/videos/08-08.m4v'
 
 class Homepage extends Component {
 
-	componentDidMount() {
-		// const circleType = new CircleType(document.getElementById("circleText")).radius(55);
-	}
+    componentDidMount() {
+        // const circleType = new CircleType(document.getElementById("circleText")).radius(55);
+    }
 
-	render() {
-		return (
-			<main class="homePage">
-				<nav>
-					<h1>HALF OF HEAVEN IS A HOME</h1>
-				</nav>
-				<ul class="img_list">
-					<li>
-						<figure>
-							<a href="https://www.rougedied.com/misc">
-								<img src={misc} alt="Misc"></img>
-							</a>
-						</figure>
-					</li>
-					<li>
-						<figure>
-							<a href="https://www.rougedied.com/gallery">
-								<img src={shoot} alt="Shoot"></img>
-							</a>
-						</figure>
-					</li>
-					<li>
-						<figure>
-							<a href="https://www.rougedied.com/war">
-								<img src={war} alt="WAR!"></img>
-							</a>
-						</figure>
+    render() {
+        return (
+            <main class="homePage">
+                <nav>
+                    <h1>HALF OF HEAVEN IS A HOME</h1>
+                </nav>
+                <ul class="img_list">
+                    <li>
+                        <figure>
+                            <a href="https://www.rougedied.com/misc">
+                                <img src={misc} alt="Misc"></img>
+                            </a>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="https://www.rougedied.com/gallery">
+                                <img src={shoot} alt="Shoot"></img>
+                            </a>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="https://www.rougedied.com/war">
+                                <img src={war} alt="WAR!"></img>
+                            </a>
+                        </figure>
 
-					</li>
-					<li>
-						<figure>
-							<a href="https://www.rougedied.com/flower">
-								<img src={plant} alt="Flower"></img>
-							</a>
-						</figure>
-					</li>
-				</ul>
-				<a href="https://www.instagram.com/rougedied">
-					<img id="ig" class="mx-auto d-block" src={ig} alt=""></img>
-				</a>
-			</main>
-		);
-	}
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="https://www.rougedied.com/flower">
+                                <img src={plant} alt="Flower"></img>
+                            </a>
+                        </figure>
+                    </li>
+                </ul>
+                <a href="https://www.instagram.com/rougedied">
+                    <img id="ig" class="mx-auto d-block" src={ig} alt=""></img>
+                </a>
+            </main>
+        );
+    }
 }
 
 export default Homepage;
