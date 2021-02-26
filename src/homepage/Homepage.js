@@ -12,10 +12,6 @@ import flower from '../resources/videos/08-08.m4v'
 
 class Homepage extends Component {
 
-    componentDidMount() {
-        // const circleType = new CircleType(document.getElementById("circleText")).radius(55);
-    }
-
     render() {
         return (
             <main class="homePage">

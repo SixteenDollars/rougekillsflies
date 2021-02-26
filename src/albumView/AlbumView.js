@@ -4,8 +4,6 @@ import ig from '../resources/images/ig.png'
 import 'bootstrap/dist/css/bootstrap.css';
 import { Link } from 'react-router-dom'
 import warcopy from '../resources/images/covercopy.png'
-import misc from '../resources/images/misc.png'
-import plant from '../resources/images/TR.png'
 import shoot1 from '../resources/images/shoot1.JPG'
 import shoot2 from '../resources/images/shoot2.jpeg'
 import ReactPlayer from 'react-player'
@@ -16,10 +14,6 @@ import bcblack from '../resources/images/bcblack.png'
 
 class AlbumView extends Component {
 
-    componentDidMount() {
-        // const circleType = new CircleType(document.getElementById("circleText")).radius(55);
-    }
-
     render() {
         return (
             <main class="albumView">
@@ -29,7 +23,7 @@ class AlbumView extends Component {
                 <div class="album-text">
                     <h1 class="album-title">"WAR!" by Rouge (an album)</h1>
                 </div>
-                <div class="logos" class="row justify-content-center align-items-center">
+                <div class="row justify-content-center align-items-center">
                         <div class="col-sm-1 col-md-1 col-2">
                             <a href="https://geo.music.apple.com/us/album/_/1460176267?mt=1&app=music&at=1000lHKX">
                                 <img class="img-fluid" id="applewar" src={appleblack} alt=""></img>
@@ -59,20 +53,25 @@ class AlbumView extends Component {
                         controls
                     />
                 </div>
-                <ul class="img_list">
+                <ul class="grid">
                     <li>
                         <figure>
-                            <img src={warcopy} alt="WAR!"></img>
+                            <img id="warcopy" src={warcopy} alt="WAR!"></img>
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <img src={shoot2} alt="Shoot2"></img>
+                            <img id="shoot2" src={shoot2} alt="Shoot2"></img>
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <img src={shoot1} alt="Shoot1"></img>
+                            <img id="shoot1" src={shoot1} alt="Shoot1"></img>
+                        </figure>
+                    </li>
+					<li>
+                        <figure>
+                            <img id="shoot1" src={shoot1} alt="Shoot1"></img>
                         </figure>
                     </li>
                 </ul>

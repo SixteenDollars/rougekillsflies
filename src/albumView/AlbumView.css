@@ -1,6 +1,7 @@
 .albumView {
   background-color:rgb(1, 0, 1);
   padding:2rem;
+  margin:0;
 }
 
 .albumView > nav {
@@ -98,7 +99,7 @@
 
 
 
-.albumView > .img_list {
+.albumView > .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   grid-template-rows: repeat(2, 275px);
@@ -106,37 +107,43 @@
   grid-auto-flow: dense;
 }
 
-.albumView > .img_list > li {
-  opacity: .75;
+.albumView > .grid > li {
+  opacity: 50%;
 }
 
-.albumView > .img_list > li:hover {
+.albumView > .grid > li:hover {
   cursor: pointer;
   opacity: 1;
   margin-top: -5px;
   margin-left: -5px;
 }
 
-.homePage > .img_list > li:nth-child(3n) {
+.albumView > .grid > li:nth-child(1n) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.albumView > .grid > li:nth-child(2n) {
   grid-column: span 2;
   grid-row: span 2;
 }
 
-.albumView > .img_list > li > figure {
+.albumView > .grid > li:nth-child(3n) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.albumView > .grid > li > figure {
   height: 100%;
 }
 
-.albumView > .img_list > li > figure > a > img {
+.albumView > .grid > li > figure > a > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.homePage > .img_list > li > figure > ReactPlayer {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+
 
 
 
