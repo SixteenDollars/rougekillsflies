@@ -1,0 +1,84 @@
+.bombView {
+    background-color:rgb(1, 0, 1);
+    padding:2rem;
+    margin:0;
+  }
+  
+  .bombView > nav {
+      text-align: center;
+    margin-bottom: 25px;
+    margin-left: 35px;
+  }
+  
+  .bombView > nav > a {
+      text-align: center;
+      color:#FFF;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+      margin-top: -15px;
+  }
+  
+  #header {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    width: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .album-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
+  
+  .bomb-title {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 35px;
+    color: white;
+  }
+  
+  
+
+  
+  
+  
+  .youtube-player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 25vh;
+    padding-top: 2rem;
+  }
+  
+  #mask {
+    display: block;
+    padding-bottom: 2rem;
+    width: 15rem;
+    opacity: .65;
+  }
+  
+  #mask:hover {
+    opacity: 1;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

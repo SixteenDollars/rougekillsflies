@@ -23,7 +23,7 @@ class AlbumView extends Component {
                     <a href="https://rougedied.com"><h1 id="header">HOME</h1></a>
                 </nav>
                 <div class="album-text">
-                    <h1 class="album-title">"WAR!" by Rouge (an album)</h1>
+                    <h1 class="album-title">"war!" by Rouge (an album)</h1>
                 </div>
                 <div class="row justify-content-center align-items-center">
                     <div class="col-sm-1 col-md-1 col-2">
