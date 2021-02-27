@@ -91,7 +91,6 @@
   .homePage > .img_list > li:nth-child(3n) {
     grid-column: span 2;
     grid-row: span 2;
-    width: 75%;
   }
 
   .homePage > .img_list > li:nth-child(4n) {
@@ -128,7 +127,6 @@
   .homePage > .img_list > li:nth-child(3n) {
     grid-column: span 2;
     grid-row: span 2;
-    width: 75%;
   }
 
   .homePage > .img_list > li:nth-child(4n) {
