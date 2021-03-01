@@ -22,8 +22,13 @@ class AlbumView extends Component {
                 <nav>
                     <a href="https://rougedied.com"><h1 id="header">HOME</h1></a>
                 </nav>
-                <div class="album-text">
-                    <h1 class="album-title">"war!" by Rouge (an album)</h1>
+                <div class="album-title">
+                    <h1 class="album-text">"war!" by Rouge (an album)</h1>
+                </div>
+                <img id="mask" class="mx-auto d-block" src={mask} alt=""></img>
+
+                <div class="under-title">
+                    <h1 class="under-text">click on your streaming service</h1>
                 </div>
                 <div class="row justify-content-center align-items-center">
                     <div class="col-sm-1 col-md-1 col-2">
@@ -55,7 +60,6 @@ class AlbumView extends Component {
                         controls
                     />
                 </div>
-                <img id="mask" class="mx-auto d-block" src={mask} alt=""></img>
                 <ul class="grid">
                     <li>
                         <figure>

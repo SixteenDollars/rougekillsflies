@@ -28,7 +28,7 @@ class Homepage extends Component {
                     </li>
                     <li>
                         <figure>
-                            <a href="https://www.rougedied.com/gallery">
+                            <a href="https://www.rougedied.com/war">
                                 <img src={shoot} alt="Shoot"></img>
                             </a>
                         </figure>

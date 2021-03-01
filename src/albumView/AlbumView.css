@@ -28,19 +28,42 @@
   cursor: pointer;
 }
 
-.album-text {
+.album-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 4rem;
-  padding-bottom: 2rem;
 }
 
-.album-title {
+.album-text {
   font-family: 'Playfair Display', serif;
   font-size: 35px;
+  color: white;
+}
+
+#mask {
+  display: block;
+  width: 15rem;
+  -webkit-animation: flickerAnimation 1s infinite;
+  -moz-animation: flickerAnimation 1s infinite;
+  -o-animation: flickerAnimation 1s infinite;
+   animation: flickerAnimation 1s infinite;
+}
+
+.under-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.under-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-style: italic;
   color: white;
 }
 
@@ -97,17 +120,6 @@
   text-align: center;
   min-height: 25vh;
   padding-top: 2rem;
-}
-
-#mask {
-  display: block;
-  padding-bottom: 2rem;
-  width: 15rem;
-  opacity: .65;
-}
-
-#mask:hover {
-  opacity: 1;
 }
 
 
@@ -293,6 +305,29 @@
     object-fit: cover;
   }
 }
+
+
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:.55; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:.55; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:.55; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:.55; }
+  100% { opacity:1; }
+}
+
 
 
 

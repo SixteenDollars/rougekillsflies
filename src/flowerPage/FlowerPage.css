@@ -22,11 +22,10 @@
     display: block;
     padding-bottom: 1.5rem;
     width: 7rem;
-    opacity: .65;
-  }
-  
-  #flower:hover {
-    opacity: 1;
+    -webkit-animation: flickerAnimation 1s infinite;
+    -moz-animation: flickerAnimation 1s infinite;
+    -o-animation: flickerAnimation 1s infinite;
+     animation: flickerAnimation 1s infinite;
   }
 
   @media screen and (max-width: 768px) {    
@@ -50,6 +49,29 @@
       width: 5.5rem;
     }
   }
+
+  @keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:.55; }
+    100% { opacity:1; }
+  }
+  @-o-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:.55; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:.55; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:.55; }
+    100% { opacity:1; }
+  }
+  
+  
   
 
   
