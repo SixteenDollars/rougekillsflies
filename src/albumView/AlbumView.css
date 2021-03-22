@@ -70,6 +70,7 @@
 
 
 
+
 #applewar {
   width: 6rem;
   opacity: 0.5;
@@ -110,6 +111,15 @@
   cursor: pointer;
 }
 
+#linktreewar {
+  opacity: 0.6;
+}
+
+#linktreewar:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
 
 
 
@@ -131,6 +141,7 @@
   grid-gap: 1rem;
   grid-auto-flow: dense;
   margin-left: -2rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
 }
 

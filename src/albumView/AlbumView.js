@@ -4,7 +4,7 @@ import ig from '../resources/images/ig.png'
 import 'bootstrap/dist/css/bootstrap.css';
 import { Link } from 'react-router-dom'
 import warcopy from '../resources/images/covercopy.png'
-import circle from '../resources/images/circle.jpeg'
+import circle from '../resources/images/shot.JPG'
 import frame from '../resources/images/TL.png'
 import shoot1 from '../resources/images/shoot1.JPG'
 import shoot2 from '../resources/images/shoot2.jpeg'
@@ -14,6 +14,8 @@ import appleblack from '../resources/images/appleblack.png'
 import tidalblackcircle from '../resources/images/tidalblackcircle.png'
 import bcblack from '../resources/images/bcblack.png'
 import mask from '../resources/images/Frame 4.png'
+import linktree from '../resources/images/linktree.png'
+import flowervid from '../resources/videos/08-08.m4v'
 
 class AlbumView extends Component {
     render() {
@@ -53,13 +55,26 @@ class AlbumView extends Component {
                             <img class="img-fluid" id="bcwar" src={bcblack} alt=""></img>
                         </a>
                     </div>
+                    <div class="col-sm-1 col-md-1 col-2">
+                        <a href="https://linktr.ee/rougedied">
+                            <img class="img-fluid" id="linktreewar" src={linktree} alt=""></img>
+                        </a>
+                    </div>
                 </div>
                 <div class="youtube-player">
+					<ReactPlayer
+						playing={true}
+						url={flowervid}
+						muted={true}
+						loop
+					/>
+				</div>
+{/*                 <div class="youtube-player">
                     <ReactPlayer
                         url="https://www.youtube.com/watch?v=UTDQnOqUe-Q"
                         controls
                     />
-                </div>
+                </div> */}
                 <ul class="grid">
                     <li>
                         <figure>
