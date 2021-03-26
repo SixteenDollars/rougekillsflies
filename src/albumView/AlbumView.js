@@ -14,7 +14,7 @@ import appleblack from '../resources/images/appleblack.png'
 import tidalblackcircle from '../resources/images/tidalblackcircle.png'
 import bcblack from '../resources/images/bcblack.png'
 import mask from '../resources/images/Frame 4.png'
-import linktree from '../resources/images/linktree.png'
+import linktree from '../resources/images/OTHER.png'
 import flowervid from '../resources/videos/08-08.m4v'
 
 class AlbumView extends Component {
@@ -34,30 +34,30 @@ class AlbumView extends Component {
                 </div>
                 <div class="row justify-content-center align-items-center">
                     <div class="col-sm-1 col-md-1 col-2">
-                        <a href="https://geo.music.apple.com/us/album/_/1460176267?mt=1&app=music&at=1000lHKX">
+                        <a href="https://music.apple.com/us/album/_/1559758015?mt=1&app=music&ls=1&at=1000lHKX">
                             <img class="img-fluid" id="applewar" src={appleblack} alt=""></img>
                         </a>
                     </div>
                     <div class="col-sm-1 col-md-1 col-2">
-                        <a href="https://open.spotify.com/album/6ITBoE1l1zPCtXKOTN12IC">
+                        <a href="https://open.spotify.com/album/2IzE8WAuhm5AAj2xk4jKLe">
                             <img class="img-fluid" id="spotifywar" src={spotifyblack} alt=""></img>
                         </a>
                     </div>
                     <div class="col-sm-1 col-md-1 col-2">
-                        <a href="https://listen.tidal.com/album/107846023">
+                        <a href="https://listen.tidal.com/album/178170980">
                             <div class="img-max">
                                 <img class="img-fluid" id="tidalwar" src={tidalblackcircle} alt=""></img>
                             </div>
                         </a>
                     </div>
                     <div class="col-sm-1 col-md-1 col-2">
-                        <a href="https://www.pandora.com/artist/various-artists/love-hart-presents-hartfm-explicit/AL2V7Pb7xcg7p74">
+                        <a href="https://rougedied.bandcamp.com/album/war">
                             <img class="img-fluid" id="bcwar" src={bcblack} alt=""></img>
                         </a>
                     </div>
                     <div class="col-sm-1 col-md-1 col-2">
-                        <a href="https://linktr.ee/rougedied">
-                            <img class="img-fluid" id="linktreewar" src={linktree} alt=""></img>
+                        <a href="https://album.link/i/1559758015">
+                            <img class="img-fluid" id="otherwar" src={linktree} alt=""></img>
                         </a>
                     </div>
                 </div>
