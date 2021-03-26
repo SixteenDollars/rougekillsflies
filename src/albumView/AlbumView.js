@@ -39,7 +39,7 @@ class AlbumView extends Component {
                         </a>
                     </div>
                     <div class="col-sm-1 col-md-1 col-2">
-                        <a href="https://open.spotify.com/album/2IzE8WAuhm5AAj2xk4jKLe">
+                        <a href="https://open.spotify.com/album/2IzE8WAuhm5AAj2xk4jKLe?si=CvlCDxjJRJOlxpoRCFX2OA">
                             <img class="img-fluid" id="spotifywar" src={spotifyblack} alt=""></img>
                         </a>
                     </div>
