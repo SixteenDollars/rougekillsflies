@@ -25,7 +25,7 @@ class AlbumView extends Component {
                     <a href="https://rougedied.com"><h1 id="header">HOME</h1></a>
                 </nav>
                 <div class="album-title">
-                    <h1 class="album-text">"war!" by Rouge (an album)</h1>
+                    <h1 class="album-text">"War!" by Rouge (an album)</h1>
                 </div>
                 <img id="mask" class="mx-auto d-block" src={mask} alt=""></img>
 
@@ -62,19 +62,11 @@ class AlbumView extends Component {
                     </div>
                 </div>
                 <div class="youtube-player">
-					<ReactPlayer
-						playing={true}
-						url={flowervid}
-						muted={true}
-						loop
-					/>
-				</div>
-{/*                 <div class="youtube-player">
                     <ReactPlayer
-                        url="https://www.youtube.com/watch?v=UTDQnOqUe-Q"
+                        url="https://youtu.be/olc8AvftI-4"
                         controls
                     />
-                </div> */}
+                </div>
                 <ul class="grid">
                     <li>
                         <figure>

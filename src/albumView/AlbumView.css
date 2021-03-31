@@ -111,12 +111,11 @@
   cursor: pointer;
 }
 
-#linktreewar {
+#otherwar {
   opacity: 0.6;
-  width: 50px;
 }
 
-#linktreewar:hover {
+#otherwar:hover {
   opacity: 1;
   cursor: pointer;
 }
@@ -339,13 +338,6 @@
   50%  { opacity:.55; }
   100% { opacity:1; }
 }
-
-
-
-
-
-
-
 
 
 
