@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import './AlbumView.css';
 import ig from '../resources/images/ig.png'
 import 'bootstrap/dist/css/bootstrap.css';
-import { Link } from 'react-router-dom'
 import warcopy from '../resources/images/covercopy.png'
 import circle from '../resources/images/shot.JPG'
 import frame from '../resources/images/TL.png'
@@ -15,7 +14,10 @@ import tidalblackcircle from '../resources/images/tidalblackcircle.png'
 import bcblack from '../resources/images/bcblack.png'
 import mask from '../resources/images/Frame 4.png'
 import linktree from '../resources/images/OTHER.png'
-import flowervid from '../resources/videos/08-08.m4v'
+import flower from '../resources/images/flower.png'
+import helmet from '../resources/images/Helmet.png'
+import ak from '../resources/images/AK.png'
+import tank from '../resources/images/Tank.png'
 
 class AlbumView extends Component {
     render() {
@@ -61,11 +63,37 @@ class AlbumView extends Component {
                         </a>
                     </div>
                 </div>
-                <div class="youtube-player">
+                <div class="youtube-player-1">
                     <ReactPlayer
                         url="https://youtu.be/olc8AvftI-4"
                         controls
                     />
+                </div>
+                <div>
+                    <h1 class="player-text">propaganda 01: Bomb</h1>
+                </div>
+                <div class="youtube-player-2">
+                    <ReactPlayer
+                        url="https://youtu.be/zFIpo35BOS0"
+                        controls
+                    />
+                </div>
+                <div>
+                    <h1 class="player-text-1">rouge + rodney chrome talk about stuff</h1>
+                </div>
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-sm-1 col-md-1 col-2">
+                        <img class="img-fluid" id="tank" src={tank} alt=""></img>
+                    </div>
+                    <div class="col-sm-1 col-md-1 col-2">
+                        <img class="img-fluid" id="helmet" src={helmet} alt=""></img>
+                    </div>
+                    <div class="col-sm-1 col-md-1 col-2">
+                        <img class="img-fluid" id="ak" src={ak} alt=""></img>
+                    </div>
+                    <div class="col-sm-1 col-md-1 col-2">
+                        <img class="img-fluid" id="flower" src={flower} alt=""></img>
+                    </div>
                 </div>
                 <ul class="grid">
                     <li>

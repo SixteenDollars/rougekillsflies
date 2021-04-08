@@ -123,13 +123,77 @@
 
 
 
-.youtube-player {
+.youtube-player-1 {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   min-height: 25vh;
   padding-top: 2rem;
+}
+
+.player-text {
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 1.25rem;
+  color: white;
+  margin-left: 46rem;
+  margin-top: .5rem;
+  margin-bottom: 2rem;
+}
+
+.player-text-1 {
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 1.25rem;
+  color: white;
+  margin-left: 42rem;
+  margin-top: .5rem;
+  margin-bottom: 2rem;
+}
+
+
+#tank {
+  display: block;
+  width: 15rem;
+  -webkit-animation: flickerAnimation 2s infinite;
+  -moz-animation: flickerAnimation 2s infinite;
+  -o-animation: flickerAnimation 2s infinite;
+   animation: flickerAnimation 2s infinite;
+}
+
+#helmet {
+  display: block;
+  width: 15rem;
+  -webkit-animation: flickerAnimation 1.5s infinite;
+  -moz-animation: flickerAnimation 1.5s infinite;
+  -o-animation: flickerAnimation 1.5s infinite;
+   animation: flickerAnimation 1.5s infinite;
+}
+
+#flower {
+  display: block;
+  width: 15rem;
+  -webkit-animation: flickerAnimation .75s infinite;
+  -moz-animation: flickerAnimation .75s infinite;
+  -o-animation: flickerAnimation .75s infinite;
+   animation: flickerAnimation .75s infinite;
+}
+
+#ak {
+  display: block;
+  width: 15rem;
+  -webkit-animation: flickerAnimation 1s infinite;
+  -moz-animation: flickerAnimation 1s infinite;
+  -o-animation: flickerAnimation 1s infinite;
+   animation: flickerAnimation 1s infinite;
+}
+
+.youtube-player-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 25vh;
+  padding-top: 1rem;
 }
 
 
