@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "671b4cc71b554d212cdcbefd4f6cf979",
+    "revision": "01aa098325cb504368f7e3a06229cb09",
     "url": "/index.html"
   },
   {
-    "revision": "42b564560cad988affd8",
+    "revision": "5c2d776d3681286ac64f",
     "url": "/static/css/2.22a7d4ef.chunk.css"
   },
   {
-    "revision": "3f3543473856fbbaf575",
-    "url": "/static/css/main.9c827902.chunk.css"
+    "revision": "e8b5b49a6b5c55058c45",
+    "url": "/static/css/main.850b69f8.chunk.css"
   },
   {
-    "revision": "42b564560cad988affd8",
-    "url": "/static/js/2.3f68fcce.chunk.js"
+    "revision": "5c2d776d3681286ac64f",
+    "url": "/static/js/2.62426179.chunk.js"
   },
   {
-    "revision": "3f3543473856fbbaf575",
-    "url": "/static/js/main.356615b4.chunk.js"
+    "revision": "e8b5b49a6b5c55058c45",
+    "url": "/static/js/main.611ac481.chunk.js"
   },
   {
     "revision": "3ee15d4df232563c2d0b",
@@ -28,6 +28,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/08-08.7280a84c.m4v"
   },
   {
+    "revision": "e0f8c875778182505a4eb970ccf6e09a",
+    "url": "/static/media/AK.e0f8c875.png"
+  },
+  {
     "revision": "16c33fddd6ea87e5286bb467ca4b6f29",
     "url": "/static/media/BandcampHoriz.16c33fdd.png"
   },
@@ -36,16 +40,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Frame 4.9c38936c.png"
   },
   {
+    "revision": "ee13adc2fb2208c4a1a07a2e0665c124",
+    "url": "/static/media/Helmet.ee13adc2.png"
+  },
+  {
+    "revision": "f8c6147cfde712ff22c6f268807888e3",
+    "url": "/static/media/Myfont-Regular.f8c6147c.ttf"
+  },
+  {
+    "revision": "a0d471e782ec8ddca5860887cc97dd8a",
+    "url": "/static/media/Myfont2-Regular.a0d471e7.ttf"
+  },
+  {
     "revision": "6a97d96b0ce7fec48080b815b58fc250",
     "url": "/static/media/OTHER.6a97d96b.png"
-  },
-  {
-    "revision": "4b1546b4bc5073ddb2c2e0e638fe4541",
-    "url": "/static/media/SoulMarkerHandwritingFont.4b1546b4.woff"
-  },
-  {
-    "revision": "b17f81bf8c2763b7848bfec5dc75e81e",
-    "url": "/static/media/SoulMarkerHandwritingFont.b17f81bf.woff2"
   },
   {
     "revision": "0138f7ea87fbaceff247f5eee58c81fd",
@@ -58,6 +66,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8d33b4e8c4b09cc789ec869e968dc1c6",
     "url": "/static/media/TR.8d33b4e8.png"
+  },
+  {
+    "revision": "24802601c97febc0245e5a5517597fcb",
+    "url": "/static/media/Tank.24802601.png"
   },
   {
     "revision": "3d919e8eeb9769073ad0661c033bb692",

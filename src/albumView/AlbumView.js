@@ -69,7 +69,7 @@ class AlbumView extends Component {
                         controls
                     />
                 </div>
-                <div>
+                <div class="player-text-wrap">
                     <h1 class="player-text">propaganda 01: Bomb</h1>
                 </div>
                 <div class="youtube-player-2">
@@ -78,10 +78,10 @@ class AlbumView extends Component {
                         controls
                     />
                 </div>
-                <div>
+                <div class="player-text-wrap">
                     <h1 class="player-text-1">rouge + rodney chrome talk about stuff</h1>
                 </div>
-                <div class="row justify-content-center align-items-center">
+{/*                 <div class="row justify-content-center align-items-center">
                     <div class="col-sm-1 col-md-1 col-2">
                         <img class="img-fluid" id="tank" src={tank} alt=""></img>
                     </div>
@@ -94,7 +94,7 @@ class AlbumView extends Component {
                     <div class="col-sm-1 col-md-1 col-2">
                         <img class="img-fluid" id="flower" src={flower} alt=""></img>
                     </div>
-                </div>
+                </div> */}
                 <ul class="grid">
                     <li>
                         <figure>
