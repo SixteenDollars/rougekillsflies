@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Myfont-Regular';
+  src: local('Myfont-Regular'), url(../resources/fonts/Myfont-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Myfont2-Regular';
+  src: local('Myfont2-Regular'), url(../resources/fonts/Myfont2-Regular.ttf) format('truetype');
+}
+
 .albumView {
   background-color:rgb(1, 0, 1);
   padding:2rem;
@@ -37,8 +47,8 @@
 }
 
 .album-text {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.99rem;
+  font-family: 'Myfont-Regular', serif;
+  font-size: 2.75rem;
   color: white;
 }
 
@@ -61,8 +71,8 @@
 }
 
 .under-text {
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
+  font-family: 'Myfont-Regular', serif;
+  font-size: 2rem;
   font-style: italic;
   color: white;
 }
@@ -133,19 +143,19 @@
 }
 
 .player-text {
-  font-family: 'Covered By Your Grace', cursive;
-  font-size: 1.25rem;
+  font-family: 'Myfont-Regular', serif;
+  font-size: 1.5rem;
   color: white;
-  margin-left: 46rem;
+  margin-left: 45rem;
   margin-top: .5rem;
   margin-bottom: 2rem;
 }
 
 .player-text-1 {
-  font-family: 'Covered By Your Grace', cursive;
-  font-size: 1.25rem;
+  font-family: 'Myfont-Regular', serif;
+  font-size: 1.5rem;
   color: white;
-  margin-left: 42rem;
+  margin-left: 40rem;
   margin-top: .5rem;
   margin-bottom: 2rem;
 }

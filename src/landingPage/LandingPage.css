@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Myfont-Regular';
+  src: local('Myfont-Regular'), url(../resources/fonts/Myfont-Regular.ttf) format('truetype');
+}
+
 #page {
   background-color:rgb(1, 0, 1);
 }

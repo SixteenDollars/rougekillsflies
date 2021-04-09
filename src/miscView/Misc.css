@@ -1,11 +1,3 @@
-@font-face {
-    font-family: 'SoulMarker_Handwriting_Font';
-    src: url('../resources/fonts/SoulMarkerHandwritingFont.woff2') format('woff2'),
-        url('../resources/fonts/SoulMarkerHandwritingFont.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-  }
-  
   .img-max {
     max-width: 500px;
   }
