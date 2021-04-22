@@ -21,6 +21,13 @@ import tank from '../resources/images/Tank.png'
 
 class AlbumView extends Component {
     render() {
+        const loveharturi = "spotify:album:6ITBoE1l1zPCtXKOTN12IC";
+		const size = {
+			width: '50%',
+			height: 350
+		};
+        const view = 'list'; // or 'coverart'
+		const theme = 'black'; // or 'white'
         return (
             <main class="albumView">
                 <nav>
@@ -74,6 +81,15 @@ class AlbumView extends Component {
                 </div>
                 <div class="youtube-player-2">
                     <ReactPlayer
+                        url="https://youtu.be/3NngaAAtcoY"
+                        controls
+                    />
+                </div>
+                <div class="player-text-wrap">
+                    <h1 class="player-text-1">rouge + st.ary talk about stuff</h1>
+                </div>
+                <div class="youtube-player-2">
+                    <ReactPlayer
                         url="https://youtu.be/zFIpo35BOS0"
                         controls
                     />
@@ -95,6 +111,20 @@ class AlbumView extends Component {
                         <img class="img-fluid" id="flower" src={flower} alt=""></img>
                     </div>
                 </div> */}
+                <div class="row justify-content-center align-items-center">
+					<iframe
+						class="col-xs"
+						title="spotify"
+						src={`https://open.spotify.com/embed/playlist/6EB5ojEIOZRCnlQ467K1Z3`}
+						width={size.width}
+						height={size.height}
+						frameBorder="0"
+						allowtransparency="true"
+					/>
+				</div>
+                <div class="player-text-wrap">
+                    <h1 class="player-text-1">"war!": the songs that inspired (playlist)</h1>
+                </div>
                 <ul class="grid">
                     <li>
                         <figure>
