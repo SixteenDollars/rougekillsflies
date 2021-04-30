@@ -32,6 +32,7 @@ class AlbumView extends Component {
             <main class="albumView">
                 <nav>
                     <a href="https://rougedied.com"><h1 id="header">HOME</h1></a>
+                    <a href="https://rougedied.com/press"><h1 id="header">PRESS</h1></a>
                 </nav>
                 <div class="album-title">
                     <h1 class="album-text">"War!" by Rouge (an album)</h1>

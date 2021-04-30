@@ -5,6 +5,7 @@ import Misc from './miscView/Misc'
 import Homepage from './homePage/Homepage'
 import FlowerPage from './flowerPage/FlowerPage'
 import AlbumView from './albumView/AlbumView'
+import PressView from './pressView/PressView'
 
 export default function App() {
 	return (
@@ -13,6 +14,7 @@ export default function App() {
 				<Route exact path="/" component={Homepage} />
 				<Route exact path="/war" component={AlbumView} />
 				<Route exact path="/misc" component={Misc} />
+				<Route exact path="/press" component={PressView} />
 				<Route exact path="/shoot" component={Homepage} />
 				<Route exact path="/flower" component={FlowerPage} />
 			</Switch>
