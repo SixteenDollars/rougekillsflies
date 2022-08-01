@@ -20,9 +20,35 @@
     padding-top: 2rem;
   }
 
+  #centralsauce {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    width: 15rem;
+  }
+
+  #centralsauce:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  #theq {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    width: 15rem;
+  }
+
+  #theq:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
   #backseat {
-    width: 60rem;
-    opacity: 0.75;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    width: 15rem;
   }
 
   #backseat:hover {
@@ -30,11 +56,27 @@
     cursor: pointer;
   }
 
+  .press-text-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .press-text {
+    font-family: 'Myfont-Regular', serif;
+    font-size: 1.5rem;
+    color: white;
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+  }
+
   
   
   #flower {
     display: block;
-    padding-bottom: 1.5rem;
+    padding-top: 2rem;
     width: 7rem;
     -webkit-animation: flickerAnimation 1s infinite;
     -moz-animation: flickerAnimation 1s infinite;

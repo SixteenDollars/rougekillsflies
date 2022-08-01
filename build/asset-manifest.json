@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.960b5486.chunk.css",
-    "main.js": "/static/js/main.9fcadefb.chunk.js",
-    "main.js.map": "/static/js/main.9fcadefb.chunk.js.map",
+    "main.css": "/static/css/main.4ab578e1.chunk.css",
+    "main.js": "/static/js/main.3bdffa2b.chunk.js",
+    "main.js.map": "/static/js/main.3bdffa2b.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.70ccc2c3.js",
     "runtime~main.js.map": "/static/js/runtime~main.70ccc2c3.js.map",
     "static/css/2.22a7d4ef.chunk.css": "/static/css/2.22a7d4ef.chunk.css",
-    "static/js/2.21724ca9.chunk.js": "/static/js/2.21724ca9.chunk.js",
-    "static/js/2.21724ca9.chunk.js.map": "/static/js/2.21724ca9.chunk.js.map",
+    "static/js/2.274ff5ed.chunk.js": "/static/js/2.274ff5ed.chunk.js",
+    "static/js/2.274ff5ed.chunk.js.map": "/static/js/2.274ff5ed.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5b8c5c0843ba4cce328a54f5a94c889a.js": "/precache-manifest.5b8c5c0843ba4cce328a54f5a94c889a.js",
+    "precache-manifest.d2b35527c26e8433af64db7318bc31fa.js": "/precache-manifest.d2b35527c26e8433af64db7318bc31fa.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.22a7d4ef.chunk.css.map": "/static/css/2.22a7d4ef.chunk.css.map",
-    "static/css/main.960b5486.chunk.css.map": "/static/css/main.960b5486.chunk.css.map",
+    "static/css/main.4ab578e1.chunk.css.map": "/static/css/main.4ab578e1.chunk.css.map",
     "static/media/08-08.m4v": "/static/media/08-08.7280a84c.m4v",
     "static/media/AK.png": "/static/media/AK.e0f8c875.png",
     "static/media/BandcampHoriz.png": "/static/media/BandcampHoriz.16c33fdd.png",
@@ -28,6 +28,7 @@
     "static/media/appleblack.png": "/static/media/appleblack.873e1c2a.png",
     "static/media/backseat.png": "/static/media/backseat.15c71698.png",
     "static/media/bcblack.png": "/static/media/bcblack.6f5cd642.png",
+    "static/media/centralsauce.jpg": "/static/media/centralsauce.ad2a740a.jpg",
     "static/media/cover.png": "/static/media/cover.17b31e57.png",
     "static/media/covercopy.png": "/static/media/covercopy.17b31e57.png",
     "static/media/flower.png": "/static/media/flower.884f0c30.png",
@@ -41,6 +42,7 @@
     "static/media/shot.JPG": "/static/media/shot.74baadd6.JPG",
     "static/media/spotify.png": "/static/media/spotify.a9225b24.png",
     "static/media/spotifyblack.png": "/static/media/spotifyblack.e49736dd.png",
+    "static/media/theq.png": "/static/media/theq.b521fa40.png",
     "static/media/tidal.png": "/static/media/tidal.5baa6a44.png"
   }
 }

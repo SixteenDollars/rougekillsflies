@@ -78,9 +78,9 @@ class AlbumView extends Component {
                     />
                 </div>
                 <div class="player-text-wrap">
-                    <h1 class="player-text">propaganda 01: Bomb</h1>
+                    <h1 class="player-text">Bomb</h1>
                 </div>
-                <div class="youtube-player-2">
+{/*                 <div class="youtube-player-2">
                     <ReactPlayer
                         url="https://youtu.be/3NngaAAtcoY"
                         controls
@@ -97,35 +97,8 @@ class AlbumView extends Component {
                 </div>
                 <div class="player-text-wrap">
                     <h1 class="player-text-1">rouge + rodney chrome talk about stuff</h1>
-                </div>
-{/*                 <div class="row justify-content-center align-items-center">
-                    <div class="col-sm-1 col-md-1 col-2">
-                        <img class="img-fluid" id="tank" src={tank} alt=""></img>
-                    </div>
-                    <div class="col-sm-1 col-md-1 col-2">
-                        <img class="img-fluid" id="helmet" src={helmet} alt=""></img>
-                    </div>
-                    <div class="col-sm-1 col-md-1 col-2">
-                        <img class="img-fluid" id="ak" src={ak} alt=""></img>
-                    </div>
-                    <div class="col-sm-1 col-md-1 col-2">
-                        <img class="img-fluid" id="flower" src={flower} alt=""></img>
-                    </div>
                 </div> */}
-                <div class="row justify-content-center align-items-center">
-					<iframe
-						class="col-xs"
-						title="spotify"
-						src={`https://open.spotify.com/embed/playlist/6EB5ojEIOZRCnlQ467K1Z3`}
-						width={size.width}
-						height={size.height}
-						frameBorder="0"
-						allowtransparency="true"
-					/>
-				</div>
-                <div class="player-text-wrap">
-                    <h1 class="player-text-1">"war!": the songs that inspired (playlist)</h1>
-                </div>
+                
                 <ul class="grid">
                     <li>
                         <figure>
