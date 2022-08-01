@@ -21,21 +21,21 @@ class Homepage extends Component {
                 <ul class="img_list">
                     <li>
                         <figure>
-                            <a href="https://www.rougedied.com/misc">
+                            <a href="https://www.rougekillsflies.com/misc">
                                 <img src={misc} alt="Misc"></img>
                             </a>
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <a href="https://www.rougedied.com/war">
+                            <a href="https://www.rougekillsflies.com/war">
                                 <img src={shoot} alt="Shoot"></img>
                             </a>
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <a href="https://www.rougedied.com/war">
+                            <a href="https://www.rougekillsflies.com/war">
                                 <img src={war} alt="WAR!"></img>
                             </a>
                         </figure>
@@ -43,13 +43,13 @@ class Homepage extends Component {
                     </li>
                     <li>
                         <figure>
-                            <a href="https://www.rougedied.com/flower">
+                            <a href="https://www.rougekillsflies.com/flower">
                                 <img src={plant} alt="Flower"></img>
                             </a>
                         </figure>
                     </li>
                 </ul>
-                <a href="https://www.instagram.com/rougedied">
+                <a href="https://www.instagram.com/rougekillsflies">
                     <img id="ig" class="mx-auto d-block" src={ig} alt=""></img>
                 </a>
             </main>

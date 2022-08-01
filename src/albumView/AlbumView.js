@@ -31,8 +31,8 @@ class AlbumView extends Component {
         return (
             <main class="albumView">
                 <nav>
-                    <a href="https://rougedied.com"><h1 id="header">HOME</h1></a>
-                    <a href="https://rougedied.com/press"><h1 id="header">PRESS</h1></a>
+                    <a href="https://rougekillsflies.com"><h1 id="header">HOME</h1></a>
+                    <a href="https://rougekillsflies.com/press"><h1 id="header">PRESS</h1></a>
                 </nav>
                 <div class="album-title">
                     <h1 class="album-text">"War!" by Rouge (an album)</h1>
@@ -126,7 +126,7 @@ class AlbumView extends Component {
                         </figure>
                     </li>
                 </ul>
-                <a href="https://www.instagram.com/rougedied">
+                <a href="https://www.instagram.com/rougekillsflies">
                     <img id="ig" class="mx-auto d-block" src={ig} alt=""></img>
                 </a>
             </main>

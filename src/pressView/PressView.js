@@ -14,8 +14,8 @@ class PressView extends Component {
         return (
             <main class="albumView">
             <nav>
-                <a href="https://rougedied.com"><h1 id="header">HOME</h1></a>
-                <a href="https://rougedied.com/press"><h1 id="header">PRESS</h1></a>
+                <a href="https://rougekillsflies.com"><h1 id="header">HOME</h1></a>
+                <a href="https://rrougekillsflies.com/press"><h1 id="header">PRESS</h1></a>
             </nav>
             <a href="https://centralsauce.com/rouge-closest-thing-to-god-in-the-flesh">
                 <img id="centralsauce" class="mx-auto d-block" src={centralsauce} alt=""></img>
@@ -36,7 +36,7 @@ class PressView extends Component {
                 <h1 class="press-text">backseatmafia (click on picture to read)</h1>
             </div>
             <img id="flower" class="mx-auto d-block" src={flower} alt=""></img>
-            <a href="https://www.instagram.com/rougedied">
+            <a href="https://www.instagram.com/rougekillsflies">
                 <img id="ig" class="mx-auto d-block" src={ig} alt=""></img>
             </a>
         </main>

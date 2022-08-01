@@ -11,7 +11,7 @@ class FlowerPage extends Component {
         return (
             <main class="flowerView">
                 <nav>
-                    <a href="https://rougedied.com"><h1 id="header">HOME</h1></a>
+                    <a href="https://rougekillsflies.com"><h1 id="header">HOME</h1></a>
                 </nav>
 				<div id="video-container">
 					<ReactPlayer
@@ -22,7 +22,7 @@ class FlowerPage extends Component {
 					/>
 				</div>
                 <img id="flower" class="mx-auto d-block" src={flower} alt=""></img>
-                <a href="https://www.instagram.com/rougedied">
+                <a href="https://www.instagram.com/rougekillsflies">
                     <img id="ig" class="mx-auto d-block" src={ig} alt=""></img>
                 </a>
             </main>

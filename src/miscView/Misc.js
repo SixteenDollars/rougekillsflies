@@ -107,7 +107,7 @@ class Misc extends Component {
 
 					<div class="row">
 						<div class="col-xs col-cent">
-							<a href="https://www.instagram.com/rougedied">
+							<a href="https://www.instagram.com/rougekillsflies">
 								<img id="ig2" class="mx-auto d-block" src={ig} alt=""></img>
 							</a>
 						</div>
