@@ -44,7 +44,7 @@ class AlbumView extends Component {
                 </div>
                 <div class="row justify-content-center align-items-center">
                     <div class="col-sm-1 col-md-1 col-2">
-                        <a href="https://music.apple.com/us/album/_/1559758015?mt=1&app=music&ls=1&at=1000lHKX">
+                        <a href="https://music.apple.com/us/album/war/1658193494">
                             <img class="img-fluid" id="applewar" src={appleblack} alt=""></img>
                         </a>
                     </div>

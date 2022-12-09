@@ -1,8 +1,8 @@
 {
-  "name": "rougedied",
+  "name": "rougekillsflies",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rougedied.com/",
+  "homepage": "https://rougekillsflies.com/",
   "dependencies": {
     "axios": "^0.19.2",
     "bootstrap": "^4.3.1",
