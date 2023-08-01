@@ -54,7 +54,7 @@ class AlbumView extends Component {
                         </a>
                     </div>
                     <div class="col-sm-1 col-md-1 col-2">
-                        <a href="https://listen.tidal.com/album/178170980">
+                        <a href="https://listen.tidal.com/album/264649475">
                             <div class="img-max">
                                 <img class="img-fluid" id="tidalwar" src={tidalblackcircle} alt=""></img>
                             </div>

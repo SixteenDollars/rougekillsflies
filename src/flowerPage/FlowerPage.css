@@ -1,80 +1,72 @@
 .flowerView {
-    background-color:rgb(1, 0, 1);
-    padding:6rem;
-    margin:0;
-  }
-  
-  #header {
-    font-family: 'Playfair Display', serif;
-    font-size: 35px;
-    color: white;
-    cursor: pointer;
-  }
+  background-color:rgb(1, 0, 1);
+  padding:6rem;
+  margin:0;
+}
 
-  #video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom:2rem;
-  }
-  
+#header {
+  font-family: 'Playfair Display', serif;
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+}
+
+#video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom:2rem;
+}
+
+#flower {
+  display: block;
+  padding-bottom: 1.5rem;
+  width: 7rem;
+  -webkit-animation: flickerAnimation 1s infinite;
+  -moz-animation: flickerAnimation 1s infinite;
+  -o-animation: flickerAnimation 1s infinite;
+   animation: flickerAnimation 1s infinite;
+}
+
+@media screen and (max-width: 768px) {    
   #flower {
     display: block;
+    margin-top: -3rem;
     padding-bottom: 1.5rem;
-    width: 7rem;
-    -webkit-animation: flickerAnimation 1s infinite;
-    -moz-animation: flickerAnimation 1s infinite;
-    -o-animation: flickerAnimation 1s infinite;
-     animation: flickerAnimation 1s infinite;
+    width: 5.5rem;
   }
+}
 
-  @media screen and (max-width: 768px) {    
-    #flower {
-      display: block;
-      margin-top: -3rem;
-      padding-bottom: 1.5rem;
-      width: 5.5rem;
-    }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #flower {
+    margin-top: -1rem;
+    width: 5.5rem;
   }
-  
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
-    #flower {
-      margin-top: -1rem;
-      width: 5.5rem;
-    }
-  }
-  
-  @media screen and (min-width: 1025px) and (max-width: 1200px) {
-    #flower {
-      width: 5.5rem;
-    }
-  }
+}
 
-  @keyframes flickerAnimation {
-    0%   { opacity:1; }
-    50%  { opacity:.55; }
-    100% { opacity:1; }
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  #flower {
+    width: 5.5rem;
   }
-  @-o-keyframes flickerAnimation{
-    0%   { opacity:1; }
-    50%  { opacity:.55; }
-    100% { opacity:1; }
-  }
-  @-moz-keyframes flickerAnimation{
-    0%   { opacity:1; }
-    50%  { opacity:.55; }
-    100% { opacity:1; }
-  }
-  @-webkit-keyframes flickerAnimation{
-    0%   { opacity:1; }
-    50%  { opacity:.55; }
-    100% { opacity:1; }
-  }
-  
-  
-  
+}
 
-  
-  
-
-  
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:.55; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:.55; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:.55; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:.55; }
+  100% { opacity:1; }
+}
