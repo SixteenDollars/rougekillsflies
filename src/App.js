@@ -6,7 +6,6 @@ import Homepage from './homePage/Homepage'
 import FlowerPage from './flowerPage/FlowerPage'
 import AlbumView from './albumView/AlbumView'
 import PressView from './pressView/PressView'
-import War2Page from './war2Page/War2Page'
 
 export default function App() {
 	return (
@@ -18,7 +17,6 @@ export default function App() {
 				<Route exact path="/press" component={PressView} />
 				<Route exact path="/shoot" component={Homepage} />
 				<Route exact path="/flower" component={FlowerPage} />
-				<Route exact path="/war2" component={War2Page} />
 			</Switch>
 		</BrowserRouter>
 	)
