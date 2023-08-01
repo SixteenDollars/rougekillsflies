@@ -84,8 +84,8 @@
     }
   
     #video-container model-viewer {
-      height: 700px;
-      width: 800px;
+      height: 100vh;
+      width: 100vh;
       top: 0;
       left: 0;
       border: none;
