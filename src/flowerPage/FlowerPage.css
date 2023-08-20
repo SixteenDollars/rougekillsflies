@@ -1,18 +1,18 @@
-#vrContainer {
-    height: 100%;
-    width: 100%;
-    top: calc(50% - 250px);
+  #video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:2rem;
   }
-  
-  /* This styles the 3D object inserted in the aside container */
-  #vrContainer model-viewer {
-    height: 100%;
-    width: 100%;
+
+  #video-container model-viewer {
+    height: 100vh;
+    width: 100vh;
     top: 0;
     left: 0;
     border: none;
   }
-  
+
   #view-button {
     background: #ffffff;
     border-radius: 0px;
@@ -75,21 +75,6 @@
       color: white;
       cursor: pointer;
     }
-  
-    #video-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-bottom:2rem;
-    }
-  
-    #video-container model-viewer {
-      height: 100vh;
-      width: 100vh;
-      top: 0;
-      left: 0;
-      border: none;
-    }
     
     #flower {
       display: block;
@@ -122,6 +107,50 @@
         width: 5.5rem;
       }
     }
+
+    @media screen and (max-width: 768px) {    
+      #video-container model-viewer {
+        height: 75vh;
+        width: 28rem;
+      }
+    }
+
+    @media screen and (max-width: 768px) {    
+      #video-container {
+        display: block;
+        margin-top: -3rem;
+        margin-left: -5rem;
+        padding-bottom: 1.5rem;
+        height: 100vh;
+        width: 100vh;
+      }
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      #video-container model-viewer {
+        height: 100vh;
+      }
+    }
+    
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      #video-container {
+        height: 50vh;
+        width: 50vh;
+      }
+    }
+
+    @media screen and (min-width: 1025px) and (max-width: 1200px) {
+      #video-container model-viewer {
+        height: 100vh;
+      }
+    }
+    
+    @media screen and (min-width: 1025px) and (max-width: 1200px) {
+      #video-container {
+        width: 5.5rem;
+      }
+    }
+  
   
     @keyframes flickerAnimation {
       0%   { opacity:1; }

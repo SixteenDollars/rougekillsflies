@@ -14,7 +14,7 @@ class FlowerPage extends Component {
                     <a href="https://rougekillsflies.com"><h1 id="header">HOME</h1></a>
                 </nav>
                 <div class="album-title">
-                    <h1 class="album-text">"War!" (AR exhibit)</h1>
+                    <h1 class="album-text">"War!" (AR exhibit V2)</h1>
                 </div>
                 <div class="under-title">
                     <h1 class="under-text">click on buttons to navigate</h1>
