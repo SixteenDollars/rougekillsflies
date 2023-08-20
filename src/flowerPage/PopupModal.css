@@ -13,18 +13,61 @@
     z-index: 9999;
   }
   
+  @media screen and (max-width: 768px) {    
+    .modal-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1%;
+      height: 1%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {    
+    .modal-overlay {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1%;
+      height: 1%;
+      margin-top: 22.5rem;
+
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .modal-overlay {
+      margin-top: -1rem;
+      width: 5.5rem;
+    }
+  }
+  
   /* CSS for modal content */
   .modal-content {
     background-color: #0e0e0e;
-    padding: 20px;
-    border-radius: 4px;
-    width: 50%;
-    height: 75%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90vh;
+    height: 95vh;
     position: relative;
     animation: slideUp 0.3s ease-in-out;
   }
-  
+
+
+.under-title-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.under-text-2 {
+  font-family: 'Myfont-Regular', serif;
+  font-size: 1.75rem;
+  font-style: italic;
+  color: white;
+}
+
   /* Close button (x) */
   .close-btn {
     font-size: 45px;
@@ -45,7 +88,39 @@
     align-items: center;
     text-align: center;
     min-height: 25vh;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
+  }
+
+  #mask-new {
+    display: block;
+    width: 10rem;
+    cursor: pointer;
+    -webkit-animation: flickerAnimation 1s infinite;
+    -moz-animation: flickerAnimation 1s infinite;
+    -o-animation: flickerAnimation 1s infinite;
+     animation: flickerAnimation 1s infinite;
+  }
+
+  @media screen and (max-width: 768px) {    
+    #mask-new {
+      display: block;
+      margin-top: -3rem;
+      padding-bottom: 1.5rem;
+      width: 5.5rem;
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    #mask-new {
+      margin-top: -1rem;
+      width: 5.5rem;
+    }
+  }
+  
+  @media screen and (min-width: 1025px) and (max-width: 1200px) {
+    #mask-new {
+      width: 5.5rem;
+    }
   }
   
   /* Animations */

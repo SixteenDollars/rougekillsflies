@@ -14,10 +14,6 @@ import tidalblackcircle from '../resources/images/tidalblackcircle.png'
 import bcblack from '../resources/images/bcblack.png'
 import mask from '../resources/images/Frame 4.png'
 import linktree from '../resources/images/OTHER.png'
-import flower from '../resources/images/flower.png'
-import helmet from '../resources/images/Helmet.png'
-import ak from '../resources/images/AK.png'
-import tank from '../resources/images/Tank.png'
 
 class AlbumView extends Component {
     render() {

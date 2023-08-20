@@ -6,6 +6,7 @@
   }
 
   #video-container model-viewer {
+    display: flex;
     height: 100vh;
     width: 100vh;
     top: 0;
@@ -109,48 +110,68 @@
     }
 
     @media screen and (max-width: 768px) {    
-      #video-container model-viewer {
-        height: 75vh;
-        width: 28rem;
+      #video-container model-viewer {   
+        height: 45vh;
+        width: 45vh;
       }
     }
 
     @media screen and (max-width: 768px) {    
       #video-container {
-        display: block;
-        margin-top: -3rem;
-        margin-left: -5rem;
+        display: flex;
+        flex-direction: column;
+        margin-top: -1rem;
+        margin-left: 2rem;
         padding-bottom: 1.5rem;
-        height: 100vh;
-        width: 100vh;
+      }
+    }
+
+    @media screen and (max-width: 768px) {    
+      #view-button {
+        display: block;
+        font-size: 10px;
+        font-weight: 1000;
+        max-width: 150px;
+        overflow-wrap: break-word;
+        padding: 0.5em 1em;
+        position: absolute;
+        width: max-content;
+        height: max-content;
+        transform: translate3d(-50%, -50%, 0);
       }
     }
 
     @media screen and (min-width: 769px) and (max-width: 1024px) {
       #video-container model-viewer {
-        height: 100vh;
+        height: 60vh;
+        width: 60vh;
       }
     }
     
     @media screen and (min-width: 769px) and (max-width: 1024px) {
       #video-container {
-        height: 50vh;
-        width: 50vh;
+        display: flex;
+        flex-direction: column;
+        margin-top: -5rem;
+        margin-left: 5rem;
+        padding-bottom: 1.5rem;
       }
     }
 
-    @media screen and (min-width: 1025px) and (max-width: 1200px) {
-      #video-container model-viewer {
-        height: 100vh;
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      #view-button {
+        display: block;
+        font-size: 15px;
+        font-weight: 1000;
+        max-width: 200px;
+        overflow-wrap: break-word;
+        padding: 0.5em 1em;
+        position: absolute;
+        width: max-content;
+        height: max-content;
+        transform: translate3d(-50%, -50%, 0);
       }
     }
-    
-    @media screen and (min-width: 1025px) and (max-width: 1200px) {
-      #video-container {
-        width: 5.5rem;
-      }
-    }
-  
   
     @keyframes flickerAnimation {
       0%   { opacity:1; }
@@ -176,7 +197,192 @@
     
     
   
+   /*  .flowerView {
+      background-color:rgb(1, 0, 1);
+      padding:2rem;
+      margin:0;
+    }
     
+    .flowerView > .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+      grid-template-rows: repeat(2, 275px);
+      grid-gap: 1rem;
+      grid-auto-flow: dense;
+      margin-left: -2rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
     
-  
+    .flowerView > .grid > li {
+      opacity: .65;
+    }
+    
+    .flowerView > .grid > li:hover {
+      opacity: 1;
+      margin-top: -5px;
+      margin-left: -5px;
+    }
+    
+    .flowerView > .grid > li:nth-child(1n) {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    
+    .flowerView > .grid > li:nth-child(2n) {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+    
+    .flowerView > .grid > li:nth-child(3n) {
+      grid-column: span 1;
+      grid-row: span 2;
+    }
+    
+    .flowerView > .grid > li:nth-child(4n) {
+      grid-column: span 1;
+      grid-row: span 2;
+    }
+    
+    .flowerView > .grid > li:nth-child(5n) {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+    
+    .flowerView > .grid > li > figure {
+      height: 100%;
+    }
+    .flowerView > .grid > li > figure > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    @media screen and (max-width: 768px) {
+    
+      
+      .flowerView > .grid > li:nth-child(1n) {
+        grid-column: span 1;
+        grid-row: span 1;
+      }
+      
+      .flowerView > .grid > li:nth-child(2n) {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+      
+      .flowerView > .grid > li:nth-child(3n) {
+        grid-column: span 1;
+        grid-row: span 2;
+      }
+      
+      .flowerView > .grid > li:nth-child(4n) {
+        grid-column: span 1;
+        grid-row: span 2;
+      }
+      
+      .flowerView > .grid > li:nth-child(5n) {
+        grid-column: span 1;
+        grid-row: span 1;
+      }
+      
+      .flowerView > .grid > li > figure {
+        height: 100%;
+      }
+      .flowerView > .grid > li > figure > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      .flowerView > .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+        grid-template-rows: repeat(2, 275px);
+        grid-gap: 1rem;
+        grid-auto-flow: dense;
+        padding-bottom: 2rem;
+      }
+      
+      .flowerView > .grid > li:nth-child(1n) {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+      
+      .flowerView > .grid > li:nth-child(2n) {
+        grid-column: span 1;
+        grid-row: span 1;
+      }
+      
+      .flowerView > .grid > li:nth-child(3n) {
+        grid-column: span 1;
+        grid-row: span 2;
+      }
+      
+      .flowerView > .grid > li:nth-child(4n) {
+        grid-column: span 1;
+        grid-row: span 2;
+      }
+      
+      .flowerView > .grid > li:nth-child(5n) {
+        grid-column: span 1;
+        grid-row: span 1;
+      }
+      
+      .flowerView > .grid > li > figure {
+        height: 100%;
+      }
+      .flowerView > .grid > li > figure > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    
+    @media screen and (min-width: 1025px) and (max-width: 1200px) {
+      .flowerView > .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+        grid-template-rows: repeat(2, 275px);
+        grid-gap: 1rem;
+        grid-auto-flow: dense;
+        padding-bottom: 2rem;
+      }
+      
+      .flowerView > .grid > li:nth-child(1n) {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+      
+      .flowerView > .grid > li:nth-child(2n) {
+        grid-column: span 1;
+        grid-row: span 1;
+      }
+      
+      .flowerView > .grid > li:nth-child(3n) {
+        grid-column: span 1;
+        grid-row: span 2;
+      }
+      
+      .flowerView > .grid > li:nth-child(4n) {
+        grid-column: span 1;
+        grid-row: span 2;
+      }
+      
+      .flowerView > .grid > li:nth-child(5n) {
+        grid-column: span 1;
+        grid-row: span 1;
+      }
+      
+      .flowerView > .grid > li > figure {
+        height: 100%;
+      }
+      .flowerView > .grid > li > figure > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    } */
     

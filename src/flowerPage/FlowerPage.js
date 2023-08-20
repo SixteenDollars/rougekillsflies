@@ -10,14 +10,13 @@ class FlowerPage extends Component {
     render() {
         return (
             <main class="flowerView">
+                {/* <PopupModal></PopupModal> */}
                 <nav>
                     <a href="https://rougekillsflies.com"><h1 id="header">HOME</h1></a>
                 </nav>
-                <div class="album-title">
-                    <h1 class="album-text">"War!" (AR exhibit V2)</h1>
-                </div>
                 <div class="under-title">
                     <h1 class="under-text">click on buttons to navigate</h1>
+                    <h1 class="under-text">or pinch in / pinch out</h1>
                 </div>
                 <div id="video-container">
                     <model-viewer 
@@ -73,7 +72,7 @@ class FlowerPage extends Component {
                     </button>  
                     </model-viewer>
                 </div>
-                <img id="flower" class="mx-auto d-block" src={flower} alt=""></img>
+                {/* <img id="flower" class="mx-auto d-block" src={flower} alt=""></img> */}
                 <a href="https://www.instagram.com/rougekillsflies">
                     <img id="ig" class="mx-auto d-block" src={ig} alt=""></img>
                 </a>
