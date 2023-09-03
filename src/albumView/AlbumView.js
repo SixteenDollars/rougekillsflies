@@ -1,12 +1,6 @@
 import React, { Component } from 'react'
 import './AlbumView.css';
-import ig from '../resources/images/ig.png'
 import 'bootstrap/dist/css/bootstrap.css';
-import warcopy from '../resources/images/covercopy.png'
-import circle from '../resources/images/shot.JPG'
-import frame from '../resources/images/TL.png'
-import shoot1 from '../resources/images/shoot1.JPG'
-import shoot2 from '../resources/images/shoot2.jpeg'
 import ReactPlayer from 'react-player'
 import spotifyblack from '../resources/images/spotifyblack.png'
 import appleblack from '../resources/images/appleblack.png'
@@ -14,31 +8,114 @@ import tidalblackcircle from '../resources/images/tidalblackcircle.png'
 import bcblack from '../resources/images/bcblack.png'
 import mask from '../resources/images/Frame 4.png'
 import linktree from '../resources/images/OTHER.png'
+import vr from '../resources/images/poly.glb'
+import NailBombArt from '../resources/images/nailbombart.jpeg'
+import NailBombTease from '../resources/images/nailbombtease.png'
+import { ScrollContainer, ScrollPage, Animator, Fade, MoveIn, MoveOut, ZoomIn, Sticky, StickyIn, StickyOut, FadeOut, Move, FadeIn, batch} from 'react-scroll-motion';
+
+const FadeUp = batch(Fade(), Move(), Sticky());
 
 class AlbumView extends Component {
     render() {
-        const loveharturi = "spotify:album:6ITBoE1l1zPCtXKOTN12IC";
-		const size = {
-			width: '50%',
-			height: 350
-		};
-        const view = 'list'; // or 'coverart'
-		const theme = 'black'; // or 'white'
         return (
+            // V1
+            <ScrollContainer>
             <main class="albumView">
-                <nav>
-                    <a href="https://rougekillsflies.com"><h1 id="header">HOME</h1></a>
-                    <a href="https://rougekillsflies.com/press"><h1 id="header">PRESS</h1></a>
-                </nav>
-                <div class="album-title">
-                    <h1 class="album-text">"War!" by Rouge (an album)</h1>
-                </div>
-                <img id="mask" class="mx-auto d-block" src={mask} alt=""></img>
+            <nav>
+                <a href="https://rougekillsflies.com/press"><h1 id="header">PRESS</h1></a>
+            </nav>
+            </main>
+            <main class="albumView">
+            <ScrollPage>
+                <Animator>
+                    <div id="section-2">
+                    <div class="player-over-text-wrap">
+                        <h1 class="player-over-text">"How To Make A Nail Bomb" (Single - 2023)</h1>
+                    </div>
+                    <img id="nailbombart" class="mx-auto d-block" src={NailBombTease} alt=""></img>
+                    <div class="under-title">
+                        <h1 class="under-text">click below to pre-save on spotify</h1>
+                    </div>
+                    <div id="dsprow" class="row justify-content-center align-items-center">
+                        <div class="col-sm-1 col-md-1 col-2">
+                            <a href="https://distrokid.com/hyperfollow/rougekillsflies/how-to-make-a-nail-bomb">
+                                <img class="img-fluid" id="spotifywar" src={spotifyblack} alt=""></img>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </Animator>
+            </ScrollPage>
+{/*             <ScrollPage>
+                <Animator>
+                    <div id="section-2">
+                    <div class="player-over-text-wrap">
+                        <h1 class="player-over-text">"How To Make A Nail Bomb" (Single - 2023)</h1>
+                    </div>
+                    <img id="nailbombart" class="mx-auto d-block" src={NailBombArt} alt=""></img>
+                    <div class="under-title">
+                        <h1 class="under-text">click on your streaming service</h1>
+                    </div>
+                    <div id="dsprow" class="row justify-content-center align-items-center">
+                        <div class="col-sm-1 col-md-1 col-2">
+                            <a href="https://music.apple.com/us/album/war/1658193494">
+                                <img class="img-fluid" id="applewar" src={appleblack} alt=""></img>
+                            </a>
+                        </div>
+                        <div class="col-sm-1 col-md-1 col-2">
+                            <a href="https://open.spotify.com/album/2IzE8WAuhm5AAj2xk4jKLe?si=CvlCDxjJRJOlxpoRCFX2OA">
+                                <img class="img-fluid" id="spotifywar" src={spotifyblack} alt=""></img>
+                            </a>
+                        </div>
+                        <div class="col-sm-1 col-md-1 col-2">
+                            <a href="https://listen.tidal.com/album/264649475">
+                                <div class="img-max">
+                                    <img class="img-fluid" id="tidalwar" src={tidalblackcircle} alt=""></img>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-1 col-md-1 col-2">
+                            <a href="https://rougedied.bandcamp.com/album/war">
+                                <img class="img-fluid" id="bcwar" src={bcblack} alt=""></img>
+                            </a>
+                        </div>
+                        <div class="col-sm-1 col-md-1 col-2">
+                            <a href="https://album.link/i/1559758015">
+                                <img class="img-fluid" id="otherwar" src={linktree} alt=""></img>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </Animator>
+            </ScrollPage> */}
+            </main>
+        </ScrollContainer>
 
-                <div class="under-title">
-                    <h1 class="under-text">click on your streaming service</h1>
+/*         // V2
+        <ScrollContainer>
+        <main class="albumView">
+        <nav>
+            <a href="https://rougekillsflies.com/press"><h1 id="header">PRESS</h1></a>
+        </nav>
+        </main>
+        <main class="albumView">
+        <ScrollPage id="scrollsection-3">
+            <Animator>
+                <div id="section-3">
+                <div class="player-over-text-wrap">
+                    <h1 class="player-over-text">"Closest Thing to God in the Flesh" (Music Video - 2021)</h1>
                 </div>
-                <div class="row justify-content-center align-items-center">
+                <div class="react-player-wrapper">
+                    <ReactPlayer
+                        class="react-player"
+                        url="https://youtu.be/05FIFwcGhbI"
+                        controls
+                    />
+                </div>
+                <div class="under-title">
+                    <h1 class="under-text">click on your streaming service to listen</h1>
+                </div>
+                <div id="dsprow" class="row justify-content-center align-items-center">
                     <div class="col-sm-1 col-md-1 col-2">
                         <a href="https://music.apple.com/us/album/war/1658193494">
                             <img class="img-fluid" id="applewar" src={appleblack} alt=""></img>
@@ -67,65 +144,163 @@ class AlbumView extends Component {
                         </a>
                     </div>
                 </div>
-                <div class="youtube-player-1">
-                    <ReactPlayer
-                        url="https://youtu.be/olc8AvftI-4"
-                        controls
-                    />
                 </div>
-                <div class="player-text-wrap">
-                    <h1 class="player-text">Bomb</h1>
-                </div>
-{/*                 <div class="youtube-player-2">
-                    <ReactPlayer
-                        url="https://youtu.be/3NngaAAtcoY"
-                        controls
-                    />
-                </div>
-                <div class="player-text-wrap">
-                    <h1 class="player-text-1">rouge + st.ary talk about stuff</h1>
-                </div>
-                <div class="youtube-player-2">
-                    <ReactPlayer
-                        url="https://youtu.be/zFIpo35BOS0"
-                        controls
-                    />
-                </div>
-                <div class="player-text-wrap">
-                    <h1 class="player-text-1">rouge + rodney chrome talk about stuff</h1>
-                </div> */}
-                
-                <ul class="grid">
-                    <li>
-                        <figure>
-                            <img id="warcopy" src={warcopy} alt="WAR!"></img>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img id="frame" src={frame} alt="Frame"></img>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img id="shoot1" src={shoot1} alt="Shoot1"></img>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img id="shoot2" src={shoot2} alt="Shoot2"></img>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img id="circle" src={circle} alt="Circle"></img>
-                        </figure>
-                    </li>
-                </ul>
-                <a href="https://www.instagram.com/rougekillsflies">
-                    <img id="ig" class="mx-auto d-block" src={ig} alt=""></img>
-                </a>
-            </main>
+            </Animator>
+        </ScrollPage>
+        </main>
+    </ScrollContainer> */
+
+/*              // V3
+            <ScrollContainer>
+                <main class="albumView">
+                <nav>
+                    <a href="https://rougekillsflies.com/press"><h1 id="header">PRESS</h1></a>
+                </nav>
+                <ScrollPage>
+                    <Animator animation={FadeUp}>
+                        <div id="section-1">
+                        <div class="album-title">
+                            <h1 class="album-text">"War!"</h1>
+                        </div>
+                        <div class="under-title">
+                            <h1 class="under-text">pinch to zoom . click titles to navigate</h1>
+                        </div>
+                        <div id="video-container">
+                            <model-viewer 
+                            id="hotspot-camera-view-demo" 
+                            touch-action="none" 
+                            camera-orbit="1000deg 90deg 1.5m" 
+                            camera-target="-0.003m 0.0722m 0.0391m" 
+                            field-of-view="45deg" 
+                            min-field-of-view="25deg" 
+                            max-field-of-view="45deg" 
+                            interpolation-decay="200" 
+                            min-camera-orbit="auto auto 5%" 
+                            src={vr} 
+                            alt="VR Headset" 
+                            auto-rotate 
+                            camera-controls 
+                            ios-src={vr}>
+                            <button id="view-button" 
+                            onClick={(e) => {
+                                e.preventDefault();
+                                window.location.href='http://google.com';
+                            }}
+                            slot="hotspot-0" 
+                            data-position="0.0000m 0.20000m -0.3500m" 
+                            data-normal="-0.4421014m 0.04410423m 0.8958802m" 
+                            data-orbit="3.711166deg 92.3035deg 0.04335197m" 
+                            data-target="-0.1879433m 0.1157161m -0.01563221m">
+                                <h1 class="viewer-text">How To Make A Nail Bomb (2023) - Single</h1>
+                            </button> 
+                            <button id="view-button" 
+                            onClick={(e) => {
+                                e.preventDefault();
+                                window.location.href='https://album.link/i/1559758015';
+                            }}
+                            slot="hotspot-1" 
+                            data-position="0.0608m 0.0566m 0.0605m" 
+                            data-normal="-0.5829775m 0.2863482m -0.7603565m" 
+                            data-orbit="42.72974deg 84.74043deg 0.07104211m" 
+                            data-target="0.0757959m 0.04128428m 0.07109568m">
+                                War! (2021) - Album
+                            </button>
+                            <button id="view-button" 
+                            onClick={(e) => {
+                                e.preventDefault();
+                                window.location.href='https://album.link/i/1559758015';
+                            }}
+                            slot="hotspot-2" 
+                            data-position="-0.2500m -0.1500m -0.1398m" 
+                            data-normal="-0.5829775m 0.2863482m -0.7603565m" 
+                            data-orbit="-50.94862deg 84.56856deg 0.06545582m" 
+                            data-target="-0.04384604m 0.07348397m -0.1213202m">
+                                Closest Thing To God In The Flesh (2021) - Music Video
+                            </button>  
+                            </model-viewer>
+                        </div>
+                        <div class="player-over-text-wrap">
+                            <h1 class="player-over-text">scroll down for more</h1>
+                        </div>
+                        </div>
+                    </Animator>
+                </ScrollPage>
+                </main>
+                <main class="albumView">
+                <ScrollPage>
+                    <Animator animation={batch(Fade())}>
+                        <div id="section-2">
+                        <div class="player-over-text-wrap">
+                            <h1 class="player-over-text">"How To Make A Nail Bomb" (Single - 2023)</h1>
+                        </div>
+                        <img id="nailbombart" class="mx-auto d-block" src={NailBombArt} alt=""></img>
+                        <div class="under-title">
+                            <h1 class="under-text">click on your streaming service</h1>
+                        </div>
+                        <div id="dsprow" class="row justify-content-center align-items-center">
+                            <div class="col-sm-1 col-md-1 col-2">
+                                <a href="https://music.apple.com/us/album/war/1658193494">
+                                    <img class="img-fluid" id="applewar" src={appleblack} alt=""></img>
+                                </a>
+                            </div>
+                            <div class="col-sm-1 col-md-1 col-2">
+                                <a href="https://open.spotify.com/album/2IzE8WAuhm5AAj2xk4jKLe?si=CvlCDxjJRJOlxpoRCFX2OA">
+                                    <img class="img-fluid" id="spotifywar" src={spotifyblack} alt=""></img>
+                                </a>
+                            </div>
+                            <div class="col-sm-1 col-md-1 col-2">
+                                <a href="https://listen.tidal.com/album/264649475">
+                                    <div class="img-max">
+                                        <img class="img-fluid" id="tidalwar" src={tidalblackcircle} alt=""></img>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-1 col-md-1 col-2">
+                                <a href="https://rougedied.bandcamp.com/album/war">
+                                    <img class="img-fluid" id="bcwar" src={bcblack} alt=""></img>
+                                </a>
+                            </div>
+                            <div class="col-sm-1 col-md-1 col-2">
+                                <a href="https://album.link/i/1559758015">
+                                    <img class="img-fluid" id="otherwar" src={linktree} alt=""></img>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="player-over-text-wrap">
+                            <h1 class="player-over-text">scroll down for more</h1>
+                        </div>
+                        </div>
+                    </Animator>
+                </ScrollPage>
+                </main>
+                <main class="albumView">
+                <ScrollPage id="scrollsection-3">
+                    <Animator>
+                        <div id="section-3">
+                        <div class="player-over-text-wrap">
+                            <h1 class="player-over-text">"Closest Thing to God in the Flesh" (Music Video - 2021)</h1>
+                        </div>
+                        <div class="react-player-wrapper">
+                            <ReactPlayer
+                                class="react-player"
+                                url="https://youtu.be/05FIFwcGhbI"
+                                controls
+                            />
+                        </div>
+                        <div class="under-title">
+                            <h1 class="under-text">click on gas mask to listen to "War!" (Album - 2021)</h1>
+                        </div>
+                        <img id="mask" class="mx-auto d-block" src={mask} 
+                            onClick={(e) => {
+                                e.preventDefault();
+                                window.location.href='http://google.com';
+                            }}
+                            alt=""></img>
+                        </div>
+                    </Animator>
+                </ScrollPage>
+                </main>
+            </ScrollContainer> */
         );
     }
 }
