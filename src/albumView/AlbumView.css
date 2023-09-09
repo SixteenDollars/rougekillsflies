@@ -353,6 +353,17 @@
   cursor: pointer;
 }
 
+#yt {
+  width: 5.25rem;
+  opacity: 0.5;
+}
+
+#yt:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+
 #tidalwar {
   width: 5.25rem;
   opacity: 0.5;
