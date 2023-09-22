@@ -338,6 +338,12 @@
   opacity: 0.5;
 }
 
+@media screen and (max-width: 768px) {    
+  #applewar {
+    height: 1.85rem;
+  }
+}
+
 #applewar:hover {
   opacity: 1;
   cursor: pointer;

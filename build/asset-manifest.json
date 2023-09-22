@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.0278bfb9.chunk.css",
-    "main.js": "/static/js/main.e252c007.chunk.js",
-    "main.js.map": "/static/js/main.e252c007.chunk.js.map",
+    "main.css": "/static/css/main.4dec59f5.chunk.css",
+    "main.js": "/static/js/main.7baee881.chunk.js",
+    "main.js.map": "/static/js/main.7baee881.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.48beaffc.js",
     "runtime~main.js.map": "/static/js/runtime~main.48beaffc.js.map",
     "static/css/2.22a7d4ef.chunk.css": "/static/css/2.22a7d4ef.chunk.css",
-    "static/js/2.25c836c2.chunk.js": "/static/js/2.25c836c2.chunk.js",
-    "static/js/2.25c836c2.chunk.js.map": "/static/js/2.25c836c2.chunk.js.map",
+    "static/js/2.3afe6799.chunk.js": "/static/js/2.3afe6799.chunk.js",
+    "static/js/2.3afe6799.chunk.js.map": "/static/js/2.3afe6799.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e3e6b28125111dd4f4036316e9467955.js": "/precache-manifest.e3e6b28125111dd4f4036316e9467955.js",
+    "precache-manifest.38b6ff463137e6b8a600a3c4780f0a3a.js": "/precache-manifest.38b6ff463137e6b8a600a3c4780f0a3a.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.22a7d4ef.chunk.css.map": "/static/css/2.22a7d4ef.chunk.css.map",
-    "static/css/main.0278bfb9.chunk.css.map": "/static/css/main.0278bfb9.chunk.css.map",
+    "static/css/main.4dec59f5.chunk.css.map": "/static/css/main.4dec59f5.chunk.css.map",
     "static/media/Frame 4.png": "/static/media/Frame 4.9c38936c.png",
     "static/media/AlbumView.css": "/static/media/Myfont2-Regular.a0d471e7.ttf",
     "static/media/OTHER.png": "/static/media/OTHER.6a97d96b.png",
@@ -26,6 +26,7 @@
     "static/media/nailbombtease.png": "/static/media/nailbombtease.603a1c9a.png",
     "static/media/poly.glb": "/static/media/poly.a83352f1.glb",
     "static/media/spotifyblack.png": "/static/media/spotifyblack.e49736dd.png",
-    "static/media/theq.png": "/static/media/theq.b521fa40.png"
+    "static/media/theq.png": "/static/media/theq.b521fa40.png",
+    "static/media/yt.png": "/static/media/yt.38bf6ff0.png"
   }
 }

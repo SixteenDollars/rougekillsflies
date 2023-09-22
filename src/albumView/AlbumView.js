@@ -19,109 +19,7 @@ const FadeUp = batch(Fade(), Move(), Sticky());
 class AlbumView extends Component {
     render() {
         return (
-            // V1
-            <ScrollContainer>
-            <main class="albumView">
-            <nav>
-                <a href="https://rougekillsflies.com/press"><h1 id="header">PRESS</h1></a>
-            </nav>
-            </main>
-            <main class="albumView">
-            <ScrollPage>
-                <Animator>
-                    <div id="section-2">
-                    <div class="player-over-text-wrap">
-                        <h1 class="player-over-text">"How To Make A Nail Bomb" (Single - 2023)</h1>
-                    </div>
-                    <img id="nailbombart" class="mx-auto d-block" src={NailBombArt} alt=""></img>
-                    <div class="under-title">
-                        <h1 class="under-text">click on your streaming service</h1>
-                    </div>
-                    <div id="dsprow" class="row justify-content-center align-items-center">
-                        <div class="col-sm-1 col-md-1 col-2">
-                            <a href="https://music.apple.com/us/album/how-to-make-a-nail-bomb/1704406232?i=1704406233">
-                                <img class="img-fluid" id="applewar" src={appleblack} alt=""></img>
-                            </a>
-                        </div>
-                        <div class="col-sm-1 col-md-1 col-2">
-                            <a href="https://open.spotify.com/track/2jCN2k8Dx83AeB8TEx8Xys?si=2b8c9d03f7b5439a">
-                                <img class="img-fluid" id="spotifywar" src={spotifyblack} alt=""></img>
-                            </a>
-                        </div>
-                        <div class="col-sm-1 col-md-1 col-2">
-                            <a href="https://music.youtube.com/watch?v=dSMUrW9LqvI">
-                                <div class="img-max">
-                                    <img class="img-fluid" id="yt" src={yt} alt=""></img>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    </div>
-                </Animator>
-            </ScrollPage>
-            </main>
-        </ScrollContainer>
-
-/*         // V2
-        <ScrollContainer>
-        <main class="albumView">
-        <nav>
-            <a href="https://rougekillsflies.com/press"><h1 id="header">PRESS</h1></a>
-        </nav>
-        </main>
-        <main class="albumView">
-        <ScrollPage id="scrollsection-3">
-            <Animator>
-                <div id="section-3">
-                <div class="player-over-text-wrap">
-                    <h1 class="player-over-text">"Closest Thing to God in the Flesh" (Music Video - 2021)</h1>
-                </div>
-                <div class="react-player-wrapper">
-                    <ReactPlayer
-                        class="react-player"
-                        url="https://youtu.be/05FIFwcGhbI"
-                        controls
-                    />
-                </div>
-                <div class="under-title">
-                    <h1 class="under-text">click on your streaming service to listen</h1>
-                </div>
-                <div id="dsprow" class="row justify-content-center align-items-center">
-                    <div class="col-sm-1 col-md-1 col-2">
-                        <a href="https://music.apple.com/us/album/war/1658193494">
-                            <img class="img-fluid" id="applewar" src={appleblack} alt=""></img>
-                        </a>
-                    </div>
-                    <div class="col-sm-1 col-md-1 col-2">
-                        <a href="https://open.spotify.com/album/2IzE8WAuhm5AAj2xk4jKLe?si=CvlCDxjJRJOlxpoRCFX2OA">
-                            <img class="img-fluid" id="spotifywar" src={spotifyblack} alt=""></img>
-                        </a>
-                    </div>
-                    <div class="col-sm-1 col-md-1 col-2">
-                        <a href="https://listen.tidal.com/album/264649475">
-                            <div class="img-max">
-                                <img class="img-fluid" id="tidalwar" src={tidalblackcircle} alt=""></img>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-1 col-md-1 col-2">
-                        <a href="https://rougedied.bandcamp.com/album/war">
-                            <img class="img-fluid" id="bcwar" src={bcblack} alt=""></img>
-                        </a>
-                    </div>
-                    <div class="col-sm-1 col-md-1 col-2">
-                        <a href="https://album.link/i/1559758015">
-                            <img class="img-fluid" id="otherwar" src={linktree} alt=""></img>
-                        </a>
-                    </div>
-                </div>
-                </div>
-            </Animator>
-        </ScrollPage>
-        </main>
-    </ScrollContainer> */
-
-/*              // V3
+             // V3
             <ScrollContainer>
                 <main class="albumView">
                 <nav>
@@ -155,14 +53,14 @@ class AlbumView extends Component {
                             <button id="view-button" 
                             onClick={(e) => {
                                 e.preventDefault();
-                                window.location.href='http://google.com';
+                                window.location.href='https://rougekillsflies.com/nailbomb';
                             }}
                             slot="hotspot-0" 
                             data-position="0.0000m 0.20000m -0.3500m" 
                             data-normal="-0.4421014m 0.04410423m 0.8958802m" 
                             data-orbit="3.711166deg 92.3035deg 0.04335197m" 
                             data-target="-0.1879433m 0.1157161m -0.01563221m">
-                                <h1 class="viewer-text">How To Make A Nail Bomb (2023) - Single</h1>
+                                How To Make A Nail Bomb (2023) - Single
                             </button> 
                             <button id="view-button" 
                             onClick={(e) => {
@@ -210,30 +108,27 @@ class AlbumView extends Component {
                         </div>
                         <div id="dsprow" class="row justify-content-center align-items-center">
                             <div class="col-sm-1 col-md-1 col-2">
-                                <a href="https://music.apple.com/us/album/war/1658193494">
+                                <a href="https://music.apple.com/us/album/how-to-make-a-nail-bomb/1704406232?i=1704406233">
                                     <img class="img-fluid" id="applewar" src={appleblack} alt=""></img>
                                 </a>
                             </div>
                             <div class="col-sm-1 col-md-1 col-2">
-                                <a href="https://open.spotify.com/album/2IzE8WAuhm5AAj2xk4jKLe?si=CvlCDxjJRJOlxpoRCFX2OA">
+                                <a href="https://open.spotify.com/track/2jCN2k8Dx83AeB8TEx8Xys?si=2b8c9d03f7b5439a">
                                     <img class="img-fluid" id="spotifywar" src={spotifyblack} alt=""></img>
                                 </a>
                             </div>
                             <div class="col-sm-1 col-md-1 col-2">
-                                <a href="https://listen.tidal.com/album/264649475">
+                            <a href="https://music.youtube.com/watch?v=dSMUrW9LqvI">
+                                <div class="img-max">
+                                    <img class="img-fluid" id="yt" src={yt} alt=""></img>
+                                </div>
+                            </a>
+                            </div>
+                            <div class="col-sm-1 col-md-1 col-2">
+                                <a href="https://tidal.com/browse/track/312880213">
                                     <div class="img-max">
                                         <img class="img-fluid" id="tidalwar" src={tidalblackcircle} alt=""></img>
                                     </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-1 col-md-1 col-2">
-                                <a href="https://rougedied.bandcamp.com/album/war">
-                                    <img class="img-fluid" id="bcwar" src={bcblack} alt=""></img>
-                                </a>
-                            </div>
-                            <div class="col-sm-1 col-md-1 col-2">
-                                <a href="https://album.link/i/1559758015">
-                                    <img class="img-fluid" id="otherwar" src={linktree} alt=""></img>
                                 </a>
                             </div>
                         </div>
@@ -271,7 +166,7 @@ class AlbumView extends Component {
                     </Animator>
                 </ScrollPage>
                 </main>
-            </ScrollContainer> */
+            </ScrollContainer>
         );
     }
 }
