@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.6d62ebd7.chunk.css",
+    "main.css": "/static/css/main.cfbebd24.chunk.css",
     "main.js": "/static/js/main.ecd0e344.chunk.js",
     "main.js.map": "/static/js/main.ecd0e344.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.48beaffc.js",
@@ -9,10 +9,10 @@
     "static/js/2.35b68694.chunk.js": "/static/js/2.35b68694.chunk.js",
     "static/js/2.35b68694.chunk.js.map": "/static/js/2.35b68694.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.016984a29120e3f38937ff1118307510.js": "/precache-manifest.016984a29120e3f38937ff1118307510.js",
+    "precache-manifest.c7291480dcd275e418a9a0be82652bd4.js": "/precache-manifest.c7291480dcd275e418a9a0be82652bd4.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.22a7d4ef.chunk.css.map": "/static/css/2.22a7d4ef.chunk.css.map",
-    "static/css/main.6d62ebd7.chunk.css.map": "/static/css/main.6d62ebd7.chunk.css.map",
+    "static/css/main.cfbebd24.chunk.css.map": "/static/css/main.cfbebd24.chunk.css.map",
     "static/media/Frame 4.png": "/static/media/Frame 4.9c38936c.png",
     "static/media/AlbumView.css": "/static/media/Myfont2-Regular.a0d471e7.ttf",
     "static/media/OTHER.png": "/static/media/OTHER.6a97d96b.png",
