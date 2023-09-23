@@ -159,7 +159,7 @@ class AlbumView extends Component {
                         <img id="mask" class="mx-auto d-block" src={mask} 
                             onClick={(e) => {
                                 e.preventDefault();
-                                window.location.href='http://google.com';
+                                window.location.href='https://album.link/i/1559758015';
                             }}
                             alt=""></img>
                         </div>
