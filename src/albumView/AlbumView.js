@@ -77,7 +77,7 @@ class AlbumView extends Component {
                             <button id="view-button" 
                             onClick={(e) => {
                                 e.preventDefault();
-                                window.location.href='https://album.link/i/1559758015';
+                                window.location.href='https://youtu.be/05FIFwcGhbI';
                             }}
                             slot="hotspot-2" 
                             data-position="-0.2500m -0.1500m -0.1398m" 
