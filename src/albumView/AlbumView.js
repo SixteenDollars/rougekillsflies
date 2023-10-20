@@ -8,10 +8,10 @@ import tidalblackcircle from '../resources/images/tidalblackcircle.png'
 import yt from '../resources/images/yt.png'
 import bcblack from '../resources/images/bcblack.png'
 import mask from '../resources/images/Frame 4.png'
-import linktree from '../resources/images/OTHER.png'
+import scblack from '../resources/images/scblack.png'
 import vr from '../resources/images/poly.glb'
 import NailBombArt from '../resources/images/nailbombart.jpeg'
-import NailBombTease from '../resources/images/nailbombtease.png'
+import hell718 from '../resources/images/Black.png'
 import { ScrollContainer, ScrollPage, Animator, Fade, MoveIn, MoveOut, ZoomIn, Sticky, StickyIn, StickyOut, FadeOut, Move, FadeIn, batch} from 'react-scroll-motion';
 
 const FadeUp = batch(Fade(), Move(), Sticky());
@@ -26,7 +26,70 @@ class AlbumView extends Component {
                     <a href="https://rougekillsflies.com/press"><h1 id="header">PRESS</h1></a>
                 </nav>
                 <ScrollPage>
-                    <Animator animation={FadeUp}>
+                    <Animator animation={batch(Fade())}>
+                     <div class="player-over-text-wrap">
+                            <h1 class="player-over-text">"718 Hell"</h1>
+                        </div>
+                        <img id="nailbombart" class="mx-auto d-block" src={hell718} alt=""></img>
+{/*                         <div class="react-player-wrapper">
+                            <ReactPlayer
+                                class="react-player"
+                                url="https://youtu.be/w08YPOkM3ww"
+                                controls
+                            />
+                        </div> */}
+                        <div class="under-title">
+                            <h1 class="under-text">click on your streaming service</h1>
+                        </div>
+                        <div id="dsprow2" class="row justify-content-center align-items-center">
+                            <div class="col-sm-1 col-md-1 col-2">
+                                <a href="https://music.apple.com/us/album/718-hell/1708770531?i=1708770532">
+                                    <img class="img-fluid" id="applewar" src={appleblack} alt=""></img>
+                                </a>
+                            </div>
+                            <div class="col-sm-1 col-md-1 col-2">
+                                <a href="https://open.spotify.com/track/7Lnl7bQzGorj951DhjEfOm?si=1c15c4c6ba0e4dbd">
+                                    <img class="img-fluid" id="spotifywar" src={spotifyblack} alt=""></img>
+                                </a>
+                            </div>
+{/*                             <div class="col-sm-1 col-md-1 col-2">
+                                <a href="https://tidal.com/browse/track/312880213">
+                                    <div class="img-max">
+                                        <img class="img-fluid" id="tidalwar" src={tidalblackcircle} alt=""></img>
+                                    </div>
+                                </a>
+                            </div> */}
+                            <div class="col-sm-1 col-md-1 col-2">
+                            <a href="https://rougekillsflies.bandcamp.com/track/718-hell">
+                                <div class="img-max">
+                                    <img class="img-fluid" id="bcwar" src={bcblack} alt=""></img>
+                                </div>
+                            </a>
+                            </div>
+                            <div class="col-sm-1 col-md-1 col-2">
+                            <a href="https://music.youtube.com/watch?v=f7OaoglwD9c&si=CLHQI5lR3v6dTX7f">
+                                <div class="img-max">
+                                    <img class="img-fluid" id="yt" src={yt} alt=""></img>
+                                </div>
+                            </a>
+                            </div>
+                            <div class="col-sm-1 col-md-1 col-2">
+                            <a href="https://on.soundcloud.com/iuoJX">
+                                <div class="img-max">
+                                    <img class="img-fluid" id="scwar" src={scblack} alt=""></img>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="player-over-text-wrap">
+                            <h1 class="player-over-text">scroll down for more</h1>
+                        </div>
+                    </Animator>
+                </ScrollPage>
+                </main>
+                <main class="albumView">
+                <ScrollPage>
+                    <Animator animation={batch(Fade())}>
                         <div id="section-1">
                         <div class="album-title">
                             <h1 class="album-text">"War!"</h1>
