@@ -27,19 +27,15 @@ class AlbumView extends Component {
                 </nav>
                 <ScrollPage>
                     <Animator animation={batch(Fade())}>
-                     <div class="player-over-text-wrap">
-                            <h1 class="player-over-text">"718 Hell"</h1>
-                        </div>
-                        <img id="nailbombart" class="mx-auto d-block" src={hell718} alt=""></img>
-{/*                         <div class="react-player-wrapper">
+                        <div class="react-player-wrapper">
                             <ReactPlayer
                                 class="react-player"
                                 url="https://youtu.be/w08YPOkM3ww"
                                 controls
                             />
-                        </div> */}
+                        </div>
                         <div class="under-title">
-                            <h1 class="under-text">click on your streaming service</h1>
+                            <h1 class="under-text">Stream "718 Hell" (click on your service)</h1>
                         </div>
                         <div id="dsprow2" class="row justify-content-center align-items-center">
                             <div class="col-sm-1 col-md-1 col-2">
