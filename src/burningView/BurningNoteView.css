@@ -1,0 +1,18 @@
+.burningNoteView {
+    background-color: rgb(1, 0, 1);
+    width: 100vw;
+    min-height: 100vh;
+}
+
+#burningnote-container {
+    display: flex;
+    z-index: 1000;
+    inline-size: 1500px;
+    padding-left: 10%;
+  }
+
+#burningnote-text {
+    margin-top: 75px;
+    color: rgb(253, 0, 0);
+    font: 15px Courier;
+}

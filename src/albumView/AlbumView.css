@@ -43,6 +43,109 @@
 
 /* Text */
 
+.top-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.top-text {
+  font-family: 'Myfont-Regular', serif;
+  font-size: 2rem;
+  font-style: italic;
+  color: white;
+}
+
+@media screen and (min-width: 414px) and (max-width: 767px) {
+  .top-text {
+    font-size: 2.25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {    
+  .top-text {
+    font-size: 2.25rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .top-text {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .top-text {
+    font-size: 3.5rem;
+  }
+}
+
+.burning-container {
+  margin-top: 8.5vh;
+  margin-bottom: 40vh;
+}
+
+@media screen and (min-width: 414px) and (max-width: 767px) {
+  .burning-container {
+    margin-bottom: 40vh;
+  }
+}
+
+@media screen and (max-width: 768px) {    
+  .burning-container {
+    margin-bottom: 25vh;
+  }
+}
+
+.burning-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#burning-text  {
+  list-style-type: none;
+  color: 	rgb(253, 0, 0);
+  font: 15px Courier;
+  margin-bottom: 25px;
+}
+
+#burning-text:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  margin-top: -5px;
+  margin-left: -5px;
+}
+
+@media screen and (min-width: 414px) and (max-width: 767px) {
+  #burning-text {
+    font-size: .95rem;
+  }
+}
+
+@media screen and (max-width: 768px) {    
+  #burning-text {
+    font-size: .90rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #burning-text {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  #burning-text {
+    font-size: .95rem;
+  }
+}
+
 .album-title {
   display: flex;
   flex-direction: column;
@@ -141,14 +244,18 @@
   margin-bottom: 2rem;
 }
 
-/* .player-text-1 {
-  font-family: 'Myfont-Regular', serif;
-  font-size: 1.5rem;
-  color: white;
-  margin-top: .5rem;
-  margin-bottom: 2rem;
+#album-text  {
+  list-style-type: none;
+  color: 	rgb(253, 0, 0);
+  font: 15px Courier;
 }
- */
+
+#album-text :hover {
+  opacity: 0.5;
+  cursor: pointer;
+  margin-top: -5px;
+  margin-left: 5px;
+}
 
 
 

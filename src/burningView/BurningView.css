@@ -1,0 +1,47 @@
+  .burningView {
+    width: 100vw;
+    min-height: 100vh;
+    background-color:rgb(1, 0, 1);
+  }  
+
+  #burningcredits-top-text  {
+    list-style-type: none;
+    color: 	rgb(253, 0, 0);
+    font: 15px Courier;
+    padding-bottom: 50px;
+    margin-top: 75px;
+  }
+
+  #burningcredits-container {
+    display: flex;
+    z-index: 1000;
+    inline-size: 1500px;
+    padding-left: 10%;
+  }
+  
+  #burningcredits-text .active {
+    display: flex;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  
+  #burningcredits-text  {
+    list-style-type: none;
+    color: 	rgb(253, 0, 0);
+    font: 15px Courier;
+  }
+  
+  #burningcredits-dot  {
+    list-style-type: none;
+    color: 	rgb(253, 0, 0);
+    font: 15px Courier;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+  }
+  
+  #burningcredits-text :hover {
+    opacity: 0.5;
+    cursor: pointer;
+    margin-top: -5px;
+    margin-left: 5px;
+  }
