@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.d90f5259.css",
+    "main.css": "/static/css/main.7062018d.css",
     "main.js": "/static/js/main.39924e29.js",
     "static/media/ghostsart.png": "/static/media/ghostsart.edfeb2772fef9d7b637d.png",
     "static/media/poly.glb": "/static/media/poly.99ee831d1de41509ff40.glb",
@@ -18,11 +18,11 @@
     "static/media/Myfont2-Regular.ttf": "/static/media/Myfont2-Regular.6df6b14bf13f7922b9ee.ttf",
     "static/media/appleblack.png": "/static/media/appleblack.7e2d2b5889f6f951ed11.png",
     "index.html": "/index.html",
-    "main.d90f5259.css.map": "/static/css/main.d90f5259.css.map",
+    "main.7062018d.css.map": "/static/css/main.7062018d.css.map",
     "main.39924e29.js.map": "/static/js/main.39924e29.js.map"
   },
   "entrypoints": [
-    "static/css/main.d90f5259.css",
+    "static/css/main.7062018d.css",
     "static/js/main.39924e29.js"
   ]
 }
