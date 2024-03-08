@@ -409,7 +409,7 @@
 @media screen and (max-width: 768px) {    
   #nailbombart {
     display: block;
-    width: 15rem;
+    width: 20rem;
   }
 }
 
@@ -438,6 +438,13 @@
 #dsprow {
   padding-bottom: 2rem;
 }
+
+@media screen and (max-width: 768px) {    
+  #dsprow {
+    padding-bottom: 10rem;
+  }
+}
+
 
 #applewar {
   width: 5.5rem;

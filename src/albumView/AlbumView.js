@@ -11,6 +11,7 @@ import mask from '../resources/images/Frame 4.png'
 import scblack from '../resources/images/scblack.png'
 import vr from '../resources/images/poly.glb'
 import NailBombArt from '../resources/images/nailbombart.jpeg'
+import GhostsArt from '../resources/images/ghostsart.png'
 import { ScrollContainer, ScrollPage, Animator, Fade, MoveIn, MoveOut, ZoomIn, Sticky, StickyIn, StickyOut, FadeOut, Move, FadeIn, batch } from 'react-scroll-motion';
 
 const FadeUp = batch(Fade(), Move(), Sticky());
@@ -25,40 +26,43 @@ class AlbumView extends Component {
                     </nav>
                     <ScrollPage>
                         <Animator animation={batch(Fade())}>
-                            {/*                             <div class="top-title">
-                                <h1 class="top-text">THE_BURNING (LP - 2024)</h1>
-                            </div> */}
-                            <div class="top-title">
-                                <h1 class="top-text">THe_buRNiNG (LP - 2024)</h1>
-                            </div>
-                            <div class="burning-container">
-                                <div class="burning-title" onClick={(e) => {
-                                    e.preventDefault();
-                                    window.location.href = 'https://album.link/i/1559758015';
-                                }}>
-                                    <h1 id="burning-text">CLICK HERE TO BUY CD VERSION 1</h1>
+                        <div id="section-2">
+                                <div class="player-over-text-wrap">
+                                    <h1 class="player-over-text">"THE GhOSTS AIN'T ReAL" (Single - 2024)</h1>
                                 </div>
-                                <div class="burning-title" onClick={(e) => {
-                                    e.preventDefault();
-                                    window.location.href = 'https://album.link/i/1559758015';
-                                }}>
-                                    <h1 id="burning-text">CLICK HERE TO LISTEN ON YOUTUBE</h1>
+                                <img id="nailbombart" class="mx-auto d-block" src={GhostsArt} alt=""></img>
+                                <div class="under-title">
+                                    <h1 class="under-text">click on your streaming service below</h1>
                                 </div>
-                                <div class="burning-title">
-                                    <h1 id="burning-text" onClick={(e) => {
-                                        e.preventDefault();
-                                        window.location.href = 'https://rougekillsflies.com/burningcredits';
-                                    }}>CLICK HERE TO VIEW CREDITS</h1>
+                                <div id="dsprow" class="row justify-content-center align-items-center">
+                                    <div class="col-sm-1 col-md-1 col-2">
+                                        <a href="https://music.apple.com/us/album/the-ghosts-aint-real-single/1731572556">
+                                            <img class="img-fluid" id="applewar" src={appleblack} alt=""></img>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-1 col-md-1 col-2">
+                                        <a href="https://open.spotify.com/track/5uITFqV9mIGiv4u1Iy7s3B?si=b4cf6608e12f40e1">
+                                            <img class="img-fluid" id="spotifywar" src={spotifyblack} alt=""></img>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-1 col-md-1 col-2">
+                                        <a href="https://music.youtube.com/watch?v=ulCl0Xa2AP8">
+                                            <div class="img-max">
+                                                <img class="img-fluid" id="yt" src={yt} alt=""></img>
+                                            </div>
+                                        </a>
+                                    </div>
+{/*                                     <div class="col-sm-1 col-md-1 col-2">
+                                        <a href="https://tidal.com/browse/track/312880213">
+                                            <div class="img-max">
+                                                <img class="img-fluid" id="tidalwar" src={tidalblackcircle} alt=""></img>
+                                            </div>
+                                        </a>
+                                    </div> */}
                                 </div>
-                                <div class="burning-title">
-                                    <h1 id="burning-text" onClick={(e) => {
-                                        e.preventDefault();
-                                        window.location.href = 'https://rougekillsflies.com/burningnote';
-                                    }}>CLICK HERE TO READ NOTE</h1>
+                                <div class="player-over-text-wrap">
+                                    <h1 class="player-over-text">scroll down for more</h1>
                                 </div>
-                            </div>
-                            <div class="player-over-text-wrap">
-                                <h1 class="player-over-text">scroll down for more</h1>
                             </div>
                         </Animator>
                     </ScrollPage>
@@ -74,7 +78,7 @@ class AlbumView extends Component {
                                 />
                             </div>
                             <div class="under-title">
-                                <h1 class="under-text">Stream "718 Hell" (click on your service)</h1>
+                                <h1 class="under-text">Stream "718 Hell" (click on your service below)</h1>
                             </div>
                             <div id="dsprow2" class="row justify-content-center align-items-center">
                                 <div class="col-sm-1 col-md-1 col-2">
@@ -202,7 +206,7 @@ class AlbumView extends Component {
                                 </div>
                                 <img id="nailbombart" class="mx-auto d-block" src={NailBombArt} alt=""></img>
                                 <div class="under-title">
-                                    <h1 class="under-text">click on your streaming service</h1>
+                                    <h1 class="under-text">click on your streaming service below</h1>
                                 </div>
                                 <div id="dsprow" class="row justify-content-center align-items-center">
                                     <div class="col-sm-1 col-md-1 col-2">
@@ -252,7 +256,7 @@ class AlbumView extends Component {
                                     />
                                 </div>
                                 <div class="under-title">
-                                    <h1 class="under-text">click on gas mask to listen to "War!" (Album - 2021)</h1>
+                                    <h1 class="under-text">click on gas mask to listen to "War!" (Mixtape - 2021)</h1>
                                 </div>
                                 <img id="mask" class="mx-auto d-block" src={mask}
                                     onClick={(e) => {
