@@ -30,8 +30,14 @@ class AlbumView extends Component {
                                 <div class="player-over-text-wrap">
                                     <h1 class="player-over-text">"THE GhOSTS AIN'T ReAL" (Single - 2024)</h1>
                                 </div>
-                                <img id="nailbombart" class="mx-auto d-block" src={GhostsArt} alt=""></img>
-                                <div class="under-title">
+                                <div class="react-player-wrapper">
+                                <ReactPlayer
+                                    class="react-player"
+                                    url="https://youtu.be/QyMkMTK2s-Y"
+                                    controls
+                                />
+                                </div>                               
+                                 <div class="under-title">
                                     <h1 class="under-text">click on your streaming service below</h1>
                                 </div>
                                 <div id="dsprow" class="row justify-content-center align-items-center">
@@ -52,13 +58,13 @@ class AlbumView extends Component {
                                             </div>
                                         </a>
                                     </div>
-{/*                                     <div class="col-sm-1 col-md-1 col-2">
-                                        <a href="https://tidal.com/browse/track/312880213">
+                                    <div class="col-sm-1 col-md-1 col-2">
+                                        <a href="https://tidal.com/browse/track/346181154">
                                             <div class="img-max">
                                                 <img class="img-fluid" id="tidalwar" src={tidalblackcircle} alt=""></img>
                                             </div>
                                         </a>
-                                    </div> */}
+                                    </div>
                                 </div>
                                 <div class="player-over-text-wrap">
                                     <h1 class="player-over-text">scroll down for more</h1>

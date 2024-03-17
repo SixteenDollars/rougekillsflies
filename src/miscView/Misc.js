@@ -29,7 +29,7 @@ class Misc extends Component {
 					<div class="row">
 						<div class="col">
 							<Link to="/journal" style={{ textDecoration: 'none' }}>
-								<p class="text-left" id="head"> HALF OF HEAVEN IS A HOME </p>
+								<p class="text-left" id="head"> ROUGE KILLS FLIES </p>
 							</Link>
 						</div>
 					</div>
