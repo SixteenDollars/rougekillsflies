@@ -28,151 +28,53 @@ class AlbumView extends Component {
                             <div class="react-player-wrapper">
                                 <ReactPlayer
                                     class="react-player"
-                                    url="https://youtu.be/w08YPOkM3ww"
+                                    url="https://youtu.be/lrlnBAJF8Sg"
                                     controls
                                 />
-                            </div>
-                            <div class="under-title">
-                                <h1 class="under-text">Stream "718 Hell" (click on your service)</h1>
-                            </div>
-                            <div id="dsprow2" class="row justify-content-center align-items-center">
-                                <div class="col-sm-1 col-md-1 col-2">
-                                    <a href="https://music.apple.com/us/album/718-hell/1708770531?i=1708770532">
-                                        <img class="img-fluid" id="applewar" src={appleblack} alt=""></img>
-                                    </a>
-                                </div>
-                                <div class="col-sm-1 col-md-1 col-2">
-                                    <a href="https://open.spotify.com/track/7Lnl7bQzGorj951DhjEfOm?si=1c15c4c6ba0e4dbd">
-                                        <img class="img-fluid" id="spotifywar" src={spotifyblack} alt=""></img>
-                                    </a>
-                                </div>
-                                {/*                             <div class="col-sm-1 col-md-1 col-2">
-                                <a href="https://tidal.com/browse/track/312880213">
-                                    <div class="img-max">
-                                        <img class="img-fluid" id="tidalwar" src={tidalblackcircle} alt=""></img>
-                                    </div>
-                                </a>
-                            </div> */}
-                                <div class="col-sm-1 col-md-1 col-2">
-                                    <a href="https://rougekillsflies.bandcamp.com/track/718-hell">
-                                        <div class="img-max">
-                                            <img class="img-fluid" id="bcwar" src={bcblack} alt=""></img>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-sm-1 col-md-1 col-2">
-                                    <a href="https://music.youtube.com/watch?v=f7OaoglwD9c&si=CLHQI5lR3v6dTX7f">
-                                        <div class="img-max">
-                                            <img class="img-fluid" id="yt" src={yt} alt=""></img>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-sm-1 col-md-1 col-2">
-                                    <a href="https://on.soundcloud.com/iuoJX">
-                                        <div class="img-max">
-                                            <img class="img-fluid" id="scwar" src={scblack} alt=""></img>
-                                        </div>
-                                    </a>
-                                </div>
                             </div>
                             <div class="player-over-text-wrap">
                                 <h1 class="player-over-text">scroll down for more</h1>
                             </div>
                         </Animator>
                     </ScrollPage>
-                    </main>
-                    <main class="albumView">
+                </main>
+                <main class="albumView">
                     <ScrollPage>
                         <Animator animation={batch(Fade())}>
                             <div class="react-player-wrapper">
                                 <ReactPlayer
                                     class="react-player"
-                                    url="https://youtu.be/w08YPOkM3ww"
+                                    url="https://www.youtube.com/watch?v=QyMkMTK2s-Y"
                                     controls
                                 />
                             </div>
                             <div class="under-title">
-                                <h1 class="under-text">Stream "718 Hell" (click on your service)</h1>
+                                <h1 class="under-text">Stream "The Ghosts Ain't Real" (click on your service)</h1>
                             </div>
                             <div id="dsprow2" class="row justify-content-center align-items-center">
                                 <div class="col-sm-1 col-md-1 col-2">
-                                    <a href="https://music.apple.com/us/album/718-hell/1708770531?i=1708770532">
+                                    <a href="https://music.apple.com/us/album/the-ghosts-aint-real-single/1731572556">
                                         <img class="img-fluid" id="applewar" src={appleblack} alt=""></img>
                                     </a>
                                 </div>
                                 <div class="col-sm-1 col-md-1 col-2">
-                                    <a href="https://open.spotify.com/track/7Lnl7bQzGorj951DhjEfOm?si=1c15c4c6ba0e4dbd">
+                                    <a href="https://open.spotify.com/track/5uITFqV9mIGiv4u1Iy7s3B?si=b4cf6608e12f40e1">
                                         <img class="img-fluid" id="spotifywar" src={spotifyblack} alt=""></img>
                                     </a>
                                 </div>
-                                {/*                             <div class="col-sm-1 col-md-1 col-2">
-                                <a href="https://tidal.com/browse/track/312880213">
-                                    <div class="img-max">
-                                        <img class="img-fluid" id="tidalwar" src={tidalblackcircle} alt=""></img>
-                                    </div>
-                                </a>
-                            </div> */}
                                 <div class="col-sm-1 col-md-1 col-2">
-                                    <a href="https://rougekillsflies.bandcamp.com/track/718-hell">
-                                        <div class="img-max">
-                                            <img class="img-fluid" id="bcwar" src={bcblack} alt=""></img>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-sm-1 col-md-1 col-2">
-                                    <a href="https://music.youtube.com/watch?v=f7OaoglwD9c&si=CLHQI5lR3v6dTX7f">
+                                    <a href="https://music.youtube.com/watch?v=ulCl0Xa2AP8">
                                         <div class="img-max">
                                             <img class="img-fluid" id="yt" src={yt} alt=""></img>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="col-sm-1 col-md-1 col-2">
-                                    <a href="https://on.soundcloud.com/iuoJX">
+                                    <a href="https://tidal.com/browse/track/346181154">
                                         <div class="img-max">
-                                            <img class="img-fluid" id="scwar" src={scblack} alt=""></img>
+                                            <img class="img-fluid" id="tidalwar" src={tidalblackcircle} alt=""></img>
                                         </div>
                                     </a>
-                                </div>
-                            </div>
-                            <div class="player-over-text-wrap">
-                                <h1 class="player-over-text">scroll down for more</h1>
-                            </div>
-                        </Animator>
-                    </ScrollPage>
-                    </main>
-                    <main class="albumView">
-                    <ScrollPage>
-                        <Animator animation={batch(Fade())}>
-                            {/*                             <div class="top-title">
-                                <h1 class="top-text">THE_BURNING (LP - 2024)</h1>
-                            </div> */}
-                            <div class="top-title">
-                                <h1 class="top-text">THe_buRNiNG (LP - 2024)</h1>
-                            </div>
-                            <div class="burning-container">
-                                <div class="burning-title" onClick={(e) => {
-                                    e.preventDefault();
-                                    window.location.href = 'https://album.link/i/1559758015';
-                                }}>
-                                    <h1 id="burning-text">CLICK HERE TO BUY CD VERSION 1</h1>
-                                </div>
-                                <div class="burning-title" onClick={(e) => {
-                                    e.preventDefault();
-                                    window.location.href = 'https://album.link/i/1559758015';
-                                }}>
-                                    <h1 id="burning-text">CLICK HERE TO STREAM</h1>
-                                </div>
-                                <div class="burning-title">
-                                    <h1 id="burning-text" onClick={(e) => {
-                                        e.preventDefault();
-                                        window.location.href = 'https://rougekillsflies.com/burningcredits';
-                                    }}>CLICK HERE TO VIEW CREDITS</h1>
-                                </div>
-                                <div class="burning-title">
-                                    <h1 id="burning-text" onClick={(e) => {
-                                        e.preventDefault();
-                                        window.location.href = 'https://rougekillsflies.com/burninglyrics';
-                                    }}>CLICK HERE TO READ LYRICS</h1>
                                 </div>
                             </div>
                             <div class="player-over-text-wrap">
