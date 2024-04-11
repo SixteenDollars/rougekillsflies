@@ -1,0 +1,31 @@
+.burningCreditsView {
+    min-height: 100vh;
+    height: 100vh;
+    background-color: rgb(1, 0, 1);
+}
+
+#credits {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    width: 25rem;
+}
+
+@media screen and (max-width: 768px) {
+    #credits {
+      width: 23rem;
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    #credits {
+      width: 50rem;
+  
+    }
+  }
+  
+  @media screen and (min-width: 1025px) and (max-width: 1200px) {
+    #credits {
+      width: 50rem;
+    }
+  }
+  
