@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.7062018d.css",
-    "main.js": "/static/js/main.012a0071.js",
-    "static/media/ghostsart.png": "/static/media/ghostsart.edfeb2772fef9d7b637d.png",
+    "main.css": "/static/css/main.927347fd.css",
+    "main.js": "/static/js/main.462e8b8d.js",
     "static/media/poly.glb": "/static/media/poly.99ee831d1de41509ff40.glb",
     "static/media/nailbombart.jpeg": "/static/media/nailbombart.6d3f2fc59a21f7aa3ade.jpeg",
     "static/media/backseat.png": "/static/media/backseat.b51cbfb703df2dcc2c34.png",
     "static/media/theq.png": "/static/media/theq.ef95a467ed65ef2f2aae.png",
+    "static/media/credits.png": "/static/media/credits.3e9892ff05b914cf9034.png",
     "static/media/centralsauce.jpg": "/static/media/centralsauce.1540d9648e2f8e3877a7.jpg",
     "static/media/Frame 4.png": "/static/media/Frame 4.304b25a397194515ab55.png",
     "static/media/ig.png": "/static/media/ig.0b9168b18277896dc351.png",
@@ -18,11 +18,11 @@
     "static/media/Myfont2-Regular.ttf": "/static/media/Myfont2-Regular.6df6b14bf13f7922b9ee.ttf",
     "static/media/appleblack.png": "/static/media/appleblack.7e2d2b5889f6f951ed11.png",
     "index.html": "/index.html",
-    "main.7062018d.css.map": "/static/css/main.7062018d.css.map",
-    "main.012a0071.js.map": "/static/js/main.012a0071.js.map"
+    "main.927347fd.css.map": "/static/css/main.927347fd.css.map",
+    "main.462e8b8d.js.map": "/static/js/main.462e8b8d.js.map"
   },
   "entrypoints": [
-    "static/css/main.7062018d.css",
-    "static/js/main.012a0071.js"
+    "static/css/main.927347fd.css",
+    "static/js/main.462e8b8d.js"
   ]
 }
