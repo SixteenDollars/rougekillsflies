@@ -32,6 +32,35 @@ class AlbumView extends Component {
                                     controls
                                 />
                             </div>
+                            <div class="under-title">
+                                <h1 class="under-text">Stream "Don't Tell The Kid_s" (click on your service)</h1>
+                            </div>
+                            <div id="dsprow2" class="row justify-content-center align-items-center">
+                                <div class="col-sm-1 col-md-1 col-2">
+                                    <a href="https://music.apple.com/us/album/dont-tell-the-kid-s-single/1739906290">
+                                        <img class="img-fluid" id="applewar" src={appleblack} alt=""></img>
+                                    </a>
+                                </div>
+                                <div class="col-sm-1 col-md-1 col-2">
+                                    <a href="https://open.spotify.com/track/3DDtbYbaC7yDx7QDHsNNNw?si=737ac739524b4bf2">
+                                        <img class="img-fluid" id="spotifywar" src={spotifyblack} alt=""></img>
+                                    </a>
+                                </div>
+                                <div class="col-sm-1 col-md-1 col-2">
+                                    <a href="https://music.youtube.com/watch?v=2rGzYxfeL20&si=gExYHdbznwH5GzWr">
+                                        <div class="img-max">
+                                            <img class="img-fluid" id="yt" src={yt} alt=""></img>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-1 col-md-1 col-2">
+                                    <a href="https://tidal.com/browse/track/350434326">
+                                        <div class="img-max">
+                                            <img class="img-fluid" id="tidalwar" src={tidalblackcircle} alt=""></img>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                             <div class="player-over-text-wrap">
                                 <h1 class="player-over-text">scroll down for more</h1>
                             </div>
