@@ -86,6 +86,12 @@ class BurningLyricsView extends Component {
                             </div>
                             <div id="burninglyrics-text" onClick={(e) => {
                                 e.preventDefault();
+                                window.location.href = 'https://rougekillsflies.com/lyrics-15';
+                            }}>
+                                <p id="burninglyrics-text">DON’T KILL MY LIGH_T</p>
+                            </div>
+                            <div id="burninglyrics-text" onClick={(e) => {
+                                e.preventDefault();
                                 window.location.href = 'https://rougekillsflies.com/lyrics-13';
                             }}>
                                 <p id="burninglyrics-text">DON’T TELL THE KID_S</p>
@@ -97,12 +103,6 @@ class BurningLyricsView extends Component {
                                 <p id="burninglyrics-text">ENOUGH</p>
                             </div>
                             <br></br>
-                            <div id="burninglyrics-text" onClick={(e) => {
-                                e.preventDefault();
-                                window.location.href = 'https://rougekillsflies.com/lyrics-15';
-                            }}>
-                                <p id="burninglyrics-text">DON’T KILL MY LIGH_T (BONUS)</p>
-                            </div>
                             <div id="burninglyrics-text" onClick={(e) => {
                                 e.preventDefault();
                                 window.location.href = 'https://rougekillsflies.com/lyrics-16';

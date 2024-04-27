@@ -25,6 +25,53 @@ class AlbumView extends Component {
                     </nav>
                     <ScrollPage>
                         <Animator animation={batch(Fade())}>
+                            {/*                             <div class="top-title">
+                                <h1 class="top-text">THE_BURNING (LP - 2024)</h1>
+                            </div> */}
+                            <div class="top-title">
+                                <h1 class="top-text">THe_buRNiNG (LP - 2024)</h1>
+                            </div>
+                            <div class="burning-container">
+                                <div class="burning-title" onClick={(e) => {
+                                    e.preventDefault();
+                                    window.location.href = 'https://rougekillsflies.bandcamp.com/album/the-burning-2';
+                                }}>
+                                    <h1 id="burning-text">CLICK HERE TO BUY CD VERSION 1</h1>
+                                </div>
+                                <div class="burning-title" onClick={(e) => {
+                                    e.preventDefault();
+                                    window.location.href = 'https://youtu.be/hb3YF8wfXuU';
+                                }}>
+                                    <h1 id="burning-text">CLICK HERE TO LISTEN ON YOUTUBE</h1>
+                                </div>
+                                <div class="burning-title">
+                                    <h1 id="burning-text" onClick={(e) => {
+                                        e.preventDefault();
+                                        window.location.href = 'https://www.youtube.com/watch?v=w08YPOkM3ww&list=PLnCawuvrhQiU5100Foa_LS1RrEyNh7u5O';
+                                    }}>CLICK HERE TO WATCH MUSIC VIDEOS</h1>
+                                </div>
+                                <div class="burning-title">
+                                    <h1 id="burning-text" onClick={(e) => {
+                                        e.preventDefault();
+                                        window.location.href = 'https://rougekillsflies.com/burninglyrics';
+                                    }}>CLICK HERE TO READ LYRICS</h1>
+                                </div>
+                                <div class="burning-title">
+                                    <h1 id="burning-text" onClick={(e) => {
+                                        e.preventDefault();
+                                        window.location.href = 'https://rougekillsflies.com/burningcredits';
+                                    }}>CLICK HERE TO VIEW CREDITS</h1>
+                                </div>
+                            </div>
+                            <div class="player-over-text-wrap">
+                                <h1 class="player-over-text">scroll down for more</h1>
+                            </div>
+                        </Animator>
+                    </ScrollPage>
+                </main>
+                <main class="albumView">
+                    <ScrollPage>
+                        <Animator animation={batch(Fade())}>
                             <div class="react-player-wrapper">
                                 <ReactPlayer
                                     class="react-player"
