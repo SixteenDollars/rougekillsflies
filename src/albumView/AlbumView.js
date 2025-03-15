@@ -11,6 +11,10 @@ import mask from '../resources/images/Frame 4.png'
 import scblack from '../resources/images/scblack.png'
 import vr from '../resources/images/poly.glb'
 import NailBombArt from '../resources/images/nailbombart.jpeg'
+import ghostart from '../resources/images/ghostart.jpg'
+import fast from '../resources/images/fast.png'
+import ghostpurp from '../resources/images/ghostpurp.png'
+import unt from '../resources/images/unt.png'
 import { ScrollContainer, ScrollPage, Animator, Fade, MoveIn, MoveOut, ZoomIn, Sticky, StickyIn, StickyOut, FadeOut, Move, FadeIn, batch } from 'react-scroll-motion';
 
 const FadeUp = batch(Fade(), Move(), Sticky());
@@ -21,29 +25,29 @@ class AlbumView extends Component {
             <ScrollContainer>
                 <main class="albumView">
                     <nav>
-                        <a href="https://rougekillsflies.com/press"><h1 id="header">PRESS</h1></a>
+                        {/* <a href="https://rougekillsflies.com/press"><h1 id="header">PRESS</h1></a> */}
                     </nav>
                     <ScrollPage>
                         <Animator animation={batch(Fade())}>
-                            {/*                             <div class="top-title">
-                                <h1 class="top-text">THE_BURNING (LP - 2024)</h1>
-                            </div> */}
                             <div class="top-title">
-                                <h1 class="top-text">THe_buRNiNG (LP - 2024)</h1>
+                                <h1 class="top-text">THe BuRNiNG (LP - 2024)</h1>
                             </div>
-                            <div class="burning-container">
+                         <div class="burning-container">
+                         <div class="react-player-wrapper">
+                                <ReactPlayer
+                                    class="react-player"
+                                    url="https://youtu.be/hb3YF8wfXuU"
+                                    controls
+                                />
+                            </div>
                                 <div class="burning-title" onClick={(e) => {
                                     e.preventDefault();
                                     window.location.href = 'https://rougekillsflies.bandcamp.com/album/the-burning-2';
                                 }}>
                                     <h1 id="burning-text">CLICK HERE TO BUY CD VERSION 1</h1>
                                 </div>
-                                <div class="burning-title" onClick={(e) => {
-                                    e.preventDefault();
-                                    window.location.href = 'https://youtu.be/hb3YF8wfXuU';
-                                }}>
-                                    <h1 id="burning-text">CLICK HERE TO LISTEN ON YOUTUBE</h1>
-                                </div>
+                                <br>
+                                </br>
                                 <div class="burning-title">
                                     <h1 id="burning-text" onClick={(e) => {
                                         e.preventDefault();
@@ -62,7 +66,7 @@ class AlbumView extends Component {
                                         window.location.href = 'https://rougekillsflies.com/burningcredits';
                                     }}>CLICK HERE TO VIEW CREDITS</h1>
                                 </div>
-                            </div>
+                            </div>   
                             <div class="player-over-text-wrap">
                                 <h1 class="player-over-text">scroll down for more</h1>
                             </div>

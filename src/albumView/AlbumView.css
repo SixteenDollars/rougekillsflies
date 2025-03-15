@@ -10,6 +10,17 @@
   src: local('Myfont2-Regular'), url(../resources/fonts/Myfont2-Regular.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'epkaisho';
+  src: url(../resources/fonts/epkaisho.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'epkaisho';
+  src: url(../resources/fonts/epmarugo.ttf) format('truetype');
+}
+
+
 /* Page View */
 
 #header {
@@ -83,20 +94,35 @@
   }
 }
 
+.ghosts-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.ghosts-text {
+  font-family: 'epkaisho', sans-serif;
+  font-size: 1rem;
+  color: white;
+  opacity: 80%;
+}
+
 .burning-container {
   margin-top: 8.5vh;
-  margin-bottom: 35vh;
+  margin-bottom: 10vh;
 }
 
 @media screen and (min-width: 414px) and (max-width: 767px) {
   .burning-container {
-    margin-bottom: 40vh;
+    margin-bottom: 10vh;
   }
 }
 
 @media screen and (max-width: 768px) {    
   .burning-container {
-    margin-bottom: 25vh;
+    margin-bottom: 10vh;
   }
 }
 
