@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.3ef1c44b.css",
-    "main.js": "/static/js/main.8c9628d3.js",
+    "main.css": "/static/css/main.adc49b95.css",
+    "main.js": "/static/js/main.4afcabce.js",
+    "static/media/DOG.png": "/static/media/DOG.31c759b14b4942516212.png",
     "static/media/poly.glb": "/static/media/poly.99ee831d1de41509ff40.glb",
     "static/media/epkaisho.ttf": "/static/media/epkaisho.a25a1f2cc461d295e1ce.ttf",
     "static/media/epmarugo.ttf": "/static/media/epmarugo.cafb299ed5565ef8a108.ttf",
     "static/media/nailbombart.jpeg": "/static/media/nailbombart.6d3f2fc59a21f7aa3ade.jpeg",
-    "static/media/lightspeed.png": "/static/media/lightspeed.623648104f42f2939434.png",
     "static/media/backseat.png": "/static/media/backseat.b51cbfb703df2dcc2c34.png",
     "static/media/theq.png": "/static/media/theq.ef95a467ed65ef2f2aae.png",
     "static/media/credits.png": "/static/media/credits.128aca09f3e04cd45800.png",
@@ -15,17 +15,18 @@
     "static/media/ig.png": "/static/media/ig.0b9168b18277896dc351.png",
     "static/media/flower.png": "/static/media/flower.007ce39caf4483f4aee4.png",
     "static/media/yt.png": "/static/media/yt.d2264ea3ab10836ae5de.png",
+    "static/media/lightspeed.jpg": "/static/media/lightspeed.525efe5bf682499872db.jpg",
     "static/media/spotifyblack.png": "/static/media/spotifyblack.a94ba792634c42d865fa.png",
     "static/media/bcblack.png": "/static/media/bcblack.56ffa386e1573a2fee26.png",
     "static/media/Myfont-Regular.ttf": "/static/media/Myfont-Regular.dbf2e41ca84bc74b3aca.ttf",
     "static/media/Myfont2-Regular.ttf": "/static/media/Myfont2-Regular.6df6b14bf13f7922b9ee.ttf",
     "static/media/appleblack.png": "/static/media/appleblack.7e2d2b5889f6f951ed11.png",
     "index.html": "/index.html",
-    "main.3ef1c44b.css.map": "/static/css/main.3ef1c44b.css.map",
-    "main.8c9628d3.js.map": "/static/js/main.8c9628d3.js.map"
+    "main.adc49b95.css.map": "/static/css/main.adc49b95.css.map",
+    "main.4afcabce.js.map": "/static/js/main.4afcabce.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ef1c44b.css",
-    "static/js/main.8c9628d3.js"
+    "static/css/main.adc49b95.css",
+    "static/js/main.4afcabce.js"
   ]
 }
