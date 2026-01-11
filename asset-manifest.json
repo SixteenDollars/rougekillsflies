@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.40f04b13.css",
-    "main.js": "/static/js/main.d9845ff9.js",
+    "main.js": "/static/js/main.d995404b.js",
     "static/media/SunGoBlind.mp4": "/static/media/SunGoBlind.909a9f48910a9b3f95be.mp4",
     "static/media/Lightspeed.mp4": "/static/media/Lightspeed.67e214b411e5fcea8433.mp4",
     "static/media/DOG.png": "/static/media/DOG.31c759b14b4942516212.png",
@@ -25,10 +25,10 @@
     "static/media/appleblack.png": "/static/media/appleblack.7e2d2b5889f6f951ed11.png",
     "index.html": "/index.html",
     "main.40f04b13.css.map": "/static/css/main.40f04b13.css.map",
-    "main.d9845ff9.js.map": "/static/js/main.d9845ff9.js.map"
+    "main.d995404b.js.map": "/static/js/main.d995404b.js.map"
   },
   "entrypoints": [
     "static/css/main.40f04b13.css",
-    "static/js/main.d9845ff9.js"
+    "static/js/main.d995404b.js"
   ]
 }
