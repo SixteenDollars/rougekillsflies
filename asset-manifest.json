@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.83f4cd99.css",
-    "main.js": "/static/js/main.c622acd4.js",
+    "main.css": "/static/css/main.a12e52b5.css",
+    "main.js": "/static/js/main.0e55ed50.js",
     "static/media/DOG.png": "/static/media/DOG.0496e39895b9f0167ef4.png",
     "static/media/SunGoBlind.mp4": "/static/media/SunGoBlind.909a9f48910a9b3f95be.mp4",
     "static/media/Lightspeed.mp4": "/static/media/Lightspeed.67e214b411e5fcea8433.mp4",
@@ -9,6 +9,8 @@
     "static/media/epkaisho.ttf": "/static/media/epkaisho.a25a1f2cc461d295e1ce.ttf",
     "static/media/epmarugo.ttf": "/static/media/epmarugo.cafb299ed5565ef8a108.ttf",
     "static/media/nailbombart.jpeg": "/static/media/nailbombart.6d3f2fc59a21f7aa3ade.jpeg",
+    "static/media/art_Nightmarez.jpg": "/static/media/art_Nightmarez.32507673e92dc686e39f.jpg",
+    "static/media/art_Lightspeeeed.jpg": "/static/media/art_Lightspeeeed.771e0ccace6f943be0d7.jpg",
     "static/media/backseat.png": "/static/media/backseat.b51cbfb703df2dcc2c34.png",
     "static/media/theq.png": "/static/media/theq.ef95a467ed65ef2f2aae.png",
     "static/media/credits.png": "/static/media/credits.128aca09f3e04cd45800.png",
@@ -17,18 +19,17 @@
     "static/media/ig.png": "/static/media/ig.0b9168b18277896dc351.png",
     "static/media/flower.png": "/static/media/flower.007ce39caf4483f4aee4.png",
     "static/media/yt.png": "/static/media/yt.d2264ea3ab10836ae5de.png",
-    "static/media/lightspeed.jpg": "/static/media/lightspeed.525efe5bf682499872db.jpg",
     "static/media/spotifyblack.png": "/static/media/spotifyblack.a94ba792634c42d865fa.png",
     "static/media/bcblack.png": "/static/media/bcblack.56ffa386e1573a2fee26.png",
     "static/media/Myfont-Regular.ttf": "/static/media/Myfont-Regular.dbf2e41ca84bc74b3aca.ttf",
     "static/media/Myfont2-Regular.ttf": "/static/media/Myfont2-Regular.6df6b14bf13f7922b9ee.ttf",
     "static/media/appleblack.png": "/static/media/appleblack.7e2d2b5889f6f951ed11.png",
     "index.html": "/index.html",
-    "main.83f4cd99.css.map": "/static/css/main.83f4cd99.css.map",
-    "main.c622acd4.js.map": "/static/js/main.c622acd4.js.map"
+    "main.a12e52b5.css.map": "/static/css/main.a12e52b5.css.map",
+    "main.0e55ed50.js.map": "/static/js/main.0e55ed50.js.map"
   },
   "entrypoints": [
-    "static/css/main.83f4cd99.css",
-    "static/js/main.c622acd4.js"
+    "static/css/main.a12e52b5.css",
+    "static/js/main.0e55ed50.js"
   ]
 }
