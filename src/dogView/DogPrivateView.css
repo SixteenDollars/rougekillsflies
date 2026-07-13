@@ -1,0 +1,251 @@
+#dog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 110vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Text block - upper left */
+.dogPrivateView p {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  margin: 0;
+  padding: 15px 20px;
+  color: black;
+  font: 20px Courier;
+  font-size: 18px;
+  z-index: 10;
+  border-radius: 8px;
+  opacity: 85%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+/* DOG title - italic and bigger */
+.dog-title {
+  display: block;
+  font-style: italic;
+  font-size: 32px !important;
+  font-weight: bold;
+}
+
+/* Carousel container - centered and responsive */
+.carousel-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-3%, -50%);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  z-index: 10;
+  max-width: 90vw;
+  max-height: 85vh;
+}
+
+/* Media display */
+.media-display {
+  width: 600px;
+  height: 650px;
+  max-width: calc(90vw - 140px);
+  max-height: calc(85vh - 40px);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.media-display iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Control visibility without unmounting */
+.media-display iframe.visible {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 1;
+}
+
+.media-display iframe.hidden {
+  opacity: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.carousel-btn {
+  background-color: transparent;
+  color: black;
+  border: none;
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  padding: 0;
+  line-height: 1;
+  flex-shrink: 0;
+  text-shadow: 2px 2px 4px rgba(76, 73, 73, 0.8);
+}
+
+.carousel-btn:hover {
+  color: rgba(255, 255, 255, 0.7);
+  transform: scale(1.2);
+}
+
+.carousel-btn:active {
+  transform: scale(0.95);
+}
+
+.media-display video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: black;
+}
+
+.media-display video.visible {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 1;
+}
+
+/* Tablet adjustments */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .dogPrivateView p {
+    font-size: 16px;
+    max-width: 350px;
+  }
+  
+  .dog-title {
+    font-size: 28px !important;
+  }
+  
+  .carousel-container {
+    max-height: 75vh;
+  }
+  
+  .media-display {
+    width: 500px;
+    height: 550px;
+    max-width: calc(85vw - 140px);
+    max-height: calc(75vh - 40px);
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  #dog {
+    width: 120vw;
+    height: 125vh;
+  }
+
+  .dogPrivateView p {
+    top: 50%;
+    left: 15px;
+    font-size: 12px;
+    padding: 10px 12px;
+    line-height: 1.4;
+    max-width: 180px;
+  }
+  
+  .dog-title {
+    font-size: 20px !important;
+    margin-bottom: 4px;
+  }
+  
+  .carousel-container {
+    top: 50%;
+    left: auto;
+    right: -2%;
+    transform: translateY(-85%);
+    gap: 8px;
+    max-width: 65vw;
+  }
+  
+  .media-display {
+    width: 400px;
+    height: 450px;
+    max-width: calc(60vw - 90px);
+    max-height: 70vh;
+  }
+  
+  .media-display iframe {
+    height: 575px;
+  }
+  
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    flex-shrink: 0;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .dogPrivateView p {
+    font-size: 15px;
+    padding: 10px 14px;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+  }
+  
+  .dog-title {
+    font-size: 26px !important;
+  }
+  
+  .carousel-container {
+    gap: 10px;
+    top: 58%;
+  }
+  
+  .media-display {
+    width: calc(100vw - 110px);
+    height: calc(60vh);
+    max-width: calc(95vw - 110px);
+    max-height: calc(60vh);
+  }
+  
+  .carousel-btn {
+    width: 42px;
+    height: 42px;
+    font-size: 26px;
+  }
+}
+
+/* Very small screens */
+@media (max-height: 700px) {
+  .dogPrivateView p {
+    font-size: 14px;
+    padding: 8px 12px;
+    top: 10px;
+  }
+  
+  .dog-title {
+    font-size: 24px !important;
+  }
+  
+  .carousel-container {
+    top: 57%;
+  }
+  
+  .media-display {
+    height: calc(57vh);
+    max-height: calc(57vh);
+  }
+}

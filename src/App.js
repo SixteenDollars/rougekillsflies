@@ -1,12 +1,11 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import AlbumView from './albumView/AlbumView'
-import WarView from './warView/WarView'
-import PressView from './pressView/PressView'
-import NailBombView from './nailBombView/NailBombView'
+import MuseumView from './museumView/MuseumView'
+import DogPrivateView from './dogView/DogPrivateView'
 import BurningCreditsView from './burningView/BurningCreditsView'
 import BurningLyricsView from './burningView/BurningLyricsView'
+import BurningManifesto from './burningView/BurningManifesto'
 import Track1LyricsView from './burningView/lyricsView/Track1LyricsView'
 import Track2LyricsView from './burningView/lyricsView/Track2LyricsView'
 import Track3LyricsView from './burningView/lyricsView/Track3LyricsView'
@@ -28,12 +27,11 @@ export default function App() {
 	return (
 		<BrowserRouter basename="/">
 			<Switch>
-				<Route exact path="/" component={AlbumView} />
-				<Route exact path="/war" component={WarView} />
-				<Route exact path="/press" component={PressView} />
-				<Route exact path="/nailbomb" component={NailBombView} />
+				<Route exact path="/" component={MuseumView} />
+				<Route exact path="/dog-private" component={DogPrivateView} />
 				<Route exact path="/burningcredits" component={BurningCreditsView} />
 				<Route exact path="/burninglyrics" component={BurningLyricsView} />
+				<Route exact path="/burningmanifesto" component={BurningManifesto} />
 				<Route exact path="/lyrics-1" component={Track1LyricsView} />
 				<Route exact path="/lyrics-2" component={Track2LyricsView} />
 				<Route exact path="/lyrics-3" component={Track3LyricsView} />
