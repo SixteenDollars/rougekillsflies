@@ -2,7 +2,6 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import MuseumView from './museumView/MuseumView'
-import DogPrivateView from './dogView/DogPrivateView'
 import BurningCreditsView from './burningView/BurningCreditsView'
 import BurningLyricsView from './burningView/BurningLyricsView'
 import BurningManifesto from './burningView/BurningManifesto'
@@ -28,7 +27,6 @@ export default function App() {
 		<BrowserRouter basename="/">
 			<Switch>
 				<Route exact path="/" component={MuseumView} />
-				<Route exact path="/dog-private" component={DogPrivateView} />
 				<Route exact path="/burningcredits" component={BurningCreditsView} />
 				<Route exact path="/burninglyrics" component={BurningLyricsView} />
 				<Route exact path="/burningmanifesto" component={BurningManifesto} />
