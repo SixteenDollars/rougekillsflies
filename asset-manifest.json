@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.ab3273d7.css",
+    "main.css": "/static/css/main.c41d9eca.css",
     "main.js": "/static/js/main.2eb2fe6a.js",
     "static/media/poly.glb": "/static/media/poly.99ee831d1de41509ff40.glb",
     "static/media/cover_BurningDeluxe.png": "/static/media/cover_BurningDeluxe.dead8d3dc45414aa4a26.png",
     "static/media/cover_War.png": "/static/media/cover_War.01f4c30da3509517bbbc.png",
     "static/media/cover_Burning.jpg": "/static/media/cover_Burning.a06d481047368ac697a1.jpg",
+    "static/media/epkaisho.ttf": "/static/media/epkaisho.a25a1f2cc461d295e1ce.ttf",
+    "static/media/epmarugo.ttf": "/static/media/epmarugo.cafb299ed5565ef8a108.ttf",
     "static/media/cover_WarAlt.jpeg": "/static/media/cover_WarAlt.6d3f2fc59a21f7aa3ade.jpeg",
     "static/media/cover_Nightmarez.jpg": "/static/media/cover_Nightmarez.24a64cd0f66d8efb998f.jpg",
     "static/media/cover_GoodBoy.jpg": "/static/media/cover_GoodBoy.37edf83d671aa1ee29ac.jpg",
     "static/media/cover_Lightspeeeed.jpg": "/static/media/cover_Lightspeeeed.009b7736a00d545f4320.jpg",
     "static/media/cover_NowIUnderstand.jpg": "/static/media/cover_NowIUnderstand.bd682d16485da3332d95.jpg",
     "static/media/credits.png": "/static/media/credits.128aca09f3e04cd45800.png",
+    "static/media/Myfont-Regular.ttf": "/static/media/Myfont-Regular.dbf2e41ca84bc74b3aca.ttf",
+    "static/media/Myfont2-Regular.ttf": "/static/media/Myfont2-Regular.6df6b14bf13f7922b9ee.ttf",
     "index.html": "/index.html",
-    "main.ab3273d7.css.map": "/static/css/main.ab3273d7.css.map",
+    "main.c41d9eca.css.map": "/static/css/main.c41d9eca.css.map",
     "main.2eb2fe6a.js.map": "/static/js/main.2eb2fe6a.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab3273d7.css",
+    "static/css/main.c41d9eca.css",
     "static/js/main.2eb2fe6a.js"
   ]
 }
