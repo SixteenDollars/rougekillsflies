@@ -1,43 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.9fcf5115.css",
-    "main.js": "/static/js/main.bf31e946.js",
-    "static/media/DOG.png": "/static/media/DOG.0496e39895b9f0167ef4.png",
-    "static/media/SunGoBlind.mp4": "/static/media/SunGoBlind.909a9f48910a9b3f95be.mp4",
-    "static/media/Lightspeed.mp4": "/static/media/Lightspeed.67e214b411e5fcea8433.mp4",
+    "main.css": "/static/css/main.ab3273d7.css",
+    "main.js": "/static/js/main.2eb2fe6a.js",
     "static/media/poly.glb": "/static/media/poly.99ee831d1de41509ff40.glb",
     "static/media/cover_BurningDeluxe.png": "/static/media/cover_BurningDeluxe.dead8d3dc45414aa4a26.png",
     "static/media/cover_War.png": "/static/media/cover_War.01f4c30da3509517bbbc.png",
     "static/media/cover_Burning.jpg": "/static/media/cover_Burning.a06d481047368ac697a1.jpg",
-    "static/media/epkaisho.ttf": "/static/media/epkaisho.a25a1f2cc461d295e1ce.ttf",
-    "static/media/epmarugo.ttf": "/static/media/epmarugo.cafb299ed5565ef8a108.ttf",
     "static/media/cover_WarAlt.jpeg": "/static/media/cover_WarAlt.6d3f2fc59a21f7aa3ade.jpeg",
-    "static/media/nailbombart.jpeg": "/static/media/nailbombart.6d3f2fc59a21f7aa3ade.jpeg",
     "static/media/cover_Nightmarez.jpg": "/static/media/cover_Nightmarez.24a64cd0f66d8efb998f.jpg",
-    "static/media/art_Nightmarez.jpg": "/static/media/art_Nightmarez.32507673e92dc686e39f.jpg",
     "static/media/cover_GoodBoy.jpg": "/static/media/cover_GoodBoy.37edf83d671aa1ee29ac.jpg",
     "static/media/cover_Lightspeeeed.jpg": "/static/media/cover_Lightspeeeed.009b7736a00d545f4320.jpg",
     "static/media/cover_NowIUnderstand.jpg": "/static/media/cover_NowIUnderstand.bd682d16485da3332d95.jpg",
-    "static/media/art_Lightspeeeed.jpg": "/static/media/art_Lightspeeeed.771e0ccace6f943be0d7.jpg",
-    "static/media/backseat.png": "/static/media/backseat.b51cbfb703df2dcc2c34.png",
-    "static/media/theq.png": "/static/media/theq.ef95a467ed65ef2f2aae.png",
     "static/media/credits.png": "/static/media/credits.128aca09f3e04cd45800.png",
-    "static/media/centralsauce.jpg": "/static/media/centralsauce.1540d9648e2f8e3877a7.jpg",
-    "static/media/Frame 4.png": "/static/media/Frame 4.304b25a397194515ab55.png",
-    "static/media/ig.png": "/static/media/ig.0b9168b18277896dc351.png",
-    "static/media/flower.png": "/static/media/flower.007ce39caf4483f4aee4.png",
-    "static/media/yt.png": "/static/media/yt.d2264ea3ab10836ae5de.png",
-    "static/media/spotifyblack.png": "/static/media/spotifyblack.a94ba792634c42d865fa.png",
-    "static/media/bcblack.png": "/static/media/bcblack.56ffa386e1573a2fee26.png",
-    "static/media/Myfont-Regular.ttf": "/static/media/Myfont-Regular.dbf2e41ca84bc74b3aca.ttf",
-    "static/media/Myfont2-Regular.ttf": "/static/media/Myfont2-Regular.6df6b14bf13f7922b9ee.ttf",
-    "static/media/appleblack.png": "/static/media/appleblack.7e2d2b5889f6f951ed11.png",
     "index.html": "/index.html",
-    "main.9fcf5115.css.map": "/static/css/main.9fcf5115.css.map",
-    "main.bf31e946.js.map": "/static/js/main.bf31e946.js.map"
+    "main.ab3273d7.css.map": "/static/css/main.ab3273d7.css.map",
+    "main.2eb2fe6a.js.map": "/static/js/main.2eb2fe6a.js.map"
   },
   "entrypoints": [
-    "static/css/main.9fcf5115.css",
-    "static/js/main.bf31e946.js"
+    "static/css/main.ab3273d7.css",
+    "static/js/main.2eb2fe6a.js"
   ]
 }
