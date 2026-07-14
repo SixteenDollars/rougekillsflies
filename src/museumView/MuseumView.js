@@ -201,7 +201,7 @@ class MuseumView extends Component {
                                             Cover art for the full-length album <strong><em>THE_BURNING</em></strong>.
                                             Oil paintings drawn and digitally edited by Yassmin Dehesh.
                                             Listen to the album {' '}
-                                            <a href="https://0909blank.com/burningcredits" target="_blank" rel="noopener noreferrer">here</a>. 
+                                            <a href="https://0909blank.com/burninglinks" target="_blank" rel="noopener noreferrer">here</a>. 
                                             {' '}
                                             <a href="https://0909blank.com/burningcredits" target="_blank" rel="noopener noreferrer">Credits</a>. 
                                             {' '}

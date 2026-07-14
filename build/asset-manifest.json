@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5967a25c.css",
-    "main.js": "/static/js/main.7272293e.js",
+    "main.js": "/static/js/main.1d6e61a4.js",
     "static/media/poly.glb": "/static/media/poly.99ee831d1de41509ff40.glb",
     "static/media/cover_BurningDeluxe.png": "/static/media/cover_BurningDeluxe.dead8d3dc45414aa4a26.png",
     "static/media/cover_War.png": "/static/media/cover_War.01f4c30da3509517bbbc.png",
@@ -17,10 +17,10 @@
     "static/media/Myfont2-Regular.ttf": "/static/media/Myfont2-Regular.6df6b14bf13f7922b9ee.ttf",
     "index.html": "/index.html",
     "main.5967a25c.css.map": "/static/css/main.5967a25c.css.map",
-    "main.7272293e.js.map": "/static/js/main.7272293e.js.map"
+    "main.1d6e61a4.js.map": "/static/js/main.1d6e61a4.js.map"
   },
   "entrypoints": [
     "static/css/main.5967a25c.css",
-    "static/js/main.7272293e.js"
+    "static/js/main.1d6e61a4.js"
   ]
 }
