@@ -12,9 +12,7 @@ import cover_Nightmarez from '../resources/images/cover_Nightmarez.jpg'
 import cover_GoodBoy from '../resources/images/cover_GoodBoy.jpg'
 import cover_NowIUnderstand from '../resources/images/cover_NowIUnderstand.jpg'
 
-import { ScrollContainer, ScrollPage, Animator, Fade, MoveIn, MoveOut, ZoomIn, Sticky, StickyIn, StickyOut, FadeOut, Move, FadeIn, batch } from 'react-scroll-motion';
-
-const FadeUp = batch(Fade(), Move(), Sticky());
+import { ScrollContainer, ScrollPage, Animator, FadeOut, FadeIn, batch } from 'react-scroll-motion';
 
 class MuseumView extends Component {
     constructor(props) {
@@ -35,8 +33,50 @@ class MuseumView extends Component {
             { url: 'https://youtu.be/rtAKsQ746fU', title: 'Lightspeeeeed' },
             { url: 'https://youtu.be/k7Vy4gPTyYE', title: 'Sun Go Blind [V1]' },
         ];
+
+        this.carouselRows = [];
+        this.registerCarouselRow = this.registerCarouselRow.bind(this);
+        this.centerCarouselRow = this.centerCarouselRow.bind(this);
+        this.centerAllCarouselRows = this.centerAllCarouselRows.bind(this);
+        this.handleCarouselImageLoad = this.handleCarouselImageLoad.bind(this);
     }
 
+    componentDidMount() {
+        window.addEventListener('resize', this.centerAllCarouselRows);
+        // Give the browser a tick to lay out images before centering.
+        setTimeout(this.centerAllCarouselRows, 50);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.centerAllCarouselRows);
+    }
+
+    registerCarouselRow(el) {
+        if (el && !this.carouselRows.includes(el)) {
+            this.carouselRows.push(el);
+        }
+    }
+
+    centerAllCarouselRows() {
+        if (window.innerWidth > 768) return;
+        this.carouselRows.forEach((row) => this.centerCarouselRow(row));
+    }
+
+    centerCarouselRow(row) {
+        if (!row || window.innerWidth > 768) return;
+        const images = Array.from(row.querySelectorAll('img.carousel-image'));
+        if (!images.length) return;
+        const middleIndex = Math.floor((images.length - 1) / 2);
+        const target = images[middleIndex];
+        if (!target) return;
+        const scrollLeft = target.offsetLeft - (row.clientWidth - target.clientWidth) / 2;
+        row.scrollTo({ left: Math.max(scrollLeft, 0), behavior: 'auto' });
+    }
+
+    handleCarouselImageLoad(e) {
+        const row = e.target.closest('.carousel-row');
+        this.centerCarouselRow(row);
+    }
     openLightbox(src, alt) {
         this.setState({ lightboxImage: src, lightboxAlt: alt });
     }
@@ -65,11 +105,11 @@ class MuseumView extends Component {
                         <ScrollPage>
                             <Animator animation={batch(FadeIn(0.5, 1), FadeOut(1, .25))}>
                                 <div class="media-block">
-                                    <div class="carousel-row">
-                                        <img class="carousel-image" src={cover_Lightspeeeed} alt="Lightspeeeed" href="https://0909blank.com/burningcredits" />
-                                        <img class="carousel-image" src={cover_Nightmarez} alt="Nightmarez" href="https://0909blank.com/burningcredits" />
-                                        <img class="carousel-image" src={cover_GoodBoy} alt="Good Boy" href="https://0909blank.com/burningcredits" />
-                                        <img class="carousel-image" src={cover_NowIUnderstand} alt="Now I Understand" href="https://0909blank.com/burningcredits" />
+                                    <div class="carousel-row" ref={this.registerCarouselRow}>
+                                        <img class="carousel-image" src={cover_Lightspeeeed} alt="Lightspeeeed" onClick={() => this.openLightbox(cover_Lightspeeeed, "Lightspeeeed")} onLoad={this.handleCarouselImageLoad} />
+                                        <img class="carousel-image" src={cover_Nightmarez} alt="Nightmarez" onClick={() => this.openLightbox(cover_Nightmarez, "Nightmarez")} onLoad={this.handleCarouselImageLoad} />
+                                        <img class="carousel-image" src={cover_GoodBoy} alt="Good Boy" onClick={() => this.openLightbox(cover_GoodBoy, "Good Boy")} onLoad={this.handleCarouselImageLoad} />
+                                        <img class="carousel-image" src={cover_NowIUnderstand} alt="Now I Understand" onClick={() => this.openLightbox(cover_NowIUnderstand, "Now I Understand")} onLoad={this.handleCarouselImageLoad} />
                                     </div>
                                     <div class="museum-label">
                                         <h3 class="label-title">
@@ -188,9 +228,9 @@ class MuseumView extends Component {
                         <ScrollPage>
                             <Animator animation={batch(FadeIn(0.5, 1), FadeOut(1, .25))}>
                                 <div class="media-block">
-                                    <div class="carousel-row">
-                                        <img class="carousel-image" src={cover_Burning} alt="Burning" onClick={() => this.openLightbox(cover_Burning, "Burning")} />
-                                        <img class="carousel-image" src={cover_BurningDeluxe} alt="BurningDeluxe" onClick={() => this.openLightbox(cover_BurningDeluxe, "BurningDeluxe")} />
+                                    <div class="carousel-row carousel-row-pair" ref={this.registerCarouselRow}>
+                                        <img class="carousel-image" src={cover_Burning} alt="Burning" onClick={() => this.openLightbox(cover_Burning, "Burning")} onLoad={this.handleCarouselImageLoad} />
+                                        <img class="carousel-image" src={cover_BurningDeluxe} alt="BurningDeluxe" onClick={() => this.openLightbox(cover_BurningDeluxe, "BurningDeluxe")} onLoad={this.handleCarouselImageLoad} />
                                     </div>
                                     <div class="museum-label">
                                         <h3 class="label-title">
@@ -201,9 +241,9 @@ class MuseumView extends Component {
                                             Cover art for the full-length album <strong><em>THE_BURNING</em></strong>.
                                             Oil paintings drawn and digitally edited by Yassmin Dehesh.
                                             Listen to the album {' '}
-                                            <a href="https://0909blank.com/burninglinks" target="_blank" rel="noopener noreferrer">here</a>. 
+                                            <a href="https://0909blank.com/burninglinks" target="_blank" rel="noopener noreferrer">here</a>.
                                             {' '}
-                                            <a href="https://0909blank.com/burningcredits" target="_blank" rel="noopener noreferrer">Credits</a>. 
+                                            <a href="https://0909blank.com/burningcredits" target="_blank" rel="noopener noreferrer">Credits</a>.
                                             {' '}
                                             <a href="https://0909blank.com/burningcompanions" target="_blank" rel="noopener noreferrer">Companions</a>. Click each image to enlarge.
                                             <br />
@@ -335,9 +375,9 @@ class MuseumView extends Component {
                         <ScrollPage>
                             <Animator animation={batch(FadeIn(0.75, 1), FadeOut(1, .75))}>
                                 <div class="media-block">
-                                    <div class="carousel-row">
-                                        <img class="carousel-image" src={cover_War} alt="Wat" onClick={() => this.openLightbox(cover_War, "War")} />
-                                        <img class="carousel-image" src={cover_WarAlt} alt="WarAlt" onClick={() => this.openLightbox(cover_WarAlt, "WarAlt")} />
+                                    <div class="carousel-row carousel-row-pair" ref={this.registerCarouselRow}>
+                                        <img class="carousel-image" src={cover_War} alt="Wat" onClick={() => this.openLightbox(cover_War, "War")} onLoad={this.handleCarouselImageLoad} />
+                                        <img class="carousel-image" src={cover_WarAlt} alt="WarAlt" onClick={() => this.openLightbox(cover_WarAlt, "WarAlt")} onLoad={this.handleCarouselImageLoad} />
                                     </div>
                                     <div class="museum-label">
                                         <h3 class="label-title">
@@ -349,7 +389,7 @@ class MuseumView extends Component {
                                             Designed, photographed, and digitally edited by Darien Eldridge (Left).
                                             Designed and digitally edited by boy blue (Right).
                                             Listen to the album {' '}
-                                            <a href="https://0909blank.com/warlinks" target="_blank" rel="noopener noreferrer">here</a>. 
+                                            <a href="https://0909blank.com/warlinks" target="_blank" rel="noopener noreferrer">here</a>.
                                             {' '}
                                             <a href="https://0909blank.com/warcompanions" target="_blank" rel="noopener noreferrer">Companions</a>. Click each image to enlarge.
                                             <br />

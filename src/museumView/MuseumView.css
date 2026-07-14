@@ -551,28 +551,28 @@
      instead of hard-cutting the outer images. */
 
   .carousel-row {
-    gap: 10px;
-    padding: 2rem 1.25rem;
+    gap: 14px;
+    padding: 2rem 1.5rem;
     justify-content: flex-start;
     overflow-x: auto;
     overflow-y: visible;
     flex-wrap: nowrap;
     -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x proximity;
-    scroll-padding: 0 1.25rem;
-    /* fade the edges so scrollable content isn't abruptly clipped */
+    scroll-snap-type: x mandatory;
+    /* fade the left/right edges so a peeking neighbor's outer
+       side blurs away instead of getting hard-cropped */
     -webkit-mask-image: linear-gradient(
       to right,
       transparent 0,
-      #000 24px,
-      #000 calc(100% - 24px),
+      #000 40px,
+      #000 calc(100% - 40px),
       transparent 100%
     );
     mask-image: linear-gradient(
       to right,
       transparent 0,
-      #000 24px,
-      #000 calc(100% - 24px),
+      #000 40px,
+      #000 calc(100% - 40px),
       transparent 100%
     );
     /* hide the scrollbar but keep it scrollable */
@@ -585,13 +585,30 @@
   }
 
   .carousel-image {
-    height: 180px;
+    height: 220px;
+    width: auto;
     scroll-snap-align: center;
+    scroll-snap-stop: always;
   }
 
   .carousel-row .carousel-image:hover,
   .carousel-row .carousel-image:active {
-    transform: scale(1.1);
+    transform: scale(1.05);
+  }
+
+  /* Two-image rows always show both images fully — no need to
+     scroll or fade the edges since nothing is cut off. */
+  .carousel-row-pair {
+    -webkit-mask-image: none;
+    mask-image: none;
+    justify-content: center;
+    overflow-x: visible;
+  }
+
+  .carousel-row-pair .carousel-image {
+    height: 200px;
+    width: calc(50% - 7px);
+    object-fit: cover;
   }
 
   /* Museum label text */
@@ -633,8 +650,9 @@
   /* AR model */
 
   #video-container model-viewer {
-    height: 45vh;
-    width: 45vh;
+    height: 65vh;
+    width: 85vw;
+    max-width: 500px;
   }
 
   #video-container {
@@ -751,12 +769,17 @@
   }
 
   .carousel-image {
+    height: 180px;
+  }
+
+  .carousel-row-pair .carousel-image {
     height: 150px;
   }
 
   #video-container model-viewer {
-    height: 38vh;
-    width: 38vh;
+    height: 58vh;
+    width: 90vw;
+    max-width: 380px;
   }
 }
 
