@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c41d9eca.css",
-    "main.js": "/static/js/main.2eb2fe6a.js",
+    "main.css": "/static/css/main.5967a25c.css",
+    "main.js": "/static/js/main.7272293e.js",
     "static/media/poly.glb": "/static/media/poly.99ee831d1de41509ff40.glb",
     "static/media/cover_BurningDeluxe.png": "/static/media/cover_BurningDeluxe.dead8d3dc45414aa4a26.png",
     "static/media/cover_War.png": "/static/media/cover_War.01f4c30da3509517bbbc.png",
@@ -13,15 +13,14 @@
     "static/media/cover_GoodBoy.jpg": "/static/media/cover_GoodBoy.37edf83d671aa1ee29ac.jpg",
     "static/media/cover_Lightspeeeed.jpg": "/static/media/cover_Lightspeeeed.009b7736a00d545f4320.jpg",
     "static/media/cover_NowIUnderstand.jpg": "/static/media/cover_NowIUnderstand.bd682d16485da3332d95.jpg",
-    "static/media/credits.png": "/static/media/credits.128aca09f3e04cd45800.png",
     "static/media/Myfont-Regular.ttf": "/static/media/Myfont-Regular.dbf2e41ca84bc74b3aca.ttf",
     "static/media/Myfont2-Regular.ttf": "/static/media/Myfont2-Regular.6df6b14bf13f7922b9ee.ttf",
     "index.html": "/index.html",
-    "main.c41d9eca.css.map": "/static/css/main.c41d9eca.css.map",
-    "main.2eb2fe6a.js.map": "/static/js/main.2eb2fe6a.js.map"
+    "main.5967a25c.css.map": "/static/css/main.5967a25c.css.map",
+    "main.7272293e.js.map": "/static/js/main.7272293e.js.map"
   },
   "entrypoints": [
-    "static/css/main.c41d9eca.css",
-    "static/js/main.2eb2fe6a.js"
+    "static/css/main.5967a25c.css",
+    "static/js/main.7272293e.js"
   ]
 }

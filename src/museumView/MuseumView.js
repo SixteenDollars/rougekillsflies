@@ -66,10 +66,10 @@ class MuseumView extends Component {
                             <Animator animation={batch(FadeIn(0.5, 1), FadeOut(1, .25))}>
                                 <div class="media-block">
                                     <div class="carousel-row">
-                                        <img class="carousel-image" src={cover_Lightspeeeed} alt="Lightspeeeed" onClick={() => this.openLightbox(cover_Lightspeeeed, "Lightspeeeed")} />
-                                        <img class="carousel-image" src={cover_Nightmarez} alt="Nightmarez" onClick={() => this.openLightbox(cover_Nightmarez, "Nightmarez")} />
-                                        <img class="carousel-image" src={cover_GoodBoy} alt="Good Boy" onClick={() => this.openLightbox(cover_GoodBoy, "Good Boy")} />
-                                        <img class="carousel-image" src={cover_NowIUnderstand} alt="Now I Understand" onClick={() => this.openLightbox(cover_NowIUnderstand, "Now I Understand")} />
+                                        <img class="carousel-image" src={cover_Lightspeeeed} alt="Lightspeeeed" href="https://0909blank.com/burningcredits" />
+                                        <img class="carousel-image" src={cover_Nightmarez} alt="Nightmarez" href="https://0909blank.com/burningcredits" />
+                                        <img class="carousel-image" src={cover_GoodBoy} alt="Good Boy" href="https://0909blank.com/burningcredits" />
+                                        <img class="carousel-image" src={cover_NowIUnderstand} alt="Now I Understand" href="https://0909blank.com/burningcredits" />
                                     </div>
                                     <div class="museum-label">
                                         <h3 class="label-title">
@@ -77,12 +77,12 @@ class MuseumView extends Component {
                                         </h3>
                                         <p class="label-medium">Pen and ink, digital</p>
                                         <p class="label-credit">
-                                            Cover art representing each song from the full-length album <strong><em>DOG</em></strong>. 
-                                            Designed and drawn by Brian Kwon. 
+                                            Cover art representing each song from the full-length album <strong><em>DOG</em></strong>.
+                                            Designed and drawn by Brian Kwon.
                                             Listen to the released tracks {' '}
-    <a href="https://open.spotify.com/album/xxxxx" target="_blank" rel="noopener noreferrer">here</a>, or click each image to access.
+                                            <a href="https://0909blank.com/doglinks" target="_blank" rel="noopener noreferrer">here</a>. Click each image to enlarge.
                                             <br />
-                                            2025.2
+                                            2025.2 - <em>Death of dogma</em>
                                         </p>
                                     </div>
                                     <div class="scroll-down-text-wrap">
@@ -138,11 +138,11 @@ class MuseumView extends Component {
                                             <h3 class="label-title">
                                                 <em>DOG Music Videos & Visualizers,</em> 2025-2026
                                             </h3>
-                                            <p class="label-medium">iPhone, DJI Osmo Action 5 Pro, animation</p>
+                                            <p class="label-medium">iPhone, DJI Osmo Action 5 Pro, Blender</p>
                                             <p class="label-credit">
-                                                Visualizers and short videos representing songs from the full-length album <strong><em>DOG</em></strong>. 
+                                                Visualizers and short videos representing songs from the full-length album <strong><em>DOG</em></strong>.
                                                 Shot and edited by Rouge. <em>Nightmarez</em> video animated by whylobin.                                                 <br />
-                                                2025.1
+                                                2025.1 - <em>Death of dogma</em>
                                             </p>
                                         </div>
                                         <div class="scroll-down-text-wrap">
@@ -172,9 +172,9 @@ class MuseumView extends Component {
                                         </h3>
                                         <p class="label-medium">Visual album</p>
                                         <p class="label-credit">
-                                            An audiovisual experience in support of the full-length album <strong><em>THE_BURNING</em></strong>. 
+                                            An audiovisual experience in support of the full-length album <strong><em>THE_BURNING</em></strong>.
                                             Edited by Rouge. Also features direction from Min Soo Park (<em>718 Hell, Don’t Tell The Kids</em>), and Colin Tunney (<em>The Ghosts Ain’t Real</em>).                                             <br />
-                                            2024.3
+                                            2024.3 - <em>Reclamation in a future world</em>
                                         </p>
                                     </div>
                                     <div class="scroll-down-text-wrap">
@@ -198,13 +198,16 @@ class MuseumView extends Component {
                                         </h3>
                                         <p class="label-medium">Oil, digital</p>
                                         <p class="label-credit">
-                                            Cover art for the full-length album <strong><em>THE_BURNING</em></strong>. 
-                                            Oil paintings drawn and digitally edited by Yassmin Dehesh. 
-                                            Inspired by the works of <em>Burial, Chynna, Deltron 3030, DMX</em>, and the worlds of <em>Blade Runner 2049 (2017), Ghost In The Shell (1995), Neon Genesis Evangelion (1995 - 1996)</em>. 
+                                            Cover art for the full-length album <strong><em>THE_BURNING</em></strong>.
+                                            Oil paintings drawn and digitally edited by Yassmin Dehesh.
                                             Listen to the album {' '}
-    <a href="https://open.spotify.com/album/xxxxx" target="_blank" rel="noopener noreferrer">here</a>. Credits.                                           
+                                            <a href="https://0909blank.com/burningcredits" target="_blank" rel="noopener noreferrer">here</a>. 
+                                            {' '}
+                                            <a href="https://0909blank.com/burningcredits" target="_blank" rel="noopener noreferrer">Credits</a>. 
+                                            {' '}
+                                            <a href="https://0909blank.com/burningcompanions" target="_blank" rel="noopener noreferrer">Companions</a>. Click each image to enlarge.
                                             <br />
-                                            2024.2
+                                            2024.2 - <em>Reclamation in a future world</em>
                                         </p>
                                         <div class="scroll-down-text-wrap">
                                             <h1 class="scroll-down-text">scroll down for more</h1>
@@ -233,11 +236,11 @@ class MuseumView extends Component {
                                         </h3>
                                         <p class="label-medium">Canon EOS Rebel T7</p>
                                         <p class="label-credit">
-                                            Vee Apollo’s deconstruction of the track <em>The Ghosts Ain’t Real </em>  
-                                            from the full-length album <strong><em>THE_BURNING</em></strong>. 
-                                            Video shot and edited by Rouge.                                             
+                                            Vee Apollo’s deconstruction of the track <em>The Ghosts Ain’t Real </em>
+                                            from the full-length album <strong><em>THE_BURNING</em></strong>.
+                                            Video shot and edited by Rouge.
                                             <br />
-                                            2024.1
+                                            2024.1 - <em>Reclamation in a future world</em>
                                         </p>
                                         <div class="scroll-down-text-wrap">
                                             <h1 class="scroll-down-text">scroll down for more</h1>
@@ -312,12 +315,12 @@ class MuseumView extends Component {
                                             </h3>
                                             <p class="label-medium">Clay, Polycam</p>
                                             <p class="label-credit">
-                                                An interactive, AR diorama of characters and settings that 
-                                                inspired the <strong><em>War!</em></strong> mixtape. 
-                                                Sculpted by Jalissa Bono. The diorama can be swiveled and 
-                                                zoomed in / out by scrolling and pinching. 
+                                                An interactive, AR diorama of characters and settings that
+                                                inspired the <strong><em>War!</em></strong> mixtape.
+                                                Sculpted by Jalissa Bono. The diorama can be swiveled and
+                                                zoomed in / out by scrolling and pinching.
                                                 Tiles are clickable and link out to various works.                                                 <br />
-                                                2023.1
+                                                2023.1 - <em>Reclamation in a future world</em>
                                             </p>
                                         </div>
                                         <div class="scroll-down-text-wrap">
@@ -340,16 +343,17 @@ class MuseumView extends Component {
                                         <h3 class="label-title">
                                             <em>War!,</em> 2021
                                         </h3>
-                                        <p class="label-medium">Mixtape</p>
+                                        <p class="label-medium">Film, digital</p>
                                         <p class="label-credit">
-                                            Cover art for the mixtape <strong><em>War!</em></strong>. 
-                                            Designed, photographed, and digitally altered by Darien Eldridge (Left). 
-                                            Designed, drawn, and digitally altered by boy blue (Right). 
-                                            Inspired by the works of <em>Can, Earl Sweatshirt, Fishmans</em>, and the worlds of <em>Fallen Angels (1995), Stalker (1979)</em>. 
+                                            Cover art for the mixtape <strong><em>War!</em></strong>.
+                                            Designed, photographed, and digitally edited by Darien Eldridge (Left).
+                                            Designed and digitally edited by boy blue (Right).
                                             Listen to the album {' '}
-    <a href="https://open.spotify.com/album/xxxxx" target="_blank" rel="noopener noreferrer">here</a>. Credits.
-                                            <br/>
-                                            2021.2
+                                            <a href="https://0909blank.com/warlinks" target="_blank" rel="noopener noreferrer">here</a>. 
+                                            {' '}
+                                            <a href="https://0909blank.com/warcompanions" target="_blank" rel="noopener noreferrer">Companions</a>. Click each image to enlarge.
+                                            <br />
+                                            2021.2 - <em>A new allegiance</em>
                                         </p>
                                         <div class="scroll-down-text-wrap">
                                             <h1 class="scroll-down-text">scroll down for more</h1>
@@ -378,9 +382,10 @@ class MuseumView extends Component {
                                         </h3>
                                         <p class="label-medium">Music video</p>
                                         <p class="label-credit">
-                                            Music video in support of the track <em>Closest Thing to God in the Flesh</em> from the mixtape <strong><em>War!</em></strong>. Directed by John Zeng. Credits.
+                                            Music video in support of the track <em>Closest Thing to God in the Flesh</em> from the mixtape <strong><em>War!</em></strong>.
+                                            Directed by John Zeng.
                                             <br />
-                                            2021.1
+                                            2021.1 - <em>A new allegiance</em>
                                         </p>
                                     </div>
                                 </div>

@@ -173,7 +173,7 @@
 }
 
 .carousel-image {
-  height: 220px;
+  height: 270px;
   width: auto;
   object-fit: cover;
   flex-shrink: 0;
@@ -295,64 +295,6 @@
   cursor: pointer;
   font-family: 'Playfair Display', serif;
 	margin-top: -15px;
-}
-
-/* AR Model */
-
-#video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -100px;
-  padding-bottom: 2rem;
-}
-
-#video-container model-viewer {
-  display: flex;
-  height: 80vh;
-  width: 80vh;
-  top: 0;
-  left: 0;
-  border: none;
-}
-
-.viewer-text {
-  background: #ffffff;
-  border-radius: 0px;
-  border: none;
-  box-sizing: border-box;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  color: rgba(255, 0, 0, 0.8);
-  font-family: 'Myfont-Regular', serif;
-  font-size: 15px;
-  font-weight: 1000;
-  max-width: 200px;
-  overflow-wrap: break-word;
-  padding: 0.5em 1em;
-  position: absolute;
-  width: max-content;
-  height: max-content;
-  transform: translate3d(-50%, -50%, 0);
-}
-
-#view-button {
-  background: #ffffff;
-  border-radius: 0px;
-  border: none;
-  box-sizing: border-box;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  color: rgba(0, 0, 0, 0.8);
-  display: block;
-  font-family: 'Myfont-Regular', serif;
-  font-size: 15px;
-  font-weight: 1000;
-  max-width: 200px;
-  overflow-wrap: break-word;
-  padding: 0.5em 1em;
-  position: absolute;
-  width: max-content;
-  height: max-content;
-  transform: translate3d(-50%, -50%, 0);
 }
 
 .album-image-wrapper {
@@ -604,19 +546,52 @@
     padding: 0 0.5rem;
   }
 
-  /* Carousel */
+  /* Carousel: make it horizontally scrollable so edge images
+     aren't cropped, and fade the left/right edges smoothly
+     instead of hard-cutting the outer images. */
 
   .carousel-row {
-    gap: 8px;
-    padding: 2rem 1rem;
+    gap: 10px;
+    padding: 2rem 1.25rem;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: visible;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+    scroll-padding: 0 1.25rem;
+    /* fade the edges so scrollable content isn't abruptly clipped */
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0,
+      #000 24px,
+      #000 calc(100% - 24px),
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent 0,
+      #000 24px,
+      #000 calc(100% - 24px),
+      transparent 100%
+    );
+    /* hide the scrollbar but keep it scrollable */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .carousel-row::-webkit-scrollbar {
+    display: none;
   }
 
   .carousel-image {
-    height: 140px;
+    height: 180px;
+    scroll-snap-align: center;
   }
 
-  .carousel-row .carousel-image:hover {
-    transform: scale(1.15);
+  .carousel-row .carousel-image:hover,
+  .carousel-row .carousel-image:active {
+    transform: scale(1.1);
   }
 
   /* Museum label text */
@@ -776,7 +751,7 @@
   }
 
   .carousel-image {
-    height: 110px;
+    height: 150px;
   }
 
   #video-container model-viewer {
@@ -853,7 +828,7 @@
 }
 
 .video-carousel-wrap {
-  max-width: 1100px;
+  max-width: 1300px;
   margin: 0 auto;
   text-align: left; 
 }
@@ -876,7 +851,7 @@
 }
 
 .carousel-card-center {
-  width: 480px;
+  width: 580px;
   opacity: 1;
   filter: none;
   transform: scale(1);
@@ -885,7 +860,7 @@
 }
 
 .carousel-card-side {
-  width: 300px;
+  width: 340px;
   opacity: 0.35;
   filter: grayscale(40%) blur(0.5px);
   transform: scale(0.85);
@@ -969,11 +944,11 @@
   }
 
   .carousel-card-center {
-    width: 240px;
+    width: 290px;
   }
 
   .carousel-card-side {
-    width: 90px;
+    width: 110px;
   }
 
   .carousel-card-info {
