@@ -360,7 +360,7 @@ class MuseumView extends Component {
                                                 Sculpted by Jalissa Bono. The diorama can be swiveled and
                                                 zoomed in / out by scrolling and pinching.
                                                 Tiles are clickable and link out to various works.                                                 <br />
-                                                2023.1 - <em>Reclamation in a future world</em>
+                                                2023.1 - <em>A new allegiance</em>
                                             </p>
                                         </div>
                                         <div class="scroll-down-text-wrap">
