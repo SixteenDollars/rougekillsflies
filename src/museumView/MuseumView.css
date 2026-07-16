@@ -546,9 +546,16 @@
     padding: 0 0.5rem;
   }
 
+  /* The audio play button + label sit fixed in the top-right
+     corner; give the very first section extra headroom on
+     mobile so its carousel doesn't run underneath them. */
   .first-section {
     padding-top: 4.75rem;
   }
+
+  /* Carousel: make it horizontally scrollable so edge images
+     aren't cropped, and fade the left/right edges smoothly
+     instead of hard-cutting the outer images. */
 
   .carousel-row {
     gap: 14px;

@@ -254,9 +254,9 @@ class MuseumView extends Component {
                                             <br />
                                             2025.4 - <em>Reclamation in a future world</em>
                                         </p>
-                                        <div class="scroll-down-text-wrap">
-                                            <h1 class="scroll-down-text">scroll down for more</h1>
-                                        </div>
+                                    </div>
+                                    <div class="scroll-down-text-wrap">
+                                        <h1 class="scroll-down-text">scroll down for more</h1>
                                     </div>
                                 </div>
                             </Animator>
@@ -287,9 +287,9 @@ class MuseumView extends Component {
                                             <br />
                                             2024.3 - <em>Reclamation in a future world</em>
                                         </p>
-                                        <div class="scroll-down-text-wrap">
-                                            <h1 class="scroll-down-text">scroll down for more</h1>
-                                        </div>
+                                    </div>
+                                    <div class="scroll-down-text-wrap">
+                                        <h1 class="scroll-down-text">scroll down for more</h1>
                                     </div>
                                 </div>
                             </Animator>
@@ -464,9 +464,9 @@ class MuseumView extends Component {
                                             <br />
                                             2021.2 - <em>A new allegiance</em>
                                         </p>
-                                        <div class="scroll-down-text-wrap">
-                                            <h1 class="scroll-down-text">scroll down for more</h1>
-                                        </div>
+                                    </div>
+                                    <div class="scroll-down-text-wrap">
+                                        <h1 class="scroll-down-text">scroll down for more</h1>
                                     </div>
                                 </div>
                             </Animator>
@@ -521,36 +521,38 @@ class MuseumView extends Component {
                     onTimeUpdate={this.handleAudioTimeUpdate}
                     onLoadedMetadata={this.handleAudioLoadedMetadata}
                 />
-                <div class="site-audio-widget">
-                    <button
-                        class="site-audio-toggle"
-                        onClick={this.togglePlay}
-                        aria-label={this.state.isPlaying ? 'Pause audio' : 'Play audio'}
-                        aria-pressed={this.state.isPlaying}
-                    >
-                        {this.state.isPlaying ? (
-                            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
-                                <rect x="5" y="4" width="5" height="16" fill="currentColor" />
-                                <rect x="14" y="4" width="5" height="16" fill="currentColor" />
-                            </svg>
-                        ) : (
-                            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
-                                <path d="M6 4l14 8-14 8V4z" fill="currentColor" />
-                            </svg>
-                        )}
-                    </button>
-                    <input
-                        class="site-audio-scrub"
-                        type="range"
-                        min="0"
-                        max={this.state.audioDuration || 0}
-                        step="0.1"
-                        value={this.state.audioCurrentTime}
-                        onChange={this.handleScrub}
-                        aria-label="Seek audio position"
-                    />
-                    <p class="site-audio-label">"{SONG_TITLE}"</p>
-                </div>
+                {!this.state.lightboxImage && (
+                    <div class="site-audio-widget">
+                        <button
+                            class="site-audio-toggle"
+                            onClick={this.togglePlay}
+                            aria-label={this.state.isPlaying ? 'Pause audio' : 'Play audio'}
+                            aria-pressed={this.state.isPlaying}
+                        >
+                            {this.state.isPlaying ? (
+                                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+                                    <rect x="5" y="4" width="5" height="16" fill="currentColor" />
+                                    <rect x="14" y="4" width="5" height="16" fill="currentColor" />
+                                </svg>
+                            ) : (
+                                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+                                    <path d="M6 4l14 8-14 8V4z" fill="currentColor" />
+                                </svg>
+                            )}
+                        </button>
+                        <input
+                            class="site-audio-scrub"
+                            type="range"
+                            min="0"
+                            max={this.state.audioDuration || 0}
+                            step="0.1"
+                            value={this.state.audioCurrentTime}
+                            onChange={this.handleScrub}
+                            aria-label="Seek audio position"
+                        />
+                        <p class="site-audio-label">"{SONG_TITLE}"</p>
+                    </div>
+                )}
             </>
         );
     }
