@@ -11,59 +11,66 @@ import cover_Lightspeeeed from '../resources/images/cover_Lightspeeeed.jpg'
 import cover_Nightmarez from '../resources/images/cover_Nightmarez.jpg'
 import cover_GoodBoy from '../resources/images/cover_GoodBoy.jpg'
 import cover_NowIUnderstand from '../resources/images/cover_NowIUnderstand.jpg'
+import NowIUnderstandMP3 from '../resources/audio/NowIUnderstandMP3.mp3'
 
 import { ScrollContainer, ScrollPage, Animator, FadeOut, FadeIn, batch } from 'react-scroll-motion';
 
+const SONG_TITLE = 'Now I Understand';
+  
 class MuseumView extends Component {
     constructor(props) {
         super(props);
         this.state = {
             lightboxImage: null,
             lightboxAlt: '',
-            carouselIndex: 0
+            carouselIndex: 0,
+            isPlaying: false
         };
         this.openLightbox = this.openLightbox.bind(this);
         this.closeLightbox = this.closeLightbox.bind(this);
         this.goToPrev = this.goToPrev.bind(this);
         this.goToNext = this.goToNext.bind(this);
-
+        this.audioRef = React.createRef();
+        this.togglePlay = this.togglePlay.bind(this);
+ 
         this.carouselItems = [
-            { url: 'https://youtu.be/DdLRa4q0OxI', title: 'Good Boy' },
+            { url: 'https://youtu.be/LJ9Y52NF1uQ', title: 'Good Boy' },
             { url: 'https://youtu.be/DdLRa4q0OxI', title: 'Nightmarez' },
             { url: 'https://youtu.be/rtAKsQ746fU', title: 'Lightspeeeeed' },
             { url: 'https://youtu.be/k7Vy4gPTyYE', title: 'Sun Go Blind [V1]' },
         ];
-
+ 
         this.carouselRows = [];
         this.registerCarouselRow = this.registerCarouselRow.bind(this);
         this.centerCarouselRow = this.centerCarouselRow.bind(this);
         this.centerAllCarouselRows = this.centerAllCarouselRows.bind(this);
         this.handleCarouselImageLoad = this.handleCarouselImageLoad.bind(this);
     }
-
+ 
     componentDidMount() {
         window.addEventListener('resize', this.centerAllCarouselRows);
         // Give the browser a tick to lay out images before centering.
         setTimeout(this.centerAllCarouselRows, 50);
     }
-
+ 
     componentWillUnmount() {
         window.removeEventListener('resize', this.centerAllCarouselRows);
     }
-
+ 
     registerCarouselRow(el) {
         if (el && !this.carouselRows.includes(el)) {
             this.carouselRows.push(el);
         }
     }
-
+ 
     centerAllCarouselRows() {
         if (window.innerWidth > 768) return;
         this.carouselRows.forEach((row) => this.centerCarouselRow(row));
     }
-
+ 
     centerCarouselRow(row) {
         if (!row || window.innerWidth > 768) return;
+        if (row.classList.contains('carousel-row-pair')) return;
         const images = Array.from(row.querySelectorAll('img.carousel-image'));
         if (!images.length) return;
         const middleIndex = Math.floor((images.length - 1) / 2);
@@ -72,31 +79,44 @@ class MuseumView extends Component {
         const scrollLeft = target.offsetLeft - (row.clientWidth - target.clientWidth) / 2;
         row.scrollTo({ left: Math.max(scrollLeft, 0), behavior: 'auto' });
     }
-
+ 
     handleCarouselImageLoad(e) {
         const row = e.target.closest('.carousel-row');
         this.centerCarouselRow(row);
     }
+ 
+    togglePlay() {
+        const audio = this.audioRef.current;
+        if (!audio) return;
+        if (this.state.isPlaying) {
+            audio.pause();
+            this.setState({ isPlaying: false });
+        } else {
+            audio.play().catch(() => {});
+            this.setState({ isPlaying: true });
+        }
+    }
+ 
     openLightbox(src, alt) {
         this.setState({ lightboxImage: src, lightboxAlt: alt });
     }
-
+ 
     closeLightbox() {
         this.setState({ lightboxImage: null, lightboxAlt: '' });
     }
-
+ 
     goToPrev() {
         this.setState((prevState) => ({
             carouselIndex: (prevState.carouselIndex - 1 + this.carouselItems.length) % this.carouselItems.length
         }));
     }
-
+ 
     goToNext() {
         this.setState((prevState) => ({
             carouselIndex: (prevState.carouselIndex + 1) % this.carouselItems.length
         }));
     }
-
+ 
     render() {
         return (
             <>
@@ -193,32 +213,30 @@ class MuseumView extends Component {
                             </Animator>
                         </ScrollPage>
                     </main>
-                    <main class="albumView">
+                                        <main class="albumView">
                         <ScrollPage>
-                            <Animator animation={batch(FadeIn(0.5, 1), FadeOut(1, .85))}>
+                            <Animator animation={batch(FadeIn(0.5, 1), FadeOut(1, .25))}>
                                 <div class="media-block">
-                                    <div class="react-player-wrapper">
-                                        <ReactPlayer
-                                            class="react-player-video"
-                                            url="https://youtu.be/RstFBfAQHng"
-                                            controls
-                                            width="100%"
-                                            height="100%"
-                                        />
+                                    <div class="carousel-row carousel-row-pair" ref={this.registerCarouselRow}>
+                                        <img class="carousel-image" src={cover_Burning} alt="Burning" onClick={() => this.openLightbox(cover_Burning, "Burning")} onLoad={this.handleCarouselImageLoad} />
+                                        <img class="carousel-image" src={cover_BurningDeluxe} alt="BurningDeluxe" onClick={() => this.openLightbox(cover_BurningDeluxe, "BurningDeluxe")} onLoad={this.handleCarouselImageLoad} />
                                     </div>
                                     <div class="museum-label">
                                         <h3 class="label-title">
-                                            <em>THE_BURNING,</em> 2024
+                                            <em>THE_BURNING CD,</em> 2025
                                         </h3>
-                                        <p class="label-medium">Visual album</p>
+                                        <p class="label-medium">Digipak</p>
                                         <p class="label-credit">
-                                            An audiovisual experience in support of the full-length album <strong><em>THE_BURNING</em></strong>.
-                                            Edited by Rouge. Also features direction from Min Soo Park (<em>718 Hell, Don’t Tell The Kids</em>), and Colin Tunney (<em>The Ghosts Ain’t Real</em>).                                             <br />
-                                            2024.3 - <em>Reclamation in a future world</em>
+                                            Digipak CD fold designed by Rouge in support of 
+                                            the full-length album <strong><em>THE_BURNING</em></strong>. Eco-friendly print. 
+                                            Listen to the album {' '}
+                                            <a href="https://0909blank.com/burninglinks" target="_blank" rel="noopener noreferrer">here</a>.
+                                            <br />
+                                            2025.4 - <em>Reclamation in a future world</em>
                                         </p>
-                                    </div>
-                                    <div class="scroll-down-text-wrap">
-                                        <h1 class="scroll-down-text">scroll down for more</h1>
+                                        <div class="scroll-down-text-wrap">
+                                            <h1 class="scroll-down-text">scroll down for more</h1>
+                                        </div>
                                     </div>
                                 </div>
                             </Animator>
@@ -247,11 +265,42 @@ class MuseumView extends Component {
                                             {' '}
                                             <a href="https://0909blank.com/burningcompanions" target="_blank" rel="noopener noreferrer">Companions</a>. Click each image to enlarge.
                                             <br />
-                                            2024.2 - <em>Reclamation in a future world</em>
+                                            2024.3 - <em>Reclamation in a future world</em>
                                         </p>
                                         <div class="scroll-down-text-wrap">
                                             <h1 class="scroll-down-text">scroll down for more</h1>
                                         </div>
+                                    </div>
+                                </div>
+                            </Animator>
+                        </ScrollPage>
+                    </main>
+                    <main class="albumView">
+                        <ScrollPage>
+                            <Animator animation={batch(FadeIn(0.5, 1), FadeOut(1, .85))}>
+                                <div class="media-block">
+                                    <div class="react-player-wrapper">
+                                        <ReactPlayer
+                                            class="react-player-video"
+                                            url="https://youtu.be/RstFBfAQHng"
+                                            controls
+                                            width="100%"
+                                            height="100%"
+                                        />
+                                    </div>
+                                    <div class="museum-label">
+                                        <h3 class="label-title">
+                                            <em>THE_BURNING,</em> 2024
+                                        </h3>
+                                        <p class="label-medium">Visual album</p>
+                                        <p class="label-credit">
+                                            An audiovisual experience in support of the full-length album <strong><em>THE_BURNING</em></strong>.
+                                            Edited by Rouge. Also features direction from Min Soo Park (<em>718 Hell, Don’t Tell The Kids</em>), and Colin Tunney (<em>The Ghosts Ain’t Real</em>).                                             <br />
+                                            2024.2 - <em>Reclamation in a future world</em>
+                                        </p>
+                                    </div>
+                                    <div class="scroll-down-text-wrap">
+                                        <h1 class="scroll-down-text">scroll down for more</h1>
                                     </div>
                                 </div>
                             </Animator>
@@ -444,9 +493,30 @@ class MuseumView extends Component {
                         />
                     </div>
                 )}
+                <audio ref={this.audioRef} src={NowIUnderstandMP3} loop preload="none" />
+                <div class="site-audio-widget">
+                    <button
+                        class="site-audio-toggle"
+                        onClick={this.togglePlay}
+                        aria-label={this.state.isPlaying ? 'Pause audio' : 'Play audio'}
+                        aria-pressed={this.state.isPlaying}
+                    >
+                        {this.state.isPlaying ? (
+                            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+                                <rect x="5" y="4" width="5" height="16" fill="currentColor" />
+                                <rect x="14" y="4" width="5" height="16" fill="currentColor" />
+                            </svg>
+                        ) : (
+                            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+                                <path d="M6 4l14 8-14 8V4z" fill="currentColor" />
+                            </svg>
+                        )}
+                    </button>
+                    <p class="site-audio-label">"{SONG_TITLE}"</p>
+                </div>
             </>
         );
     }
 }
-
+ 
 export default MuseumView;
