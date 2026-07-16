@@ -383,7 +383,7 @@ class MuseumView extends Component {
                                                 <button id="view-button"
                                                     onClick={(e) => {
                                                         e.preventDefault();
-                                                        window.location.href = 'https://rougekillsflies.com/nailbomb';
+                                                        window.location.href = 'https://0909blank.com/warlinks';
                                                     }}
                                                     slot="hotspot-0"
                                                     data-position="0.0000m 0.20000m -0.3500m"
@@ -395,7 +395,7 @@ class MuseumView extends Component {
                                                 <button id="view-button"
                                                     onClick={(e) => {
                                                         e.preventDefault();
-                                                        window.location.href = 'https://album.link/i/1559758015';
+                                                        window.location.href = 'https://0909blank.com/warlinks';
                                                     }}
                                                     slot="hotspot-1"
                                                     data-position="0.0608m 0.0566m 0.0605m"
