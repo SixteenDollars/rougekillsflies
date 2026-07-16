@@ -24,7 +24,9 @@ class MuseumView extends Component {
             lightboxImage: null,
             lightboxAlt: '',
             carouselIndex: 0,
-            isPlaying: false
+            isPlaying: false,
+            audioCurrentTime: 0,
+            audioDuration: 0
         };
         this.openLightbox = this.openLightbox.bind(this);
         this.closeLightbox = this.closeLightbox.bind(this);
@@ -32,6 +34,9 @@ class MuseumView extends Component {
         this.goToNext = this.goToNext.bind(this);
         this.audioRef = React.createRef();
         this.togglePlay = this.togglePlay.bind(this);
+        this.handleAudioTimeUpdate = this.handleAudioTimeUpdate.bind(this);
+        this.handleAudioLoadedMetadata = this.handleAudioLoadedMetadata.bind(this);
+        this.handleScrub = this.handleScrub.bind(this);
  
         this.carouselItems = [
             { url: 'https://youtu.be/LJ9Y52NF1uQ', title: 'Good Boy' },
@@ -97,6 +102,21 @@ class MuseumView extends Component {
         }
     }
  
+    handleAudioTimeUpdate(e) {
+        this.setState({ audioCurrentTime: e.target.currentTime });
+    }
+ 
+    handleAudioLoadedMetadata(e) {
+        this.setState({ audioDuration: e.target.duration || 0 });
+    }
+ 
+    handleScrub(e) {
+        const audio = this.audioRef.current;
+        const value = parseFloat(e.target.value);
+        if (audio) audio.currentTime = value;
+        this.setState({ audioCurrentTime: value });
+    }
+ 
     openLightbox(src, alt) {
         this.setState({ lightboxImage: src, lightboxAlt: alt });
     }
@@ -121,7 +141,7 @@ class MuseumView extends Component {
         return (
             <>
                 <ScrollContainer>
-                    <main class="albumView">
+                    <main class="albumView first-section">
                         <ScrollPage>
                             <Animator animation={batch(FadeIn(0.5, 1), FadeOut(1, .25))}>
                                 <div class="media-block">
@@ -493,7 +513,14 @@ class MuseumView extends Component {
                         />
                     </div>
                 )}
-                <audio ref={this.audioRef} src={NowIUnderstandMP3} loop preload="none" />
+                <audio
+                    ref={this.audioRef}
+                    src={NowIUnderstandMP3}
+                    loop
+                    preload="metadata"
+                    onTimeUpdate={this.handleAudioTimeUpdate}
+                    onLoadedMetadata={this.handleAudioLoadedMetadata}
+                />
                 <div class="site-audio-widget">
                     <button
                         class="site-audio-toggle"
@@ -512,6 +539,16 @@ class MuseumView extends Component {
                             </svg>
                         )}
                     </button>
+                    <input
+                        class="site-audio-scrub"
+                        type="range"
+                        min="0"
+                        max={this.state.audioDuration || 0}
+                        step="0.1"
+                        value={this.state.audioCurrentTime}
+                        onChange={this.handleScrub}
+                        aria-label="Seek audio position"
+                    />
                     <p class="site-audio-label">"{SONG_TITLE}"</p>
                 </div>
             </>
