@@ -15,6 +15,12 @@ class WarLinks extends Component {
                 <br />
                 <strong>
                     {' '}
+                    <a href="https://soundcloud.com/rougekillsflies/sets/war" target="_blank" rel="noopener noreferrer">Click here for Soundcloud</a>
+                </strong>
+                <br />
+                <br />
+                <strong>
+                    {' '}
                     <a href="https://open.spotify.com/album/4EB90iSgS5OIW3HhnhB6s6?si=SeggBiJ5SRS7bqVQVJkIkQ" target="_blank" rel="noopener noreferrer">Click here for Spotify</a>
                 </strong>
             </>

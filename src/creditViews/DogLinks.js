@@ -15,6 +15,12 @@ class BurningLinks extends Component {
                 <br />
                 <strong>
                     {' '}
+                    <a href="https://soundcloud.com/rougekillsflies/sets/dog" target="_blank" rel="noopener noreferrer">Click here for Soundcloud</a>
+                </strong>
+                <br />
+                <br />
+                <strong>
+                    {' '}
                     <a href="https://open.spotify.com/artist/6nbcBSweBGQxsgni0Xu1YC?si=cPMTt1qlQGu8qhxMD3alAA" target="_blank" rel="noopener noreferrer">Click here for Spotify</a>
                 </strong>
             </>

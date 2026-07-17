@@ -11,12 +11,15 @@ import cover_Lightspeeeed from '../resources/images/cover_Lightspeeeed.jpg'
 import cover_Nightmarez from '../resources/images/cover_Nightmarez.jpg'
 import cover_GoodBoy from '../resources/images/cover_GoodBoy.jpg'
 import cover_NowIUnderstand from '../resources/images/cover_NowIUnderstand.jpg'
+import cdBurningFold from '../resources/images/cd_burning_fold.png'
+import cdBurningSleeve from '../resources/images/cd_burning_sleeve.png'
 import NowIUnderstandMP3 from '../resources/audio/NowIUnderstandMP3.mp3'
 
 import { ScrollContainer, ScrollPage, Animator, FadeOut, FadeIn, batch } from 'react-scroll-motion';
 
 const SONG_TITLE = 'Now I Understand';
-  
+const SUPPORT_URL = 'https://buymeacoffee.com/rxugebusinv';
+
 class MuseumView extends Component {
     constructor(props) {
         super(props);
@@ -37,42 +40,42 @@ class MuseumView extends Component {
         this.handleAudioTimeUpdate = this.handleAudioTimeUpdate.bind(this);
         this.handleAudioLoadedMetadata = this.handleAudioLoadedMetadata.bind(this);
         this.handleScrub = this.handleScrub.bind(this);
- 
+
         this.carouselItems = [
             { url: 'https://youtu.be/LJ9Y52NF1uQ', title: 'Good Boy' },
             { url: 'https://youtu.be/DdLRa4q0OxI', title: 'Nightmarez' },
             { url: 'https://youtu.be/rtAKsQ746fU', title: 'Lightspeeeeed' },
             { url: 'https://youtu.be/k7Vy4gPTyYE', title: 'Sun Go Blind [V1]' },
         ];
- 
+
         this.carouselRows = [];
         this.registerCarouselRow = this.registerCarouselRow.bind(this);
         this.centerCarouselRow = this.centerCarouselRow.bind(this);
         this.centerAllCarouselRows = this.centerAllCarouselRows.bind(this);
         this.handleCarouselImageLoad = this.handleCarouselImageLoad.bind(this);
     }
- 
+
     componentDidMount() {
         window.addEventListener('resize', this.centerAllCarouselRows);
         // Give the browser a tick to lay out images before centering.
         setTimeout(this.centerAllCarouselRows, 50);
     }
- 
+
     componentWillUnmount() {
         window.removeEventListener('resize', this.centerAllCarouselRows);
     }
- 
+
     registerCarouselRow(el) {
         if (el && !this.carouselRows.includes(el)) {
             this.carouselRows.push(el);
         }
     }
- 
+
     centerAllCarouselRows() {
         if (window.innerWidth > 768) return;
         this.carouselRows.forEach((row) => this.centerCarouselRow(row));
     }
- 
+
     centerCarouselRow(row) {
         if (!row || window.innerWidth > 768) return;
         if (row.classList.contains('carousel-row-pair')) return;
@@ -84,12 +87,12 @@ class MuseumView extends Component {
         const scrollLeft = target.offsetLeft - (row.clientWidth - target.clientWidth) / 2;
         row.scrollTo({ left: Math.max(scrollLeft, 0), behavior: 'auto' });
     }
- 
+
     handleCarouselImageLoad(e) {
         const row = e.target.closest('.carousel-row');
         this.centerCarouselRow(row);
     }
- 
+
     togglePlay() {
         const audio = this.audioRef.current;
         if (!audio) return;
@@ -97,46 +100,46 @@ class MuseumView extends Component {
             audio.pause();
             this.setState({ isPlaying: false });
         } else {
-            audio.play().catch(() => {});
+            audio.play().catch(() => { });
             this.setState({ isPlaying: true });
         }
     }
- 
+
     handleAudioTimeUpdate(e) {
         this.setState({ audioCurrentTime: e.target.currentTime });
     }
- 
+
     handleAudioLoadedMetadata(e) {
         this.setState({ audioDuration: e.target.duration || 0 });
     }
- 
+
     handleScrub(e) {
         const audio = this.audioRef.current;
         const value = parseFloat(e.target.value);
         if (audio) audio.currentTime = value;
         this.setState({ audioCurrentTime: value });
     }
- 
+
     openLightbox(src, alt) {
         this.setState({ lightboxImage: src, lightboxAlt: alt });
     }
- 
+
     closeLightbox() {
         this.setState({ lightboxImage: null, lightboxAlt: '' });
     }
- 
+
     goToPrev() {
         this.setState((prevState) => ({
             carouselIndex: (prevState.carouselIndex - 1 + this.carouselItems.length) % this.carouselItems.length
         }));
     }
- 
+
     goToNext() {
         this.setState((prevState) => ({
             carouselIndex: (prevState.carouselIndex + 1) % this.carouselItems.length
         }));
     }
- 
+
     render() {
         return (
             <>
@@ -157,7 +160,7 @@ class MuseumView extends Component {
                                         </h3>
                                         <p class="label-medium">Pen and ink, digital</p>
                                         <p class="label-credit">
-                                            Cover art representing each song from the full-length album <strong><em>DOG</em></strong>.
+                                            Cover art representing each song from the album <strong><em>DOG</em></strong>.
                                             Designed and drawn by Brian Kwon.
                                             Listen to the released tracks {' '}
                                             <a href="https://0909blank.com/doglinks" target="_blank" rel="noopener noreferrer">here</a>. Click each image to enlarge.
@@ -220,7 +223,7 @@ class MuseumView extends Component {
                                             </h3>
                                             <p class="label-medium">iPhone, DJI Osmo Action 5 Pro, Blender</p>
                                             <p class="label-credit">
-                                                Visualizers and short videos representing songs from the full-length album <strong><em>DOG</em></strong>.
+                                                Visualizers and short videos representing songs from the album <strong><em>DOG</em></strong>.
                                                 Shot and edited by Rouge. <em>Nightmarez</em> video animated by whylobin.                                                 <br />
                                                 2025.1 - <em>Death of dogma</em>
                                             </p>
@@ -233,13 +236,17 @@ class MuseumView extends Component {
                             </Animator>
                         </ScrollPage>
                     </main>
-                                        <main class="albumView">
+                    <main class="albumView">
                         <ScrollPage>
                             <Animator animation={batch(FadeIn(0.5, 1), FadeOut(1, .25))}>
                                 <div class="media-block">
-                                    <div class="carousel-row carousel-row-pair" ref={this.registerCarouselRow}>
-                                        <img class="carousel-image" src={cover_Burning} alt="Burning" onClick={() => this.openLightbox(cover_Burning, "Burning")} onLoad={this.handleCarouselImageLoad} />
-                                        <img class="carousel-image" src={cover_BurningDeluxe} alt="BurningDeluxe" onClick={() => this.openLightbox(cover_BurningDeluxe, "BurningDeluxe")} onLoad={this.handleCarouselImageLoad} />
+                                    <div class="cd-gallery">
+                                        <div class="cd-gallery-item">
+                                            <img class="cd-gallery-image" src={cdBurningFold} alt="THE_BURNING CD digipak fold" onClick={() => this.openLightbox(cdBurningFold, "THE_BURNING CD digipak fold")} />
+                                        </div>
+                                        <div class="cd-gallery-item">
+                                            <img class="cd-gallery-image" src={cdBurningSleeve} alt="THE_BURNING CD sleeve" onClick={() => this.openLightbox(cdBurningSleeve, "THE_BURNING CD sleeve")} />
+                                        </div>
                                     </div>
                                     <div class="museum-label">
                                         <h3 class="label-title">
@@ -247,8 +254,8 @@ class MuseumView extends Component {
                                         </h3>
                                         <p class="label-medium">Digipak</p>
                                         <p class="label-credit">
-                                            Digipak CD fold designed by Rouge in support of 
-                                            the full-length album <strong><em>THE_BURNING</em></strong>. Eco-friendly print. 
+                                            Digipak CD fold designed by Rouge in support of
+                                            the album <strong><em>THE_BURNING</em></strong>. Eco-friendly print.
                                             Listen to the album {' '}
                                             <a href="https://0909blank.com/burninglinks" target="_blank" rel="noopener noreferrer">here</a>.
                                             <br />
@@ -276,7 +283,7 @@ class MuseumView extends Component {
                                         </h3>
                                         <p class="label-medium">Oil, digital</p>
                                         <p class="label-credit">
-                                            Cover art for the full-length album <strong><em>THE_BURNING</em></strong>.
+                                            Cover art for the album <strong><em>THE_BURNING</em></strong>.
                                             Oil paintings drawn and digitally edited by Yassmin Dehesh.
                                             Listen to the album {' '}
                                             <a href="https://0909blank.com/burninglinks" target="_blank" rel="noopener noreferrer">here</a>.
@@ -314,7 +321,7 @@ class MuseumView extends Component {
                                         </h3>
                                         <p class="label-medium">Visual album</p>
                                         <p class="label-credit">
-                                            An audiovisual experience in support of the full-length album <strong><em>THE_BURNING</em></strong>.
+                                            An audiovisual experience in support of the album <strong><em>THE_BURNING</em></strong>.
                                             Edited by Rouge. Also features direction from Min Soo Park (<em>718 Hell, Don’t Tell The Kids</em>), and Colin Tunney (<em>The Ghosts Ain’t Real</em>).                                             <br />
                                             2024.2 - <em>Reclamation in a future world</em>
                                         </p>
@@ -346,7 +353,7 @@ class MuseumView extends Component {
                                         <p class="label-medium">Canon EOS Rebel T7</p>
                                         <p class="label-credit">
                                             Vee Apollo’s deconstruction of the track <em>The Ghosts Ain’t Real </em>
-                                            from the full-length album <strong><em>THE_BURNING</em></strong>.
+                                            from the album <strong><em>THE_BURNING</em></strong>.
                                             Video shot and edited by Rouge.
                                             <br />
                                             2024.1 - <em>Reclamation in a future world</em>
@@ -551,11 +558,19 @@ class MuseumView extends Component {
                             aria-label="Seek audio position"
                         />
                         <p class="site-audio-label">"{SONG_TITLE}"</p>
+{/*                         <a
+                            class="site-support-link"
+                            href={SUPPORT_URL}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            support
+                        </a> */}
                     </div>
                 )}
             </>
         );
     }
 }
- 
+
 export default MuseumView;

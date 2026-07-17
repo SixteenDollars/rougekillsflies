@@ -58,7 +58,7 @@
   transform: translate3d(-50%, -50%, 0);
 }
 
-@media screen and (max-width: 768px) {    
+@media screen and (max-width: 768px) {
   .viewer-text {
     display: block;
     font-size: 10px;
@@ -93,7 +93,7 @@
   transform: translate3d(-50%, -50%, 0);
 }
 
-@media screen and (max-width: 768px) {    
+@media screen and (max-width: 768px) {
   #view-button {
     display: block;
     font-size: 10px;
@@ -121,16 +121,16 @@
     height: max-content;
     transform: translate3d(-50%, -50%, 0);
   }
-}  
+}
 
-@media screen and (max-width: 768px) {    
-  #video-container model-viewer {   
+@media screen and (max-width: 768px) {
+  #video-container model-viewer {
     height: 45vh;
     width: 45vh;
   }
 }
 
-@media screen and (max-width: 768px) {    
+@media screen and (max-width: 768px) {
   #video-container {
     display: flex;
     flex-direction: column;
@@ -154,11 +154,11 @@
     margin-left: 5rem;
     padding-bottom: 1.5rem;
   }
-} 
+}
 
 .media-block {
-    max-width: 900px;
-    margin: 0 auto;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* Image Carousel */
@@ -204,50 +204,50 @@
 .react-player-wrapper {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 aspect ratio */
+  padding-top: 56.25%;
 }
 
 .media-block-2 {
-    max-width: 900px;
-    margin: 0 auto;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .museum-label {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 24px 28px;
-    max-width: none;
-    line-height: 1.4;
-    width: 100%;
-    margin: 0 auto; 
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 24px 28px;
+  max-width: none;
+  line-height: 1.4;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .label-artist {
-    font-size: 22px;
-    font-weight: 700;
-    margin: 0 0 4px 0;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
 }
 
 .label-title {
-    font-size: 20px;
-    font-weight: 700;
-    font-style: italic;
-    margin: 0 0 8px 0;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0 0 8px 0;
 }
 
 .label-title em {
-    font-style: italic; 
+  font-style: italic;
 }
 
 .label-medium {
-    font-size: 16px;
-    font-weight: 400;
-    margin: 0 0 16px 0;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 16px 0;
 }
 
 .label-credit {
-    font-size: 14px;
-    font-weight: 400;
-    margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
 }
 
 .scroll-down-text-wrap {
@@ -260,7 +260,7 @@
 
 .scroll-down-text {
   font-family: Arial, Helvetica, sans-serif;
-  font-style: italic; 
+  font-style: italic;
   font-size: 1rem;
   color: rgb(0, 0, 0);
   margin-top: 2rem;
@@ -277,38 +277,38 @@
 }
 
 .albumView {
-  background-color:rgb(255, 254, 254);
-  padding:2rem;
+  background-color: rgb(255, 254, 254);
+  padding: 2rem;
 }
 
-.albumView > nav {
-	text-align: center;
+.albumView>nav {
+  text-align: center;
   margin-bottom: 25px;
   margin-left: 35px;
 }
 
-.albumView > nav > a {
-	text-align: center;
-	color:#FFF;
+.albumView>nav>a {
+  text-align: center;
+  color: #FFF;
   font-size: 35px;
   color: white;
   cursor: pointer;
   font-family: 'Playfair Display', serif;
-	margin-top: -15px;
+  margin-top: -15px;
 }
 
 .album-image-wrapper {
-    border-radius: 20px;
-    overflow: hidden;
-    display: block;
-    margin-bottom: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .album-image {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 /* Video Player */
@@ -328,7 +328,7 @@
 
 /* Grid */
 
-.albumView > .grid {
+.albumView>.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   grid-template-rows: repeat(2, 275px);
@@ -338,79 +338,115 @@
   padding-top: 2rem;
 }
 
-.albumView > .grid > li {
+.albumView>.grid>li {
   opacity: .65;
 }
 
-.albumView > .grid > li:hover {
+.albumView>.grid>li:hover {
   opacity: 1;
   margin-top: -5px;
   margin-left: -5px;
 }
 
-.albumView > .grid > li:nth-child(1n) {
+.albumView>.grid>li:nth-child(1n) {
   grid-column: span 2;
   grid-row: span 2;
 }
 
-.albumView > .grid > li:nth-child(2n) {
+.albumView>.grid>li:nth-child(2n) {
   grid-column: span 1;
   grid-row: span 1;
 }
 
-.albumView > .grid > li:nth-child(3n) {
+.albumView>.grid>li:nth-child(3n) {
   grid-column: span 1;
   grid-row: span 2;
 }
 
-.albumView > .grid > li:nth-child(4n) {
+.albumView>.grid>li:nth-child(4n) {
   grid-column: span 1;
   grid-row: span 2;
 }
 
-.albumView > .grid > li:nth-child(5n) {
+.albumView>.grid>li:nth-child(5n) {
   grid-column: span 1;
   grid-row: span 1;
 }
 
-.albumView > .grid > li > figure {
+.albumView>.grid>li>figure {
   height: 100%;
 }
-.albumView > .grid > li > figure > img {
+
+.albumView>.grid>li>figure>img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 #coverWar {
-    display: block;
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    margin: 0 auto 24px auto;
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto 24px auto;
 }
 
 /* Flicker Animation */
 
 @keyframes flickerAnimation {
-  0%   { opacity:1; }
-  50%  { opacity:.55; }
-  100% { opacity:1; }
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .55;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
-@-o-keyframes flickerAnimation{
-  0%   { opacity:1; }
-  50%  { opacity:.55; }
-  100% { opacity:1; }
+
+@-o-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .55;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
-@-moz-keyframes flickerAnimation{
-  0%   { opacity:1; }
-  50%  { opacity:.55; }
-  100% { opacity:1; }
+
+@-moz-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .55;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
-@-webkit-keyframes flickerAnimation{
-  0%   { opacity:1; }
-  50%  { opacity:.55; }
-  100% { opacity:1; }
+
+@-webkit-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .55;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 /* ==========================================================================
@@ -444,7 +480,7 @@
     padding-bottom: 1.5rem;
   }
 
-  .albumView > .grid {
+  .albumView>.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
     grid-template-rows: repeat(2, 275px);
@@ -452,35 +488,36 @@
     grid-auto-flow: dense;
   }
 
-  .albumView > .grid > li:nth-child(1n) {
+  .albumView>.grid>li:nth-child(1n) {
     grid-column: span 2;
     grid-row: span 2;
   }
 
-  .albumView > .grid > li:nth-child(2n) {
+  .albumView>.grid>li:nth-child(2n) {
     grid-column: span 1;
     grid-row: span 1;
   }
 
-  .albumView > .grid > li:nth-child(3n) {
+  .albumView>.grid>li:nth-child(3n) {
     grid-column: span 1;
     grid-row: span 2;
   }
 
-  .albumView > .grid > li:nth-child(4n) {
+  .albumView>.grid>li:nth-child(4n) {
     grid-column: span 1;
     grid-row: span 2;
   }
 
-  .albumView > .grid > li:nth-child(5n) {
+  .albumView>.grid>li:nth-child(5n) {
     grid-column: span 1;
     grid-row: span 1;
   }
 
-  .albumView > .grid > li > figure {
+  .albumView>.grid>li>figure {
     height: 100%;
   }
-  .albumView > .grid > li > figure > img {
+
+  .albumView>.grid>li>figure>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -488,7 +525,7 @@
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
-  .albumView > .grid {
+  .albumView>.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
     grid-template-rows: repeat(2, 275px);
@@ -496,35 +533,36 @@
     grid-auto-flow: dense;
   }
 
-  .albumView > .grid > li:nth-child(1n) {
+  .albumView>.grid>li:nth-child(1n) {
     grid-column: span 2;
     grid-row: span 2;
   }
 
-  .albumView > .grid > li:nth-child(2n) {
+  .albumView>.grid>li:nth-child(2n) {
     grid-column: span 1;
     grid-row: span 1;
   }
 
-  .albumView > .grid > li:nth-child(3n) {
+  .albumView>.grid>li:nth-child(3n) {
     grid-column: span 1;
     grid-row: span 2;
   }
 
-  .albumView > .grid > li:nth-child(4n) {
+  .albumView>.grid>li:nth-child(4n) {
     grid-column: span 1;
     grid-row: span 2;
   }
 
-  .albumView > .grid > li:nth-child(5n) {
+  .albumView>.grid>li:nth-child(5n) {
     grid-column: span 1;
     grid-row: span 1;
   }
 
-  .albumView > .grid > li > figure {
+  .albumView>.grid>li>figure {
     height: 100%;
   }
-  .albumView > .grid > li > figure > img {
+
+  .albumView>.grid>li>figure>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -550,7 +588,7 @@
      corner; give the very first section extra headroom on
      mobile so its carousel doesn't run underneath them. */
   .first-section {
-    padding-top: 4.75rem;
+    padding-top: 5.5rem;
   }
 
   /* Carousel: make it horizontally scrollable so edge images
@@ -568,20 +606,16 @@
     scroll-snap-type: x mandatory;
     /* fade the left/right edges so a peeking neighbor's outer
        side blurs away instead of getting hard-cropped */
-    -webkit-mask-image: linear-gradient(
-      to right,
-      transparent 0,
-      #000 40px,
-      #000 calc(100% - 40px),
-      transparent 100%
-    );
-    mask-image: linear-gradient(
-      to right,
-      transparent 0,
-      #000 40px,
-      #000 calc(100% - 40px),
-      transparent 100%
-    );
+    -webkit-mask-image: linear-gradient(to right,
+        transparent 0,
+        #000 40px,
+        #000 calc(100% - 40px),
+        transparent 100%);
+    mask-image: linear-gradient(to right,
+        transparent 0,
+        #000 40px,
+        #000 calc(100% - 40px),
+        transparent 100%);
     /* hide the scrollbar but keep it scrollable */
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -651,7 +685,8 @@
   /* Video */
 
   .react-player-wrapper {
-    padding-top: 56.25%; /* keep 16:9 ratio, full width on mobile */
+    padding-top: 56.25%;
+    /* keep 16:9 ratio, full width on mobile */
   }
 
   /* AR model */
@@ -706,7 +741,7 @@
 
   /* Grid */
 
-  .albumView > .grid {
+  .albumView>.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
     grid-template-rows: repeat(2, 275px);
@@ -715,35 +750,36 @@
     padding-bottom: 5rem;
   }
 
-  .albumView > .grid > li:nth-child(1n) {
+  .albumView>.grid>li:nth-child(1n) {
     grid-column: span 1;
     grid-row: span 1;
   }
 
-  .albumView > .grid > li:nth-child(2n) {
+  .albumView>.grid>li:nth-child(2n) {
     grid-column: span 2;
     grid-row: span 2;
   }
 
-  .albumView > .grid > li:nth-child(3n) {
+  .albumView>.grid>li:nth-child(3n) {
     grid-column: span 1;
     grid-row: span 2;
   }
 
-  .albumView > .grid > li:nth-child(4n) {
+  .albumView>.grid>li:nth-child(4n) {
     grid-column: span 1;
     grid-row: span 2;
   }
 
-  .albumView > .grid > li:nth-child(5n) {
+  .albumView>.grid>li:nth-child(5n) {
     grid-column: span 1;
     grid-row: span 1;
   }
 
-  .albumView > .grid > li > figure {
+  .albumView>.grid>li>figure {
     height: 100%;
   }
-  .albumView > .grid > li > figure > img {
+
+  .albumView>.grid>li>figure>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -790,6 +826,62 @@
   }
 }
 
+/* CD gallery — stacked, centered, no background */
+
+.cd-gallery {
+  column-count: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 4rem;
+}
+
+.cd-gallery-item {
+  display: block;
+  text-align: center;
+}
+
+.cd-gallery-image {
+  display: inline-block;
+  width: 90%;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cd-gallery-image:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .cd-gallery {
+    gap: 16px;
+    padding: 2rem 1.5rem;
+  }
+
+  .cd-gallery-image {
+    display: inline-block;
+    width: 95%;
+    cursor: pointer;
+  }
+}
+
+/* Support link */
+ 
+.site-support-link {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  transition: color 0.2s ease, border-color 0.2s ease;
+  font-size: 10.5px;
+  font-style: italic;
+}
+ 
+.site-support-link:hover {
+  color: rgba(0, 0, 0, 0.75);
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
 /* Site audio toggle */
 
 .site-audio-widget {
@@ -801,6 +893,38 @@
   flex-direction: column;
   align-items: center;
   gap: 6px;
+}
+
+.site-audio-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.site-audio-skip {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: rgba(20, 20, 20, 0.55);
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: color 0.2s ease, transform 0.15s ease;
+}
+
+.site-audio-skip:hover {
+  color: rgb(20, 20, 20);
+  transform: scale(1.15);
+}
+
+.site-audio-skip:active {
+  transform: scale(0.9);
 }
 
 .site-audio-toggle {
@@ -936,8 +1060,13 @@
 }
 
 @keyframes lightboxFadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .lightbox-image {
@@ -984,7 +1113,7 @@
 .video-carousel-wrap {
   max-width: 1300px;
   margin: 0 auto;
-  text-align: left; 
+  text-align: left;
 }
 
 .video-carousel-stage {
@@ -1033,7 +1162,7 @@
   background: #000;
 }
 
-.carousel-card-video > div {
+.carousel-card-video>div {
   position: absolute !important;
   top: 0;
   left: 0;

@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.39df43ef.css",
-    "main.js": "/static/js/main.063d594c.js",
+    "main.css": "/static/css/main.8dc2465b.css",
+    "main.js": "/static/js/main.f3f036cb.js",
     "static/media/poly.glb": "/static/media/poly.99ee831d1de41509ff40.glb",
+    "static/media/cd_burning_sleeve.png": "/static/media/cd_burning_sleeve.de3224ccbf51686be79b.png",
+    "static/media/cd_burning_fold.png": "/static/media/cd_burning_fold.fb15dc4fbabe2cb3db67.png",
     "static/media/cover_BurningDeluxe.png": "/static/media/cover_BurningDeluxe.dead8d3dc45414aa4a26.png",
     "static/media/NowIUnderstandMP3.mp3": "/static/media/NowIUnderstandMP3.49327f9b7b23988e8633.mp3",
     "static/media/cover_War.png": "/static/media/cover_War.01f4c30da3509517bbbc.png",
@@ -17,11 +19,11 @@
     "static/media/Myfont-Regular.ttf": "/static/media/Myfont-Regular.dbf2e41ca84bc74b3aca.ttf",
     "static/media/Myfont2-Regular.ttf": "/static/media/Myfont2-Regular.6df6b14bf13f7922b9ee.ttf",
     "index.html": "/index.html",
-    "main.39df43ef.css.map": "/static/css/main.39df43ef.css.map",
-    "main.063d594c.js.map": "/static/js/main.063d594c.js.map"
+    "main.8dc2465b.css.map": "/static/css/main.8dc2465b.css.map",
+    "main.f3f036cb.js.map": "/static/js/main.f3f036cb.js.map"
   },
   "entrypoints": [
-    "static/css/main.39df43ef.css",
-    "static/js/main.063d594c.js"
+    "static/css/main.8dc2465b.css",
+    "static/js/main.f3f036cb.js"
   ]
 }
