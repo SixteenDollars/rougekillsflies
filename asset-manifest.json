@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.a0bb22c4.css",
+    "main.css": "/static/css/main.e8876ed7.css",
     "main.js": "/static/js/main.f3f036cb.js",
     "static/media/poly.glb": "/static/media/poly.99ee831d1de41509ff40.glb",
     "static/media/cd_burning_sleeve.png": "/static/media/cd_burning_sleeve.de3224ccbf51686be79b.png",
@@ -19,11 +19,11 @@
     "static/media/Myfont-Regular.ttf": "/static/media/Myfont-Regular.dbf2e41ca84bc74b3aca.ttf",
     "static/media/Myfont2-Regular.ttf": "/static/media/Myfont2-Regular.6df6b14bf13f7922b9ee.ttf",
     "index.html": "/index.html",
-    "main.a0bb22c4.css.map": "/static/css/main.a0bb22c4.css.map",
+    "main.e8876ed7.css.map": "/static/css/main.e8876ed7.css.map",
     "main.f3f036cb.js.map": "/static/js/main.f3f036cb.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0bb22c4.css",
+    "static/css/main.e8876ed7.css",
     "static/js/main.f3f036cb.js"
   ]
 }
