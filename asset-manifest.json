@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.160bfc26.css",
-    "main.js": "/static/js/main.d4855fab.js",
+    "main.js": "/static/js/main.8f766048.js",
     "static/media/poly.glb": "/static/media/poly.99ee831d1de41509ff40.glb",
     "static/media/cd_burning_sleeve.png": "/static/media/cd_burning_sleeve.de3224ccbf51686be79b.png",
     "static/media/cd_burning_fold.png": "/static/media/cd_burning_fold.fb15dc4fbabe2cb3db67.png",
@@ -20,10 +20,10 @@
     "static/media/Myfont2-Regular.ttf": "/static/media/Myfont2-Regular.6df6b14bf13f7922b9ee.ttf",
     "index.html": "/index.html",
     "main.160bfc26.css.map": "/static/css/main.160bfc26.css.map",
-    "main.d4855fab.js.map": "/static/js/main.d4855fab.js.map"
+    "main.8f766048.js.map": "/static/js/main.8f766048.js.map"
   },
   "entrypoints": [
     "static/css/main.160bfc26.css",
-    "static/js/main.d4855fab.js"
+    "static/js/main.8f766048.js"
   ]
 }
